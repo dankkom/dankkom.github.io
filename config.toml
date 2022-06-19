@@ -1,0 +1,11 @@
+baseURL = "http://dkko.me/"
+languageCode = "pt-br"
+title = "dkko"
+
+theme = "tale"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[permalinks]
+    posts = "/posts/:slug"
