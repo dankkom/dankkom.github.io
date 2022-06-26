@@ -6,12 +6,12 @@ slug: trade-off-vies-variancia
 tags: []
 ---
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2022/01/bias-variance.png" alt=""/></figure>
+![](https://images2.imgbox.com/de/78/0qO1L89P_o.png)
 
 Quanto mais parâmetros colocamos no modelo, menor se torna o viés, porém mais complexo ele se torna e maior é a variância. Em machine learning é importante encontrar o equilíbrio entre viés e variância num modelo.
 
 <figure class="size-full">
-    <img src="https://dkko.me/wp-content/uploads/2022/01/Bias_and_variance_contributing_to_total_error.png" alt="Gráfico do trade-off entre viés e variância"/>
+    <img src="https://images2.imgbox.com/24/01/kBknKFe3_o.png" alt="Gráfico do trade-off entre viés e variância"/>
     <figcaption>Trade-off entre viés e variância <a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff#/media/File:Bias_and_variance_contributing_to_total_error.svg">Wikipedia</a></figcaption>
 </figure>
 

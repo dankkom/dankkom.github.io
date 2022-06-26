@@ -29,14 +29,14 @@ Alguns métodos recomendados para resolver o problema de overfitting são:
 O **underfitting** é quando o modelo não consegue fazer boas previsões nem com os dados de treinamento. Nesse caso tentar incluir mais variáveis no modelo pode ajudar e, se for o caso, diminuir o nível de regularização. Também é válido treinar o modelo com uma base de dados maior, pois ruídos em conjuntos de dados pequenos podem estar prejudicando a aprendizagem do algoritmo.
 
 <figure class="aligncenter size-full">
-    <img src="https://dkko.me/wp-content/uploads/2022/02/Overfitting.png" alt=""/>
+    <img src="https://images2.imgbox.com/a9/17/X9bOZXUM_o.png" alt=""/>
     <figcaption>Figura 1 - Exemplo de overfitting. Fonte: Wikipédia.</figcaption>
 </figure>
 
 Observe que na Figura 1 a linha verde separa perfeitamente os pontos vermelhos dos pontos azuis. Esse é um exemplo de overfitting, pois o algoritmo provavelmente não vai conseguir fazer essa separação perfeita com novos dados.
 
 <figure class="alignwide size-full is-style-default">
-    <img src="https://dkko.me/wp-content/uploads/2022/02/overfitting-underfitting.png" alt=""/>
+    <img src="https://images2.imgbox.com/20/67/cDcK6ajL_o.png" alt=""/>
     <figcaption>Figura 2 - Exemplos de modelos com underfitting, overfitting e balanceado.</figcaption>
 </figure>
 

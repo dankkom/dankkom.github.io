@@ -134,7 +134,7 @@ No período de 1995 a 2017 houve significativa expansão do estoque de capital f
 No período de 1995 a 2017 houve significativa expansão do estoque de capital fixo no país. Segundo a série histórica disponibilizada pelo IPEA (2017), o Brasil teve crescimento médio de 2,59% a.a. da média anual de estoque líquido de capital dessazonalizado entre 1995 e 2017. Nesse mesmo período, dados do Banco Mundial (2018c) apontam crescimento médio do Produto Interno Bruto (PIB) de 2,28% a.a. e expansão de 1,88% a.a. da força de trabalho. Ou seja, a relação PIB/Estoque de Capital diminuiu nos últimos anos, fazendo a PTF cair (Gráfico 1).
 
 <figure class="size-large">
-    <img src="https://dkko.me/wp-content/uploads/2021/11/grafico1-1-1024x576.png" alt=""/>
+    <img src="https://images2.imgbox.com/e1/b2/3yL6luvF_o.png" alt=""/>
     <figcaption>Gráfico 1 – Produto, fatores de produção e suas respectivas produtividades no Brasil, 1995-2017.<br>Fonte: Elaboração própria com dados do Banco Mundial (2018c) e do IPEA (2017).<br>Nota: a razão Y/L representa a produtividade do trabalho. Y/K representa a produtividade do capital, ou seja, quanto cada unidade de capital gera de produto.</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ Segundo relatório do Banco Mundial (2018a), a baixa produtividade brasileira es
 A abertura comercial promovida pelo governo na década de 1990 teve efeitos positivos na produtividade do trabalho (ROSSI JR., FERREIRA, 1999; BRASIL, 2018; BANCO MUNDIAL, 2018). Na década de 2000, durante o ciclo de alta das *commodities*, o Brasil teve um aumento marginal da produtividade, porém não conseguiu manter esse ganho (Gráfico 2).
 
 <figure class="size-full">
-    <img src="https://dkko.me/wp-content/uploads/2021/11/grafico2-1.png" alt=""/>
+    <img src="https://images2.imgbox.com/01/eb/4TFJhsuj_o.png" alt=""/>
     <figcaption>Gráfico 2 — Evolução da Produtividade do Trabalho e da Produtividade Total dos Fatores antes e após abertura comercial, Brasil, 1975-2014.<br>Fonte: BRASIL (2018, p. 16).</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ Embora o indicador de produtividade do trabalho mostre aumento no período, a PT
 Os níveis de instrução da população brasileira melhoraram nas últimas décadas, principalmente devido aos esforços de universalização do acesso ao ensino básico. A PNADC do 2º trimestre de 2018 mostra que o nível de instrução da população brasileira é maior para os jovens, enquanto a população idosa apresenta alta proporção de pessoas sem instrução (Gráfico 3).
 
 <figure class="size-large">
-    <img src="https://dkko.me/wp-content/uploads/2021/11/grafico3-1-1024x576.png" alt=""/>
+    <img src="https://images2.imgbox.com/0a/45/9sV1Ic7D_o.png" alt=""/>
     <figcaption>Gráfico 3 — Proporção da população por grupos de idade e nível de educação, Brasil, 2º trimestre de 2018.<br>Fonte: Elaboração própria com base nos microdados da PNADC (IBGE, 2018b).</figcaption>
 </figure>
 
@@ -165,7 +165,7 @@ Cabe destacar a maior proporção de pessoas com nível fundamental incompleto n
 Entre 2000 e 2015 o Investimento Público Direto em Educação (IPDE) subiu de 3,88% do PIB para 5,08% do PIB (INEP, 2018). O Gráfico 4 apresenta os valores do IPDE como percentual do PIB *per capita* por aluno. Em 2015, o IPDE no ensino básico correspondeu a cerca de 22% do PIB *per capita* por aluno. No ensino superior, por outro lado, o investimento foi maior do que 80% do PIB *per capita* por aluno.
 
 <figure class="size-large">
-    <img src="https://dkko.me/wp-content/uploads/2021/11/grafico4-1-1024x576.png" alt=""/>
+    <img src="https://images2.imgbox.com/e1/47/zMcx2dag_o.png" alt=""/>
     <figcaption>Gráfico 4 — Investimento público direto em educação por aluno e nível de ensino, % do PIB per capita por aluno, Brasil, 2000 a 2015.<br>Fonte: Elaboração própria com dados do INEP (2018).</figcaption>
 </figure>
 
@@ -190,7 +190,7 @@ Apesar dos esforços para reformar o ambiente de negócios, o Brasil perdeu posi
 Em alguns tópicos o Brasil tem boa performance na pesquisa. Por exemplo, na obtenção de eletricidade o país obteve pontuação no quartil superior da distribuição (Gráfico 5). A pontuação brasileira em relação à execução de contratos também é boa, seguida da proteção dos investidores minoritários. Isso, no entanto, não é suficiente para elevar o ambiente de negócios nacional ao patamar de países desenvolvidos.
 
 <figure class="size-large">
-    <img src="https://dkko.me/wp-content/uploads/2021/11/grafico5-1-1024x576.png" alt=""/>
+    <img src="https://images2.imgbox.com/fc/d8/AJ24gqZ3_o.png" alt=""/>
     <figcaption>Gráfico 5 — Pontuação no Doing Business 2019 do Brasil em relação à distribuição dos outros países da pesquisa.<br>Fonte: Elaboração própria com dados do Banco Mundial (2019).</figcaption>
 </figure>
 

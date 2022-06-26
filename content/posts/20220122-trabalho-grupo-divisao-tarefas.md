@@ -6,7 +6,7 @@ slug: trabalho-grupo-divisao-tarefas
 tags: []
 ---
 
-<figure class="size-large"><img src="https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg" alt=""/></figure>
+![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)
 
 Depois que os membros do grupo de trabalho já estão decididos, é primordial a divisão das tarefas do trabalho.
 

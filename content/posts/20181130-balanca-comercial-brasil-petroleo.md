@@ -6,6 +6,8 @@ slug: balanca-comercial-brasil-petroleo
 katex: true
 ---
 
+![](https://images2.imgbox.com/8e/03/ty8mgZnx_o.jpg)
+
 Este trabalho analisa a evolução das exportações e importações brasileiras entre os anos de 2008 e 2017, com foco nos combustíveis derivados de petróleo (diesel, gasolina, querosene etc.), motivado pela recente paralisação dos caminhoneiros em decorrência da alta dos preços desses produtos.
 
 Utilizando dados do Ministério da Indústria, Comércio Exterior e Serviços (MDIC) das exportações e importações brasileiras, analisa-se a evolução do saldo da balança comercial do Brasil. Com dados da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP), observa-se superávit na balança comercial de petróleo bruto déficit no de derivados. Houve queda de processamento de petróleo nas refinarias brasileiras, a despeito do crescimento da produção de petróleo nacional. O mercado interno de combustíveis é dependente de importações de óleo do exterior, visto que o petróleo brasileiro não tem as características adequadas para a produção de gasolina.
@@ -20,7 +22,7 @@ Este trabalho está dividido em quatro seções, sendo esta introdução a prime
 
 O Brasil, desde a abertura comercial no começo da década de 1990, avançou bastante quanto à abertura ao comércio com outros países. O Gráfico 1 mostra a evolução anual das exportações e importações brasileiras em valores free-on-board (FOB) em dólares e o saldo.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico1.png" alt=""/></figure>
+![](https://images2.imgbox.com/8b/d4/hxakqeRu_o.png)
 
 A partir do ano 2001 observou-se um grande crescimento do volume de importações e exportações brasileiras, acumulando contínuos superávits até 2013. Nesse período de 13 anos, o superávit acumulado foi de 326,6 bilhões de reais. Em 2009, devido à crise financeira nos Estados Unidos, o comércio exterior teve uma queda acentuada, mas se recuperou rapidamente no ano seguinte. Do final de 2002 a meados de 2011 viu-se uma grande valorização da taxa de câmbio brasileira, com uma breve interrupção apenas durante a crise financeira.
 
@@ -30,7 +32,7 @@ De julho de 2011 a outubro de 2018 o real desvalorizou em relação ao dólar ce
 
 A Tabela 1 apresenta os dados da balança comercial brasileira em relação aos dez países com maior corrente de comércio em 2017. A China é, atualmente, o maior parceiro de comércio exterior do Brasil, seguido dos Estados Unidos, Argentina, Alemanha, Países Baixos, Japão, Chile, Coréia do Sul e Índia.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/tabela1.png" alt=""/></figure>
+![](https://images2.imgbox.com/d0/9e/TnY0diRy_o.png)
 
 Chama atenção o impressionante aumento das exportações brasileiras para a China (187,5%) e para a Índia (322,7%), revertendo um cenário de déficit em 2008 para superávit em 2017. O comércio com os Países Baixos apresenta superávit constante e significativo ao longo do tempo, apesar de ter havido queda das exportações e aumento das importações nesse período. A balança comercial com a Alemanha, por outro lado, traz déficits consistentemente para o Brasil.
 
@@ -46,7 +48,7 @@ Onde: \\(X\\) e \\(M\\) representam os valores de exportações e importações,
 
 O Gráfico 2 mostra um ranking de grau de abertura comercial de 45 países calculado a partir de dados do Banco Mundial (2018).
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico2.png" alt=""/></figure>
+![](https://images2.imgbox.com/62/73/IXnnJT1C_o.png)
 
 Para a construção desse ranking foram escolhidos os países que atendiam a três critérios:
 
@@ -62,17 +64,17 @@ O baixo grau de abertura comercial do Brasil é explicado pelos altos impostos d
 
 A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP, 2018) publica estatísticas da balança comercial de petróleo e seus derivados mensalmente em seu site. Segundo esses dados, o Brasil tem significativo superávit na importação e exportação de petróleo bruto (Gráfico 3).
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico3.png" alt=""/></figure>
+![](https://images2.imgbox.com/8b/7e/9QytRd9b_o.png)
 
 Por outro lado, o resultado da balança comercial de derivados de petróleo apresenta déficit em magnitude quase igual ao de petróleo bruto (Gráfico 4), anulando grande parte do saldo positivo da conta de petróleo e derivados.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico4.png" alt=""/></figure>
+![](https://images2.imgbox.com/15/d0/wphCAUT9_o.png)
 
 A partir de 2016 o saldo da balança comercial de petróleo de derivados passou a ser positivo (IBP, 2018) em mais de 2 bilhões de dólares anuais, principalmente pela queda das importações de petróleo bruto. Nos anos de 2009 e 2010, o Brasil teve saldo positivo mas em valores bem menores (592 milhões e 271 milhões de dólares respectivamente).
 
 A explicação para o superávit do petróleo bruto e déficit dos derivados de petróleo é o tipo e a qualidade do petróleo produzido no Brasil e o déficit na capacidade instalada de refino do óleo. O Nexo Jornal (2018) explica:
 
-<blockquote class="wp-block-quote">O Brasil é o nono maior produtor de petróleo do mundo, segundo dados de 2017 da EIA (U.S. Energy Information Administration, agência de informações energéticas do governo americano). Mas isso não quer dizer que o país não dependa do mercado externo. São dois os motivos principais.O primeiro é que parte do petróleo extraído no Brasil é considerado pesado, difícil e caro para o refino que produz combustíveis. Isso significa que o país vende parte de seu petróleo para fora e compra o petróleo mais apropriado para o refino do exterior.Além disso, o país não tem capacidade instalada suficiente para a produção de todo o combustível de que necessita — e precisa comprar uma pequena parte já pronta de outros países. (NEXO JORNAL, 2018).</blockquote>
+> O Brasil é o nono maior produtor de petróleo do mundo, segundo dados de 2017 da EIA (U.S. Energy Information Administration, agência de informações energéticas do governo americano). Mas isso não quer dizer que o país não dependa do mercado externo. São dois os motivos principais.O primeiro é que parte do petróleo extraído no Brasil é considerado pesado, difícil e caro para o refino que produz combustíveis. Isso significa que o país vende parte de seu petróleo para fora e compra o petróleo mais apropriado para o refino do exterior.Além disso, o país não tem capacidade instalada suficiente para a produção de todo o combustível de que necessita — e precisa comprar uma pequena parte já pronta de outros países. (NEXO JORNAL, 2018).
 
 O Brasil é altamente dependente do petróleo do mercado externo e, portanto, o preço internacional do petróleo afeta diretamente o custo da gasolina, diesel e outros produtos derivados do óleo. A paralisação dos caminhoneiros que ocorreu em maio de 2018 foi motivada, segundo os líderes do movimento, pela alta do preço do óleo diesel (BBC BRASIL, 2018).
 
@@ -82,11 +84,11 @@ A mudança na política de preços da Petrobras, principal empresa do setor, de 
 
 Com o objetivo de refletir o preço do petróleo no mercado internacional, os preços dos combustíveis vendidos pelas refinarias da Petrobras são reajustados sempre que for necessário. O represamento dos preços da gasolina durante o primeiro governo Dilma (2011–2014), que causou prejuízos bilionários à empresa foi um dos motivos para a mudança na política de preços da empresa (MORAES, 2018).
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico5.png" alt=""/></figure>
+![](https://images2.imgbox.com/72/dc/XGgZgNQV_o.png)
 
 Entre 2011 e final de 2014 o preço médio do barril de petróleo bruto esteve em patamares bastante elevados (Gráfico 5). A taxa de câmbio, vale lembrar, se desvalorizou nesse período, como mostrado no Gráfico 1b, o que contribuiu para elevar o preço do petróleo mesmo em momentos de relativa estabilidade dos preços internacionais. No entanto, houve poucos ajustes nos preços dos combustíveis pela Petrobras, geralmente abaixo do aumento do preço do petróleo em moeda local.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico6.png" alt=""/></figure>
+![](https://images2.imgbox.com/c4/a0/wt1wHI5X_o.png)
 
 De fato, o preço real da gasolina vem caindo desde o início da década de 2000 (NEXO JORNAL, 2017). A forte alta dos preços recentemente (Gráfico 6), e sua excessiva oscilação nos postos de gasolina, entretanto, foi visto negativamente pela sociedade. Para amenizar as oscilações de curto-prazo poderia ser adotado um mecanismo de suavização de preços para diminuir a volatilidade e os riscos/incertezas percebidos pelos agentes econômicos em relação aos preços dos combustíveis (COADY, 2012).
 
@@ -96,11 +98,11 @@ A produção de petróleo brasileiro está em crescimento desde 2000, e não apa
 
 Por outro lado, o processamento de petróleo nas refinarias apresenta tendência de queda a partir do último trimestre de 2014. Os processamentos de petróleo nacional e importado tiveram queda de -13,4% e -52,4%, respectivamente, no último trimestre de 2018 em relação ao último trimestre de 2014, representando um decréscimo somado de -38,2 bilhões de bep processados.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico7.png" alt=""/></figure>
+![](https://images2.imgbox.com/99/43/PkyB5YWo_o.png)
 
 A produção dos produtos derivados de petróleo nas refinarias brasileiras também teve significativa queda a partir de 2015 (Gráfico 7). A produção de óleo diesel sofreu a maior variação negativa. A gasolina automotiva (GASOLINA A) também teve queda de produção, mas em volume absoluto menor do que o do diesel.
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/grafico8.png" alt=""/></figure>
+![](https://images2.imgbox.com/78/c6/nmqfn35b_o.png)
 
 A Petrobras está executando um plano de venda de ativos (desinvestimentos) que inclui a venda de refinarias<sup id="r2">[2](#f2)</sup> e isso pode ter impactado a produção e processamento de petróleo e derivados no Brasil. A redução de produção de derivados de petróleo pode estar relacionada ao aumento da ociosidade das refinarias em operação no país.
 

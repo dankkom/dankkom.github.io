@@ -68,7 +68,7 @@ df = pd.read_excel(
 df.head()
 ```
 
-<figure class="size-large"><img src="https://dkko.me/wp-content/uploads/2021/11/fig1-1-1024x193.png" alt=""/></figure>
+![](https://images2.imgbox.com/48/57/DpoiLNaF_o.png)
 
 Veja que é preciso tratar os nomes das colunas. Principalmente, é preciso corrigir os nomes das olunas do segundo nível (as colunas "Unnamed" 😣).
 
@@ -101,7 +101,7 @@ df.columns = pd.MultiIndex.from_tuples(new_columns)
 df.head()
 ```
 
-<figure class="size-large"><img src="https://dkko.me/wp-content/uploads/2021/11/fig2-1-1024x192.png" alt=""/></figure>
+![](https://images2.imgbox.com/0f/2c/B2Zt62PA_o.png)
 
 O código para ler os dados de uma planilha está feito. Vou colocá-lo em uma função para usar no loop para ler todas as planilhas do arquivo.
 
@@ -137,7 +137,7 @@ with pd.ExcelFile("data/projecoes_2018_indicadores.xls") as xls:
 print(sheet_names)
 ```
 
-```
+```sh
 ['Brasil', 'Norte', 'RO', 'AC', 'AM', 'RR', 'PA', 'AP', 'TO', 'Nordeste', 'MA', 'PI', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA', 'Sudeste', 'MG', 'ES', 'RJ', 'SP', 'Sul', 'PR', 'SC', 'RS', 'Centro-Oeste', 'MS', 'MT', 'GO', 'DF']
 ```
 

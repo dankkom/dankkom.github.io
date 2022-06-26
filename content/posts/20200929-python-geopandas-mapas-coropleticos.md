@@ -154,7 +154,7 @@ br_uf_d.plot(
 )
 ```
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/fig1.png" alt=""/></figure>
+![](https://images2.imgbox.com/1a/44/u9mDM6J8_o.png)
 
 Temos um mapa coroplético básico agora, mas faltam algumas coisas para estar completo. Não temos ideia dos valores que as cores representam, por isso uma escala de cores (colorbar) é imprescindível.
 
@@ -194,7 +194,7 @@ sm = plt.cm.ScalarMappable(
 f.colorbar(sm, cax=cax)
 ```
 
-<figure class="size-full"><img src="https://dkko.me/wp-content/uploads/2021/11/fig2.png" alt=""/></figure>
+![](https://images2.imgbox.com/1e/47/WdrHOi7i_o.png)
 
 Temos uma escala de cores, mas o formato dos valores não estão como desejados. Além disso, essas bordas com as coordenadas geográficas são desnecessárias e ficam feias para colocar numa publicação.
 
@@ -258,4 +258,4 @@ f.text(
 ax.axis("off")          # Remove os eixos
 ```
 
-<figure class="size-large"><img src="https://dkko.me/wp-content/uploads/2021/11/fig3-1024x915.png" alt=""/></figure>
+![](https://images2.imgbox.com/0f/81/bSVKCAMa_o.png)

@@ -6,7 +6,7 @@ slug: trabalho-grupo-lider
 tags: []
 ---
 
-<figure class="size-large"><img src="https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg" alt=""/></figure>
+![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)
 
 Num grupo de trabalho deve haver uma pessoa no papel de líder do grupo. O líder não é o aluno que mais sabe sobre o assunto do trabalho, nem o aluno que faz amizade com todo mundo, mas sim o que melhor sabe lidar com as pessoas. O líder tem a tarefa de manter o grupo organizado e assegurar que as tarefas estão sendo feitas. Saber cobrar prazos e fazer com que os membros façam suas tarefas também é o trabalho do líder.
 

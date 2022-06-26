@@ -6,7 +6,7 @@ slug: trabalho-grupo-comunicacao
 tags: []
 ---
 
-<figure class="size-large"><img src="https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg" alt=""/></figure>
+![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)
 
 O segundo aspecto mais importante num trabalho em grupo, ou em qualquer tipo de trabalho em equipe com mais de duas pessoas, é a comunicação. Isso não é um ato tão simples e trivial quanto pode parecer.
 

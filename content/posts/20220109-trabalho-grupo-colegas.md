@@ -6,7 +6,7 @@ slug: trabalho-grupo-colegas
 tags: []
 ---
 
-<figure class="size-large"><img src="https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg" alt=""/></figure>
+![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)
 
 Pode não ser óbvio para alguns, mas trabalho em grupo é um grande esforço social. Conhecer seus colegas ajudará em duas coisas: **escolher os membros do grupo** e fazer a **divisão de tarefas do trabalho**.
 
