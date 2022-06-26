@@ -6,7 +6,7 @@ slug: underfitting-e-overfitting
 tags: []
 ---
 
-Underfitting e overfitting são problemas em machine learning supervisionado que podem aparecer nos modelos e está relacionado com o [trade-off de viés e variância](https://dkko.me/trade-off-vies-variancia/).
+Underfitting e overfitting são problemas em machine learning supervisionado que podem aparecer nos modelos e está relacionado com o [trade-off de viés e variância](/posts/trade-off-vies-variancia/).
 
 <!--more-->
 
@@ -16,7 +16,7 @@ O **overfitting** ocorre quando o modelo tem **muitas variáveis**, ou seja, é 
 
 ## Como identificar underfitting e overfitting?
 
-Para identificar se o modelo está sofrendo com o problema de underfitting e overfitting é preciso olhar para suas métricas de desempenho. Para medir o desempenho do modelo é necessário fazer a [divisão dos dados em treino, validação e teste](https://dkko.me/treino-teste-validacao/) e validar as previsões com, por exemplo, a técnica de [validação cruzada](https://en.wikipedia.org/wiki/Cross-validation_(statistics)).
+Para identificar se o modelo está sofrendo com o problema de underfitting e overfitting é preciso olhar para suas métricas de desempenho. Para medir o desempenho do modelo é necessário fazer a [divisão dos dados em treino, validação e teste](/posts/treino-teste-validacao/) e validar as previsões com, por exemplo, a técnica de [validação cruzada](https://en.wikipedia.org/wiki/Cross-validation_(statistics)).
 
 Alguns métodos recomendados para resolver o problema de overfitting são:
 

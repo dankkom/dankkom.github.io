@@ -24,7 +24,7 @@ A **comunicação síncrona** é aquela que acontece "em tempo real", e exige am
 
 Já a **comunicação assíncrona** acontece de acordo com o tempo da pessoa para responder. Exemplos de comunicação assíncrona incluem e-mails e mensagens por aplicativo (Whatsapp, Telegram, Discord, Slack etc.). Nesse caso as pessoas têm tempo para pensar na mensagem, sendo possível conversas mais profundas e objetivas.
 
-Para uma comunicação mais eficiente e um ambiente de debate de ideias mais propício, a comunicação deve ser um hábito do grupo e acontecer de forma transparente. Todos devem estar a par da situação do trabalho. O líder, principalmente, deve se certificar que a informação chega a todos e é entendida corretamente. Todos os participantes do grupo devem ter a cultura de comunicar eventos sobre o trabalho entre si (por isso a [importância de se conhecer os colegas com quem vamos trabalhar](https://dkko.me/trabalho-grupo-colegas/)).
+Para uma comunicação mais eficiente e um ambiente de debate de ideias mais propício, a comunicação deve ser um hábito do grupo e acontecer de forma transparente. Todos devem estar a par da situação do trabalho. O líder, principalmente, deve se certificar que a informação chega a todos e é entendida corretamente. Todos os participantes do grupo devem ter a cultura de comunicar eventos sobre o trabalho entre si (por isso a [importância de se conhecer os colegas com quem vamos trabalhar](/posts/trabalho-grupo-colegas/)).
 
 <blockquote class="wp-block-quote">"Sobre-comunicação é melhor do sub-comunicação"</blockquote>
 

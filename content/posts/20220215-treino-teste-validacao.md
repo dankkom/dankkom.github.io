@@ -6,7 +6,7 @@ slug: treino-teste-validacao
 tags: []
 ---
 
-A divisão de datasets em treino, teste e validação é um procedimento em *data science*, mais especificamente [machine learning supervisionado](https://dkko.me/aprendizado-supervisionado-vs-nao-supervisionado/), que divide o conjunto de dados (*dataset*) em três subconjuntos para permitir a medição da performance de algoritmos de previsão e classificação.
+A divisão de datasets em treino, teste e validação é um procedimento em *data science*, mais especificamente [machine learning supervisionado](/posts/aprendizado-supervisionado-vs-nao-supervisionado/), que divide o conjunto de dados (*dataset*) em três subconjuntos para permitir a medição da performance de algoritmos de previsão e classificação.
 
 Em modelos de aprendizado supervisionado é de suma importância mensurar o erro e a precisão das previsões para que o modelo se ajuste de acordo. Mais importante ainda é que as previsões sejam não-viesadas, ou seja, que o modelo  performe bem em dados diferentes daqueles usados na etapa do treino.
 
