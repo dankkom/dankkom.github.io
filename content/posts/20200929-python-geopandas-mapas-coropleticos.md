@@ -6,9 +6,14 @@ slug: python-geopandas-mapas-coropleticos
 tags: []
 ---
 
-Frequentemente um mapa colorido é o mais adequado para comunicar alguma informação que pode ser agregada geograficamente. Neste texto eu descrevo o passo-a-passo para criar um [mapa coroplético](https://pt.wikipedia.org/wiki/Mapa_coroplético) básico em Python usando os pacotes [matplotlib](https://matplotlib.org) e o [geopandas](https://geopandas.org). Além desses dois pacotes, vou utilizar o [geobr](https://github.com/ipeaGIT/geobr) desenvolvido pelo IPEA para baixar dados geoespaciais do Brasil para plotar os mapas.
+Frequentemente um mapa colorido é o mais adequado para comunicar alguma informação que pode ser agregada geograficamente. Neste texto eu descrevo o passo-a-passo para criar um *mapa coroplético* básico em Python usando os pacotes **matplotlib** e o **geopandas**. Além desses dois pacotes, vou utilizar o **geobr** desenvolvido pelo IPEA para baixar dados geoespaciais do Brasil para plotar os mapas.
 
 <!--more-->
+
+- [mapa coroplético](https://pt.wikipedia.org/wiki/Mapa_coroplético)
+- [matplotlib](https://matplotlib.org)
+- [geopandas](https://geopandas.org)
+- [geobr](https://github.com/ipeaGIT/geobr)
 
 Instalando os pacotes necessários:
 

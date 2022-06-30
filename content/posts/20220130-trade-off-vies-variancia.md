@@ -10,6 +10,8 @@ tags: []
 
 Quanto mais parâmetros colocamos no modelo, menor se torna o viés, porém mais complexo ele se torna e maior é a variância. Em machine learning é importante encontrar o equilíbrio entre viés e variância num modelo.
 
+<!--more-->
+
 <figure class="size-full">
     <img src="https://images2.imgbox.com/24/01/kBknKFe3_o.png" alt="Gráfico do trade-off entre viés e variância"/>
     <figcaption>Trade-off entre viés e variância <a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff#/media/File:Bias_and_variance_contributing_to_total_error.svg">Wikipedia</a></figcaption>

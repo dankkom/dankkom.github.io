@@ -6,9 +6,11 @@ slug: converter-midi-para-wav-timidity
 tags: []
 ---
 
-É possível converter arquivos de música MIDI para o formato WAV com a ferramenta [Timidity++](https://sourceforge.net/projects/timidity/), um software sintetizador que consegue tocar MIDI sem precisar de um sintetizador de hardware.
+É possível converter arquivos de música MIDI para o formato WAV com a ferramenta Timidity++, um software sintetizador que consegue tocar MIDI sem precisar de um sintetizador de hardware.
 
 <!--more-->
+
+- [Timidity++](https://sourceforge.net/projects/timidity/)
 
 Para instalar via APT no Debian e derivados use o seguinte comando:
 

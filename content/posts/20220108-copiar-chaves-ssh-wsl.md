@@ -6,9 +6,12 @@ slug: copiar-chaves-ssh-wsl
 tags: []
 ---
 
-A introdução do [Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) foi uma grande novidade da Microsoft para quem trabalha com código. Com essa camada de compatibilidade é possível executar várias coisas de Linux sem sair do Windows. No entanto, para trabalhar com repositórios *git* remoto é preciso configurar as [chaves SSH](https://en.wikipedia.org/wiki/Secure_Shell) dentro da distribuição Linux no WSL. Ao invés de gerar um par de chaves próprio para o WSL, é mais prático compartilhar as chaves já configuradas no Windows.
+A introdução do Windows Subsystem for Linux (WSL) foi uma grande novidade da Microsoft para quem trabalha com código. Com essa camada de compatibilidade é possível executar várias coisas de Linux sem sair do Windows. No entanto, para trabalhar com repositórios *git* remoto é preciso configurar as chaves SSH dentro da distribuição Linux no WSL. Ao invés de gerar um par de chaves próprio para o WSL, é mais prático compartilhar as chaves já configuradas no Windows.
 
 <!--more-->
+
+- [Windows Subsystem for Linux (WSL)](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
+- [chaves SSH](https://en.wikipedia.org/wiki/Secure_Shell)
 
 #### 1. Copiar as chaves SSH no Windows
 

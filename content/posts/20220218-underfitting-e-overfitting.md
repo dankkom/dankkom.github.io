@@ -6,9 +6,11 @@ slug: underfitting-e-overfitting
 tags: []
 ---
 
-Underfitting e overfitting são problemas em machine learning supervisionado que podem aparecer nos modelos e está relacionado com o [trade-off de viés e variância](/posts/trade-off-vies-variancia/).
+Underfitting e overfitting são problemas em machine learning supervisionado que podem aparecer nos modelos e está relacionado com o trade-off de viés e variância.
 
 <!--more-->
+
+- [trade-off de viés e variância](/posts/trade-off-vies-variancia/)
 
 O **overfitting** é quando o modelo se ajusta demais aos dados de treinamento. Desse modo, o modelo "memoriza" os dados de treinamento e assim consegue minimizar o erro, fazendo parecer que tem uma performance melhor do que realmente tem. Ao tentarmos fazer previsões com dados diferentes o modelo erra muito mais. Quando isso ocorre, diz-se que o modelo não generaliza bem.
 

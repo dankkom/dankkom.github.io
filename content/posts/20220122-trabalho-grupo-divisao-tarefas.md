@@ -10,9 +10,11 @@ tags: []
 
 Depois que os membros do grupo de trabalho já estão decididos, é primordial a divisão das tarefas do trabalho.
 
-É preciso que os membros tenham as habilidades necessárias para executar essas tarefas, mesmo que sejam iniciantes (afinal é um grupo de trabalho de <span style="text-decoration: underline;">estudantes</span>). O mais importante é a vontade de aprender e ajudar o grupo. Por isso conhecer seus colegas é uma [condição *sine qua non*](https://pt.wikipedia.org/wiki/Sine_qua_non).
+É preciso que os membros tenham as habilidades necessárias para executar essas tarefas, mesmo que sejam iniciantes (afinal é um grupo de trabalho de <span style="text-decoration: underline;">estudantes</span>). O mais importante é a vontade de aprender e ajudar o grupo. Por isso conhecer seus colegas é uma condição *sine qua non*.
 
 <!--more-->
+
+- [*sine qua non*](https://pt.wikipedia.org/wiki/Sine_qua_non)
 
 Adam Smith, ainda no século 18, já apontava a importância da denominada [divisão do trabalho](https://www.adamsmithworks.org/documents/division-of-labor-part-1) e da [especialização](https://www.adamsmithworks.org/documents/division-of-labor-part-2-a-beautiful-machine) na sociedade. Porém, antes dele, [vários filósofos já haviam abordado a questão da divisão do trabalho](https://en.wikipedia.org/wiki/Division_of_labour). Em um projeto a divisão de tarefas é fundamental, pois tem superpoderes. As pessoas podem ser muito boas naquilo que fazem, mas não quer dizer que podem fazer de tudo perfeitamente.
 

@@ -8,11 +8,11 @@ tags: []
 
 É comum disponibilizar dados tabulares em arquivos CSV ou XLSX. No entanto, nem sempre esses dados vêm no melhor formato estruturado para leitura e processamento por softwares.
 
+<!--more-->
+
 O IBGE, por exemplo, disponibiliza vários dados em arquivos de planilhas (.xls, .xlsx, .ods) que, em muitos casos, não é amigável à leitura por scripts. Nesses casos é preciso escrever scripts para extrair esses dados para um formato usável em análise de dados.
 
 Neste texto eu descrevo passo a passo como extrair dados das Projeções de População do IBGE de 2018.
-
-<!--more-->
 
 ## Instalação dos pacotes necessários
 

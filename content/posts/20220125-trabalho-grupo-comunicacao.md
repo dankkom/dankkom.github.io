@@ -10,6 +10,8 @@ tags: []
 
 O segundo aspecto mais importante num trabalho em grupo, ou em qualquer tipo de trabalho em equipe com mais de duas pessoas, é a comunicação. Isso não é um ato tão simples e trivial quanto pode parecer.
 
+<!--more-->
+
 A comunicação, nesse caso, não é a conversa de colegas e amigos. No ambiente de trabalho precisa ser minimamente objetivo para uma comunicação eficaz.
 
 [Comunicação](https://en.wikipedia.org/wiki/Communication) é o ato de tornar comum alguma informação através de palavras, sinais e símbolos mutuamente entendidos. Na economia, a comunicação é um meio de diminuir a assimetria de informação.

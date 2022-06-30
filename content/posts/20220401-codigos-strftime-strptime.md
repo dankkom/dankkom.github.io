@@ -8,6 +8,8 @@ tags: []
 
 Todos os códigos de formato de data/hora do padrão C 1989.
 
+<!--more-->
+
 <table>
     <thead>
         <tr>

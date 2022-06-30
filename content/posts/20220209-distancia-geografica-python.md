@@ -8,6 +8,8 @@ tags: []
 
 Em análises geoespaciais, uma das tarefas mais frequentes é medir a distância entre duas coordenadas geográficas. Em Python é possível obter essa distância facilmente usando o pacote `geopy` e seu módulo `distance`.
 
+<!--more-->
+
 O pacote `geopy` é um cliente Python para trabalhar vários serviços web de geocodificação populares e inclui o módulo `distance` que tem funções para calcular distâncias geográficas.
 
 Para instalar o pacote use o comando:

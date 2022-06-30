@@ -10,11 +10,11 @@ katex: true
 
 Este trabalho analisa a evolução das exportações e importações brasileiras entre os anos de 2008 e 2017, com foco nos combustíveis derivados de petróleo (diesel, gasolina, querosene etc.), motivado pela recente paralisação dos caminhoneiros em decorrência da alta dos preços desses produtos.
 
+<!--more-->
+
 Utilizando dados do Ministério da Indústria, Comércio Exterior e Serviços (MDIC) das exportações e importações brasileiras, analisa-se a evolução do saldo da balança comercial do Brasil. Com dados da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP), observa-se superávit na balança comercial de petróleo bruto déficit no de derivados. Houve queda de processamento de petróleo nas refinarias brasileiras, a despeito do crescimento da produção de petróleo nacional. O mercado interno de combustíveis é dependente de importações de óleo do exterior, visto que o petróleo brasileiro não tem as características adequadas para a produção de gasolina.
 
 Este trabalho está dividido em quatro seções, sendo esta introdução a primeira. A segunda seção apresenta um panorama geral da balança comercial brasileira desde 1997, com uma breve análise dos períodos de superávit e déficit, os principais países com que o Brasil faz comércio e o grau de abertura comercial brasileiro. A terceira seção analisa o mercado doméstico de combustíveis derivados do petróleo. A quarta e última seção compreende as conclusões do estudo, com sugestões para futuras pesquisas sobre a balança comercial brasileira e a dependência do país no petróleo importado.
-
-<!--more-->
 
 ## Panorama geral do Comércio Exterior brasileiro
 

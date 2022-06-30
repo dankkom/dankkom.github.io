@@ -8,6 +8,8 @@ tags: []
 
 Em **machine learning** (aprendizado de máquina em português) temos dois tipos de aprendizado: o **supervisionado** e o **não-supervisionado**. A diferença entre eles está nos rótulos, também conhecidos como *targets*, dos dados e nos métodos utilizados para cada um.
 
+<!--more-->
+
 **No aprendizado supervisionado os dados são rotulados**, ou seja, há informação indicando a resposta, seja categórica, numérica ou outro tipo. Nessa abordagem alguns dos algoritmos usados são:
 
 - Regressão linear
