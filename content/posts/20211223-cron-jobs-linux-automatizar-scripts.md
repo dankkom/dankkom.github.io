@@ -3,6 +3,8 @@ title: "Cron Jobs no Linux: como automatizar a execução de scripts"
 date: 2021-12-23
 author: Komesu, D. K.
 slug: cron-jobs-linux-automatizar-scripts
+aliases:
+    - /cron-jobs-linux-automatizar-scripts
 tags: []
 ---
 

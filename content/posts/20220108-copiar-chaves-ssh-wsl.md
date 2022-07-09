@@ -3,6 +3,8 @@ title: "Como copiar chaves SSH do Windows para o WSL"
 date: 2022-01-08
 author: Komesu, D. K.
 slug: copiar-chaves-ssh-wsl
+aliases:
+    - /copiar-chaves-ssh-wsl
 tags: []
 ---
 

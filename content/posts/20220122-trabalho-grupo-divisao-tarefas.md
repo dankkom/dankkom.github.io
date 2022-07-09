@@ -3,6 +3,8 @@ title: "Guia de trabalho em grupo para estudantes: divisão de tarefas"
 date: 2022-01-22
 author: Komesu, D. K.
 slug: trabalho-grupo-divisao-tarefas
+aliases:
+    - /trabalho-grupo-divisao-tarefas
 tags: []
 ---
 

@@ -3,6 +3,9 @@ title: "Balança comercial do Brasil de 2008 a 2017: Uma análise com ênfase no
 date: 2018-11-30
 author: Komesu, D. K.
 slug: balanca-comercial-brasil-petroleo
+aliases:
+    - /balanca-comercial-brasil-petroleo
+tags: []
 katex: true
 ---
 

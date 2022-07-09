@@ -3,6 +3,8 @@ title: "Pandas read_csv: como ler um arquivo CSV no Python"
 date: 2021-11-28
 author: Komesu, D. K.
 slug: python-pandas-read-csv
+aliases:
+     - /python-pandas-read-csv
 tags: []
 katex: true
 ---

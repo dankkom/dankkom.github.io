@@ -3,6 +3,8 @@ title: "Aprendizado supervisionado vs não-supervisionado"
 date: 2022-02-02
 author: Komesu, D. K.
 slug: aprendizado-supervisionado-vs-nao-supervisionado
+aliases:
+    - /aprendizado-supervisionado-vs-nao-supervisionado
 tags: []
 ---
 

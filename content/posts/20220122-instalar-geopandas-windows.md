@@ -3,6 +3,8 @@ title: "PIP: Como instalar o GeoPandas no Windows (sem Conda)"
 date: 2022-01-22
 author: Komesu, D. K.
 slug: instalar-geopandas-windows
+aliases:
+    - /instalar-geopandas-windows
 tags: []
 ---
 

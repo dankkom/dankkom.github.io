@@ -3,6 +3,8 @@ title: "Como calcular distâncias geográficas entre duas coordenadas em Python"
 date: 2022-02-09
 author: Komesu, D. K.
 slug: distancia-geografica-python
+aliases:
+    - /distancia-geografica-python
 tags: []
 ---
 

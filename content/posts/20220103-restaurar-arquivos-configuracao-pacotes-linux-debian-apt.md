@@ -3,6 +3,8 @@ title: "Restaurar arquivos configuração de pacotes no Linux Debian com APT"
 date: 2022-01-03
 author: Komesu, D. K.
 slug: restaurar-arquivos-configuracao-pacotes-linux-debian-apt
+aliases:
+    - /restaurar-arquivos-configuracao-pacotes-linux-debian-apt
 tags: []
 ---
 

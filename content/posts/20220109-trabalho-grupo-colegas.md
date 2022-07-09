@@ -3,6 +3,8 @@ title: "Guia de trabalho em grupo para estudantes: conheça seus colegas"
 date: 2022-01-09
 author: Komesu, D. K.
 slug: trabalho-grupo-colegas
+aliases:
+    - /trabalho-grupo-colegas
 tags: []
 ---
 

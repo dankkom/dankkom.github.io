@@ -3,6 +3,8 @@ title: "Underfitting e Overfitting"
 date: 2022-02-18
 author: Komesu, D. K.
 slug: underfitting-e-overfitting
+aliases:
+    - /underfitting-e-overfitting
 tags: []
 ---
 

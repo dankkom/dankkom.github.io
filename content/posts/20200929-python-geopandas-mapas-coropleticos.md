@@ -3,6 +3,8 @@ title: "Como criar mapas coropléticos em Python com matplotlib e geopandas"
 date: 2020-09-29
 author: Komesu, D. K.
 slug: python-geopandas-mapas-coropleticos
+aliases:
+    - /python-geopandas-mapas-coropleticos
 tags: []
 ---
 

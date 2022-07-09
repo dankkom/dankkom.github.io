@@ -3,6 +3,8 @@ title: "Divisão de dados em Treino, Validação e Teste para Machine Learning"
 date: 2022-02-15
 author: Komesu, D. K.
 slug: treino-teste-validacao
+aliases:
+    - /treino-teste-validacao
 tags: []
 ---
 

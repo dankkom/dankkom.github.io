@@ -3,6 +3,8 @@ title: "Produtividade no Brasil"
 date: 2019-07-01
 author: Komesu, D. K.
 slug: produtividade-brasil
+aliases:
+    - /produtividade-brasil
 tags: []
 katex: true
 ---

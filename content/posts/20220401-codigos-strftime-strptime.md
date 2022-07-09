@@ -3,6 +3,8 @@ title: "Códigos de Formato de Data e Hora: strftime(), strptime()"
 date: 2022-04-01
 author: Komesu, D. K.
 slug: codigos-strftime-strptime
+aliases:
+    - /codigos-strftime-strptime
 tags: []
 ---
 

@@ -3,6 +3,8 @@ title: "Extraindo dados de arquivos Excel"
 date: 2021-04-20
 author: Komesu, D. K.
 slug: extraindo-dados-de-arquivos-excel
+aliases:
+    - /extraindo-dados-de-arquivos-excel
 tags: []
 ---
 

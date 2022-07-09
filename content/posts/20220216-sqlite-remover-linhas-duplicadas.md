@@ -3,6 +3,8 @@ title: "SQLite: como remover linhas duplicadas"
 date: 2022-02-16
 author: Komesu, D. K.
 slug: sqlite-remover-linhas-duplicadas
+aliases:
+    - /sqlite-remover-linhas-duplicadas
 tags: []
 ---
 

@@ -3,6 +3,8 @@ title: "Checklist para configurar um servidor Linux seguro"
 date: 2022-01-22
 author: Komesu, D. K.
 slug: configurar-linux
+aliases:
+    - /configurar-linux
 tags: []
 ---
 

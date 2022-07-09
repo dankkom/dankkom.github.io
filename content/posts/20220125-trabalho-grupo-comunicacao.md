@@ -3,6 +3,8 @@ title: "Guia de trabalho em grupo para estudantes: comunique-se!"
 date: 2022-01-25
 author: Komesu, D. K.
 slug: trabalho-grupo-comunicacao
+aliases:
+    - /trabalho-grupo-comunicacao
 tags: []
 ---
 

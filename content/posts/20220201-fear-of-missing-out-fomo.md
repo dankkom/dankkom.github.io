@@ -3,6 +3,8 @@ title: "Síndrome de FOMO: fear of missing out"
 date: 2022-02-01
 author: Komesu, D. K.
 slug: fear-of-missing-out-fomo
+aliases:
+    - /fear-of-missing-out-fomo
 tags: []
 ---
 

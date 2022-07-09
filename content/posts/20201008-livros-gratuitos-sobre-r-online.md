@@ -3,6 +3,8 @@ title: "Livros gratuitos sobre R (online)"
 date: 2020-10-08
 author: Komesu, D. K.
 slug: livros-gratuitos-sobre-r-online
+aliases:
+    - /livros-gratuitos-sobre-r-online
 tags: []
 ---
 

@@ -3,6 +3,8 @@ title: "Trade-off entre viés e variância (links)"
 date: 2022-01-30
 author: Komesu, D. K.
 slug: trade-off-vies-variancia
+aliases:
+    - /trade-off-vies-variancia
 tags: []
 ---
 

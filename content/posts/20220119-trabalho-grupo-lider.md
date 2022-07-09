@@ -3,6 +3,8 @@ title: "Guia de trabalho em grupo para estudantes: o papel do líder"
 date: 2022-01-19
 author: Komesu, D. K.
 slug: trabalho-grupo-lider
+aliases:
+    - /trabalho-grupo-lider
 tags: []
 ---
 

@@ -3,6 +3,8 @@ title: "Como converter músicas .midi para arquivos .wav com TiMidity++"
 date: 2022-01-20
 author: Komesu, D. K.
 slug: converter-midi-para-wav-timidity
+aliases:
+    - /converter-midi-para-wav-timidity
 tags: []
 ---
 
