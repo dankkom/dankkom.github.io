@@ -4,6 +4,8 @@ title = "dkko"
 
 theme = "tale"
 
+googleAnalytics = "UA-37695851-13"
+
 [markup.goldmark.renderer]
     unsafe = true
 
