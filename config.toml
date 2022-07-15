@@ -6,6 +6,9 @@ theme = "tale"
 
 googleAnalytics = "UA-37695851-13"
 
+[params]
+    GoogleAnalytics4 = "G-RLSNHYP5C3"
+
 [markup.goldmark.renderer]
     unsafe = true
 
