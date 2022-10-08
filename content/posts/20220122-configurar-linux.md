@@ -63,7 +63,7 @@ scp $env:USERPROFILE/.ssh/id_ed25519.pub <nomedousuario>@<enderecodoservidor>:~/
 No Linux o comando é:
 
 ```sh
-scp ~/.ssh/id_ed25519.pub <nomedousuario>@&lt;enderecodoservidor>:~/.ssh/authorized_keys
+scp ~/.ssh/id_ed25519.pub <nomedousuario>@<enderecodoservidor>:~/.ssh/authorized_keys
 ```
 
 ### 3. Desabilitar acesso root e acesso por senha
@@ -101,8 +101,8 @@ sudo ss -tupln
 Para permitir ou bloquear tráfego pelo número da porta use o comando:
 
 ```sh
-sudo ufw allow &lt;numero-da-porta>  # permite
-sudo ufw deny &lt;numero-da-porta>   # bloqueia
+sudo ufw allow <numero-da-porta>  # permite
+sudo ufw deny <numero-da-porta>   # bloqueia
 ```
 
 É possível especificar o nome do serviço, ao invés do número da porta, para permitir ou bloquear o tráfego. Para listar os serviços disponíveis:
@@ -114,8 +114,8 @@ sudo ufw app list
 Então, para permitir ou bloquear acesso pelo nome do serviço:
 
 ```sh
-sudo ufw allow &lt;nome-do-aplicativo>  # permite acesso
-sudo ufw deny &lt;nome-do-aplicativo>   # bloqueia acesso
+sudo ufw allow <nome-do-aplicativo>  # permite acesso
+sudo ufw deny <nome-do-aplicativo>   # bloqueia acesso
 ```
 
 Após definir as regras de permissão e bloqueio de tráfego é preciso habilitar o UFW:
