@@ -11,7 +11,7 @@ Escrevi esse texto originalmente em 2018, à luz da greve dos caminhoneiros, e a
 
 ---
 
-# Análise da balança comercial do petróleo e derivados 
+# Análise da balança comercial do petróleo e derivados
 
 *Daniel K. Komesu*
 
@@ -36,7 +36,7 @@ O Gráfico 2 mostra a participação relativa das exportações e importações,
 <figure>
 Gráfico 2 – Participação do petróleo bruto nas exportações e importações, anual, Brasil, 2000-2021, %
 
-![](https://images2.imgbox.com/cd/37/PBjMdwb9_o.png) 
+![](https://images2.imgbox.com/cd/37/PBjMdwb9_o.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
@@ -114,7 +114,7 @@ Gráfico 7 – Produção e Processamento de Petróleo, Brasil, m³, anual, 2000
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
- 
+
 O descompasso dos ritmos de crescimento da produção e do processamento de petróleo pode ser explicado pelo foco da Petrobras, principal empresa do setor, na extração e exportação de óleo bruto, visto que o negócio de refino de petróleo exige altos investimentos, a construção de uma refinaria é demorada e a margem de lucro é baixa em comparação à operação de extração. Além disso, a Petrobras está executando um plano de venda de ativos (desinvestimentos) que inclui a venda de refinarias  e isso tem impactado o refino de petróleo. A redução de produção de derivados de petróleo está relacionada ao aumento da ociosidade das refinarias em operação no país.
 A produção dos produtos derivados de petróleo nas refinarias brasileiras teve significativa queda a partir de 2015 (Gráfico 8), com a maior variação negativa sendo o óleo diesel. A gasolina automotiva (GASOLINA A) também teve queda de produção, mas em volume absoluto menor do que o do diesel.
 
@@ -127,7 +127,7 @@ Gráfico 8 – Produção de derivados de petróleo, Brasil, m³, anual, 2000-20
 Fonte: Elaboração própria com dados da ANP (2022)
 
 </figure>
- 
+
 Existem 16 refinarias em operação no país, as quais produziram 42,2 milhões de m³ de óleo diesel ao longo de 2020. Considerando que as vendas de óleo diesel no mesmo ano foram de 57,5 milhões de m³, evidencia-se que o número de refinarias no Brasil é baixo para a demanda existente e um aumento de empresas no setor poderia fortalecer o fornecimento de gasolina e diesel para as indústrias e a população em geral. Em 2020 o país importou 12 milhões de m³ de óleo diesel para suprir sua demanda (BRASIL, 2021).
 
 ## Conclusão
