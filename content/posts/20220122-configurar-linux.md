@@ -76,7 +76,7 @@ sudo nano /etc/ssh/sshd_config
 
 Para desabilitar acesso root troque  `PermitLoginRoot yes` por `PermitLoginRoot no`
 
-Para desabilitar acesso por senha substitua ``PasswordAuthentication` yes` por ` PasswordAuthentication no`
+Para desabilitar acesso por senha substitua `PasswordAuthentication yes` por `PasswordAuthentication no`
 
 Após salvar o arquivo de configuração editado é preciso reiniciar o *daemon*:
 
