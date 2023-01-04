@@ -36,6 +36,12 @@ Após criar seu próprio usuário é preciso adicioná-lo ao grupo *sudo* para p
 usermod -aG sudo <nome-do-usuario>
 ```
 
+No Fedora, o usuário deve ser adicionado ao [grupo `wheel`](https://docs.fedoraproject.org/en-US/quick-docs/adding_user_to_sudoers_file/):
+
+```sh
+usermod -aG wheel <nome-do-usuario>
+```
+
 Após criar o seu próprio usuário já podemos desconectar do servidor pelo usuário root e conectar pelo nosso usuário e senha usando SSH.
 
 ### 2. Chave SSH
