@@ -20,7 +20,7 @@ A introdução do Windows Subsystem for Linux (WSL) foi uma grande novidade da M
 Presumindo que [as chaves SSH já foram geradas no Windows](https://interworks.com/blog/2021/09/15/setting-up-ssh-agent-in-windows-for-passwordless-git-authentication/), execute o seguinte comando no Linux para copiar essas chaves para o WSL.
 
 ```sh
-cp -r /mnt/c/Users/<username>/.ssh ~/.ssh
+cp -r /mnt/c/Users/<username>/.ssh ~
 ```
 
 #### 2. Corrigir permissões dos arquivos
