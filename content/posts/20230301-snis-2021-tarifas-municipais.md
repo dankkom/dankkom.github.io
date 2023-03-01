@@ -97,7 +97,7 @@ O objetivo da equação do filtro HP é minimizar a soma dos quadrados dos resí
 
 O filtro HP é amplamente utilizado em análises econômicas, mas também pode ser útil em outros contextos onde se deseja suavizar séries temporais para obter uma representação mais clara da tendência subjacente. Ele é uma ferramenta valiosa para a análise de séries temporais, pois permite identificar tendências e padrões subjacentes que podem ser obscurecidos por flutuações cíclicas.
 
-Neste texto foi utilizado o parâmetro \\(\lambda=1\\). [O recomendado pela literatura](https://www.amazon.com.br/MODELOS-S%C3%89RIES-TEMPORAIS-introdu%C3%A7%C3%A3o-aplica%C3%A7%C3%B5es-ebook/dp/B08D7X1GM2) é que se utilize \\(\lambda=1/7\\) para séries com frequência anual, porém, como as séries do SNIS apresentam muita volatilidade, optou-se por um valor maior.
+Neste texto foi utilizado o parâmetro \\(\lambda=1\\). [O recomendado pela literatura](https://amzn.to/3KJGxl5) é que se utilize \\(\lambda=1/7\\) para séries com frequência anual, porém, como as séries do SNIS apresentam muita volatilidade, optou-se por um valor maior.
 
 ## Análise das Tarifas Médias de Água e Esgoto
 
