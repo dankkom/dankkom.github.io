@@ -9,6 +9,8 @@ katex: true
 
 Nesse post apresento duas medidas para relatórios em Power BI que calculam a variação percentual de séries temporais: uma para variação mensal (Month over Month - MoM) e outra para a variação de um período contra o mesmo período do ano anterior (Year over Year - YoY)
 
+<!--more-->
+
 __É necessário ter uma tabela *Calendário* para as medidas funcionarem.__
 
 ## Variação percentual do mês atual contra mês imediatamente anterior (MoM)

@@ -11,6 +11,8 @@ katex: true
 
 Nos últimos anos, o saneamento básico tem sido um dos principais temas discutidos no Brasil. Com o objetivo de promover o acesso universal aos serviços de abastecimento de água e esgotamento sanitário, o governo brasileiro vem implementando políticas públicas para garantir o acesso à água tratada e ao tratamento de esgoto em todo o país. No entanto, apesar dos esforços, ainda existem muitos desafios a serem enfrentados nessa área.
 
+<!--more-->
+
 Uma das questões mais importantes em relação ao saneamento básico é o acesso à informação sobre as tarifas cobradas pelos serviços. Afinal, para entender melhor os desafios que ainda precisam ser superados e promover uma gestão mais eficiente do setor, é fundamental conhecer os valores praticados pelas concessionárias de serviços públicos.
 
 Nesse contexto, a visualização de dados pode ser uma ferramenta valiosa. Por meio de gráficos, tabelas e mapas, é possível entender melhor a evolução das tarifas ao longo do tempo, bem como comparar os valores praticados em diferentes regiões do país. Neste artigo, vamos explorar uma visualização de dados que apresenta as tarifas médias municipais de saneamento básico no Brasil entre 1995 e 2021.

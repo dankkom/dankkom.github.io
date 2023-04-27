@@ -10,6 +10,8 @@ tags: ["Balança Comercial", "Comércio Exterior", "Visualização de Dados", "E
 
 Segue uma visualização de dados animada mostrando os principais países de destino das exportações brasileiras entre 1997 e 2022.
 
+<!--more-->
+
 A visualização foi feita com a ferramenta [flourish](https://flourish.studio).
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/12817498">
