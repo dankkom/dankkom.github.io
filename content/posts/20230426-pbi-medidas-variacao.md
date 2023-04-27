@@ -13,15 +13,17 @@ __É necessário ter uma tabela *Calendário* para as medidas funcionarem.__
 
 ## Variação percentual do mês atual contra mês imediatamente anterior (MoM)
 
-```DAX
-% MoM =
-VAR ValorMesAtual = SUM('FATO'[valor])
-VAR ValorMesAnterior = CALCULATE(SUM('FATO'[valor]), DATEADD('Calendário'[data], -1, MONTH))
+```r
+% MoM :=
+VAR ValorMesAtual =
+    SUM ( 'FATO'[valor] )
+VAR ValorMesAnterior =
+    CALCULATE ( SUM ( 'FATO'[valor] ), DATEADD ( 'Calendário'[data], -1, MONTH ) )
 RETURN
-    IF(
-        AND(ValorMesAtual <> 0, ValorMesAnterior <> 0),
-        DIVIDE(ValorMesAtual, ValorMesAnterior) - 1,
-        BLANK()
+    IF (
+        AND ( ValorMesAtual <> 0, ValorMesAnterior <> 0 ),
+        DIVIDE ( ValorMesAtual, ValorMesAnterior ) - 1,
+        BLANK ()
     )
 ```
 
@@ -38,18 +40,17 @@ Porém, caso `ValorMesAtual` e `ValorMesAnterior` sejam iguais a zero, a medida 
 
 ## Variação percentual do período atual contra mesmo período do ano anterior (YoY)
 
-```DAX
-% YoY =
-VAR ValorMesAtual = SUM('FATO'[valor])
-VAR ValorMesAnoAnterior = CALCULATE(
-    SUM('FATO'[valor]),
-    SAMEPERIODLASTYEAR('Calendário'[data])
-)
+```r
+% YoY :=
+VAR ValorMesAtual =
+    SUM ( 'FATO'[valor] )
+VAR ValorMesAnoAnterior =
+    CALCULATE ( SUM ( 'FATO'[valor] ), SAMEPERIODLASTYEAR ( 'Calendário'[data] ) )
 RETURN
-    IF(
-        AND(ValorMesAtual <> 0, ValorMesAnoAnterior <> 0),
-        DIVIDE(ValorMesAtual, ValorMesAnoAnterior) - 1,
-        BLANK()
+    IF (
+        AND ( ValorMesAtual <> 0, ValorMesAnoAnterior <> 0 ),
+        DIVIDE ( ValorMesAtual, ValorMesAnoAnterior ) - 1,
+        BLANK ()
     )
 ```
 
