@@ -45,8 +45,7 @@ $Env:VARIAVEL3 = "valor3"
 Para definir uma variável de ambiente de sistema, digite:
 
 ```powershell
-[Environment]::SetEnvironmentVariable
-     ("valor", $Env:VARIAVEL, [System.EnvironmentVariableTarget]::Machine)
+[Environment]::SetEnvironmentVariable("valor", $Env:VARIAVEL, [System.EnvironmentVariableTarget]::Machine)
 ```
 
 Substitua `VARIAVEL` pelo nome da variável de ambiente e `valor` pelo valor que você quer atribuir a ela.
@@ -54,8 +53,7 @@ Substitua `VARIAVEL` pelo nome da variável de ambiente e `valor` pelo valor que
 Para definir uma variável de ambiente de usuário, digite:
 
 ```powershell
-[Environment]::SetEnvironmentVariable
-     ("valor", $Env:VARIAVEL, [System.EnvironmentVariableTarget]::User)
+[Environment]::SetEnvironmentVariable("valor", $Env:VARIAVEL, [System.EnvironmentVariableTarget]::User)
 ```
 
 Do mesmo modo anterior, substitua `VARIAVEL` pelo nome da variável de ambiente e `valor` pelo valor que você quer atribuir a ela.

@@ -18,7 +18,7 @@ Em modelos de aprendizado supervisionado é de suma importância mensurar o erro
 
 A divisão dos dados em treino, validação e teste é importante também para detectar se o modelo sofre com problema de undeffiting ou overfitting.
 
-<h2 id="para-que-serve-cada-dataset">Para quê serve cada dataset?</h2>
+## Para quê serve cada dataset?
 
 - **Treino**: esse dataset é usado para o treino, ou seja, o **fit** do modelo. Por exemplo, numa regressão os parâmetros são ajustados para minimizar o erro nesse dataset.
 - **Validação**: esse dataset é usado para a avaliação não-viesada da performance do modelo durante o ajuste de hiperparâmetros.
@@ -30,7 +30,7 @@ Outras técnicas mais avançadas levam em conta o componente temporal (séries t
 
 ---
 
-Link:
+Links:
 
 - [Real Python: Split Your Dataset With scikit-learn's train_test_split()](https://realpython.com/train-test-split-python-data/)
 - [Towards Data Science: How to split data into three sets (train, validation, and test) And why?](https://towardsdatascience.com/how-to-split-data-into-three-sets-train-validation-and-test-and-why-e50d22d3e54c)

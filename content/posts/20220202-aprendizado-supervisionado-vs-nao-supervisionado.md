@@ -36,7 +36,5 @@ Já **no aprendizado não-supervisionado não há rótulos**. Os algoritmos de a
 Links:
 
 - [Estatisite: Tipos de Aprendizado Machine Learning](https://estatsite.com.br/2021/11/22/tipos-de-aprendizado-machine-learning/)
-
 - [Lambda3: Aprendizagem não-supervisionada](https://www.lambda3.com.br/2020/03/aprendizagem-nao-supervisionada/)
-
 - [QASTACK: What is the difference between supervised learning and unsupervised learning](https://qastack.com.br/programming/1832076/what-is-the-difference-between-supervised-learning-and-unsupervised-learning)
