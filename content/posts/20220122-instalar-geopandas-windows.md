@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: instalar-geopandas-windows
 aliases:
     - /instalar-geopandas-windows
-tags: []
+tags: ["Python", "GeoPandas", "Windows"]
 ---
 
 Como instalar o pacote GeoPandas no Windows sem usar o conda? Quando tentamos instalá-lo usando o PIP recebemos um erro. Muitas respostas no StackOverflow dizem para usar o Conda nesse caso. Porém, e quando não queremos usar o Conda, pois não queremos instalar outra versão gerenciador de pacotes no Windows?

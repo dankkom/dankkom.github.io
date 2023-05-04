@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: livros-gratuitos-sobre-r-online
 aliases:
     - /livros-gratuitos-sobre-r-online
-tags: []
+tags: ["Programação", "R", "Livros"]
 ---
 
 Neste post listo alguns livros online sobre R totalmente gratuitos. A lista compreende desde níveis introdutórios até R avançado aplicado à econometria, computação geoespacial, inferência estatística e análise de pesquisas amostrais complexas.

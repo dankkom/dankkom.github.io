@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: restaurar-arquivos-configuracao-pacotes-linux-debian-apt
 aliases:
     - /restaurar-arquivos-configuracao-pacotes-linux-debian-apt
-tags: []
+tags: ["Linux", "SysAdmin"]
 ---
 
 Esse texto é para quem apagou algum arquivo de configuração (🤦‍♀️) que foi criado por algum pacote instalado no Linux e agora precisa restaurá-lo. Não, simplesmente usar o APT para reinstalar o pacote com `sudo apt install --reinstall <nome-do-pacote>` não restaura os arquivos de configuração 😢 — eu já tentei isso.

@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: distancia-geografica-python
 aliases:
     - /distancia-geografica-python
-tags: []
+tags: ["Python"]
 ---
 
 Em análises geoespaciais, uma das tarefas mais frequentes é medir a distância entre duas coordenadas geográficas. Em Python é possível obter essa distância facilmente usando o pacote `geopy` e seu módulo `distance`.

@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: aprendizado-supervisionado-vs-nao-supervisionado
 aliases:
     - /aprendizado-supervisionado-vs-nao-supervisionado
-tags: []
+tags: ["Machine Learning"]
 ---
 
 Em **machine learning** (aprendizado de máquina em português) temos dois tipos de aprendizado: o **supervisionado** e o **não-supervisionado**. A diferença entre eles está nos rótulos, também conhecidos como *targets*, dos dados e nos métodos utilizados para cada um.

@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: trade-off-vies-variancia
 aliases:
     - /trade-off-vies-variancia
-tags: []
+tags: ["Machine Learning"]
 ---
 
 ![](https://images2.imgbox.com/de/78/0qO1L89P_o.png)

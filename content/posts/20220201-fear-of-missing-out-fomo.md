@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: fear-of-missing-out-fomo
 aliases:
     - /fear-of-missing-out-fomo
-tags: []
+tags: ["Psicologia", "Sociedade"]
 ---
 
 FOMO: esse é o nome de uma síndrome que descobri recentemente. Fear Of Missing Out (FOMO). Essa síndrome nada mais é do que a sensação de estar perdendo algo quando não estamos "por dentro" ou "participando" de algum assunto ou grupo. É um sentimento de ansiedade muito incômodo quando outras pessoas estão falando sobre algum assunto em que não estamos incluídos.

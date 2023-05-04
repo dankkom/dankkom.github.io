@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: trabalho-grupo-lider
 aliases:
     - /trabalho-grupo-lider
-tags: []
+tags: ["Trabalho", "Gestão", "Gestão de Projetos", "Gestão de Equipes"]
 ---
 
 ![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)

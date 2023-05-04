@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: python-pandas-read-csv
 aliases:
      - /python-pandas-read-csv
-tags: []
+tags: ["Python", "Programação", "CSV", "Dados", "Extração de Dados"]
 katex: true
 ---
 

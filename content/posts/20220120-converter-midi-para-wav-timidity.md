@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: converter-midi-para-wav-timidity
 aliases:
     - /converter-midi-para-wav-timidity
-tags: []
+tags: ["MIDI", "WAV", "Áudio"]
 ---
 
 É possível converter arquivos de música MIDI para o formato WAV com a ferramenta Timidity++, um software sintetizador que consegue tocar MIDI sem precisar de um sintetizador de hardware.

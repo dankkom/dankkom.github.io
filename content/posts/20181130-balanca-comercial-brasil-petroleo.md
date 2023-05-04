@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: balanca-comercial-brasil-petroleo
 aliases:
     - /balanca-comercial-brasil-petroleo
-tags: []
+tags: ["Balança Comercial", "Economia", "Petróleo"]
 katex: true
 ---
 

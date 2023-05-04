@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: treino-teste-validacao
 aliases:
     - /treino-teste-validacao
-tags: []
+tags: ["Machine Learning"]
 ---
 
 A divisão de datasets em treino, teste e validação é um procedimento em *data science*, mais especificamente machine learning supervisionado, que divide o conjunto de dados (*dataset*) em três subconjuntos para permitir a medição da performance de algoritmos de previsão e classificação.

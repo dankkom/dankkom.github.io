@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: cron-jobs-linux-automatizar-scripts
 aliases:
     - /cron-jobs-linux-automatizar-scripts
-tags: []
+tags: ["Linux", "SysAdmin"]
 ---
 
 Eu sou a favor da automação no trabalho. Quanto menos trabalho repetitivo ocupa o tempo do funcionário, melhor, tanto para o funcionário quanto para a empresa. Uma das ferramentas que ajudam a diminuir as tarefas repetitivas é o *cron* do Linux.

@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: underfitting-e-overfitting
 aliases:
     - /underfitting-e-overfitting
-tags: []
+tags: ["Machine Learning"]
 ---
 
 Underfitting e overfitting são problemas em machine learning supervisionado que podem aparecer nos modelos e está relacionado com o trade-off de viés e variância.

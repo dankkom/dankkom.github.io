@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: extraindo-dados-de-arquivos-excel
 aliases:
     - /extraindo-dados-de-arquivos-excel
-tags: []
+tags: ["Python", "Microsoft Excel", "Extração de Dados", "Dados"]
 ---
 
 É comum disponibilizar dados tabulares em arquivos CSV ou XLSX. No entanto, nem sempre esses dados vêm no melhor formato estruturado para leitura e processamento por softwares.

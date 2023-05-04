@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: configurar-linux
 aliases:
     - /configurar-linux
-tags: []
+tags: ["Linux", "SysAdmin"]
 ---
 
 Este post é checklist a seguir ao configurar um servidor Linux recém instalado. Numa instalação nova do Linux em um servidor é preciso configurar algumas coisas para se certificar que o sistema está seguro e atualizado.

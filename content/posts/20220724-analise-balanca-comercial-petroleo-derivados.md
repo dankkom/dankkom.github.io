@@ -3,7 +3,7 @@ title: "Análise da balança comercial do petróleo e derivados"
 date: 2022-07-24
 author: Komesu, D. K.
 slug: analise-balanca-comercial-petroleo-derivados
-tags: []
+tags: ["Balança Comercial", "Petróleo", "Comércio Exterior", "Economia"]
 ---
 
 Gostaria de compartilhar uma atualização de um texto sobre a dependência brasileira em importações de petróleo.

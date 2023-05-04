@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: sqlite-remover-linhas-duplicadas
 aliases:
     - /sqlite-remover-linhas-duplicadas
-tags: []
+tags: ["SQLite", "Base de Dados", "SQL"]
 ---
 
 Quando o DBA (ou seja, nós mesmos) não coloca uma constraint (restrição) de valores únicos numa tabela, pode ser que sejam inseridas linhas com valores duplicados. Não dá para colocar um constraint nessa tabela depois que temos linhas duplicadas. É preciso remover essas linhas.

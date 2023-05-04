@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: codigos-strftime-strptime
 aliases:
     - /codigos-strftime-strptime
-tags: []
+tags: ["Python", "Referência"]
 ---
 
 Todos os códigos de formato de data/hora do padrão C 1989.

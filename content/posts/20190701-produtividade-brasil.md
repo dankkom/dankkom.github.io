@@ -5,7 +5,7 @@ author: Komesu, D. K.
 slug: produtividade-brasil
 aliases:
     - /produtividade-brasil
-tags: []
+tags: ["Produtividade", "Economia"]
 katex: true
 ---
 
