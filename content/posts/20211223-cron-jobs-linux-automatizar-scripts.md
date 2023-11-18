@@ -76,6 +76,10 @@ PATH=/usr/local/bin:/bin
 
 Assim, os scripts terão acesso aos executáveis localizados em `/usr/local/bin` e `/bin`
 
+### Script executável
+
+Para que o *cron* execute um script é preciso que o script seja executável. Para isso, basta rodar o comando `chmod +x script.sh` no terminal.
+
 ### Logs dos *Cron Jobs*
 
 Para ver os registros das tarefas executadas pelo cron podemos usar o seguinte comando:
