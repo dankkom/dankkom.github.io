@@ -130,7 +130,7 @@ Após definir as regras de permissão e bloqueio de tráfego é preciso habilita
 sudo ufw enable
 ```
 
-Depois disso, sempre que você fizer alguma mudança nas regras do IFW será preciso recarregar com o comando:
+Depois disso, sempre que você fizer alguma mudança nas regras do UFW será preciso recarregar com o comando:
 
 ```sh
 sudo ufw reload
