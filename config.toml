@@ -4,10 +4,9 @@ title = "dkko"
 
 theme = "tale"
 
-[Author]
-    name = "Daniel Komesu"
-
 [params]
+    Author = "Daniel Komesu"
+    Description = "Python, Economics, Data Science, and other stuff"
     GoogleAnalytics4 = "G-RLSNHYP5C3"
 
 [markup.goldmark.renderer]
