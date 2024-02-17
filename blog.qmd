@@ -1,0 +1,11 @@
+---
+title: "Blog"
+listing:
+  contents: blog
+  type: default
+  categories: false
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---

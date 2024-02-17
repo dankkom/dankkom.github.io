@@ -1,0 +1,27 @@
+---
+title: "[Vídeo] Como usar Docker e Docker Compose em 12 minutos"
+date: 2022-02-02
+author:
+  - name: Daniel Komesu
+    orcid: 0000-0002-8086-3636
+slug: docker
+aliases:
+    - /docker
+categories: ["Docker"]
+---
+
+Docker é uma tecnologia de virtualização em nível de sistema operacional que permite empacotar aplicações, chamados contêineres, que podem rodar da mesma forma em praticamente qualquer máquina. Chega do "funciona na minha máquina".
+
+<!--more-->
+
+Para uma melhor definição consulte a [página da Wikipédia sobre Docker](https://en.wikipedia.org/wiki/Docker_(software)).
+
+Para uma rápida introdução de como usar o Docker os dois vídeos abaixo, publicados pelo usuário Jake Wright, são excelentes.
+
+Learn Docker in 12 Minutes:
+
+{{< video https://www.youtube.com/embed/YFl2mCHdv24 >}}
+
+Docker Compose in 12 Minutes:
+
+{{< video https://www.youtube.com/embed/Qw9zlE3t8Ko >}}
