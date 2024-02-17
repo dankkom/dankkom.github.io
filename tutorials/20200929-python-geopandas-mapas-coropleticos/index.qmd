@@ -8,6 +8,7 @@ aliases:
     - /python-geopandas-mapas-coropleticos
     - /posts/python-geopandas-mapas-coropleticos
 categories: ["Programação", "Python", "Mapas", "Visualização de Dados"]
+image: "https://images2.imgbox.com/0f/81/bSVKCAMa_o.png"
 ---
 
 Frequentemente um mapa colorido é o mais adequado para comunicar alguma informação que pode ser agregada geograficamente. Neste texto eu descrevo o passo-a-passo para criar um *mapa coroplético* básico em Python usando os pacotes **matplotlib** e o **geopandas**. Além desses dois pacotes, vou utilizar o **geobr** desenvolvido pelo IPEA para baixar dados geoespaciais do Brasil para plotar os mapas.
@@ -60,18 +61,17 @@ d = pd.read_csv(
 d.head()
 ```
 
-<table>
-    <thead>
-        <tr><th></th><th>ANO</th><th>CÓD.</th><th>UNIDADE DA FEDERAÇÃO</th><th>PRODUTO DAS LAVOURAS TEMPORÁRIAS</th><th>ÁREA PLANTADA (HECTARES)</th></tr>
-    </thead>
-    <tbody>
-        <tr><th>0</th><td>2018</td><td>11</td><td>Rondônia</td><td>Total</td><td>185413</td></tr>
-        <tr><th>1</th><td>2018</td><td>12</td><td>Acre</td><td>Total</td><td>30140</td></tr>
-        <tr><th>2</th><td>2018</td><td>13</td><td>Amazonas</td><td>Total</td><td>3612</td></tr>
-        <tr><th>3</th><td>2018</td><td>14</td><td>Roraima</td><td>Total</td><td>9155</td></tr>
-        <tr><th>4</th><td>2018</td><td>15</td><td>Pará</td><td>Total</td><td>226708</td></tr>
-    </tbody>
-</table>
+:::{.column-page}
+
+|   | ANO  | CÓD. | UNIDADE DA FEDERAÇÃO | PRODUTO DAS LAVOURAS TEMPORÁRIAS | ÁREA PLANTADA (HECTARES) |
+|:-:|:----:|:----:|----------------------|----------------------------------|-------------------------:|
+| 0 | 2018 | 11   | Rondônia             | Total                            |                   185413 |
+| 1 | 2018 | 12   | Acre                 | Total                            |                    30140 |
+| 2 | 2018 | 13   | Amazonas             | Total                            |                     3612 |
+| 3 | 2018 | 14   | Roraima              | Total                            |                     9155 |
+| 4 | 2018 | 15   | Pará                 | Total                            |                   226708 |
+
+:::
 
 Das colunas presentes na tabela precisamos apenas de duas: o código da unidade de federação (`Cód.`) e a coluna com as áreas plantadas (`Área plantada (Hectares)`). Para fazermos o [merge](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html) dessa tabela com o dataframe com as geometrias obtidos com o `geobr` vamos renomear a coluna `Cód.`.
 
@@ -84,18 +84,14 @@ d = d.rename(columns={"Cód.": "code_state"})
 d.head()
 ```
 
-<table>
-    <thead>
-        <tr><th></th><th>CODE_STATE</th><th>ÁREA PLANTADA (HECTARES)</th></tr>
-    </thead>
-    <tbody>
-        <tr><th>0</th><td>11</td><td>185413</td></tr>
-        <tr><th>1</th><td>12</td><td>30140</td></tr>
-        <tr><th>2</th><td>13</td><td>3612</td></tr>
-        <tr><th>3</th><td>14</td><td>9155</td></tr>
-        <tr><th>4</th><td>15</td><td>226708</td></tr>
-    </tbody>
-</table>
+|   | CODE_STATE | ÁREA PLANTADA (HECTARES) |
+|:-:|:----------:|-------------------------:|
+| 0 |     11     |                   185413 |
+| 1 |     12     |                    30140 |
+| 2 |     13     |                     3612 |
+| 3 |     14     |                     9155 |
+| 4 |     15     |                   226708 |
+
 
 ### Obtendo as geometrias
 
@@ -109,18 +105,17 @@ br_uf = geobr.read_state()
 br_uf.head()
 ```
 
-<table>
-    <thead>
-        <tr><th>CODE_STATE</th><th>ABBREV_STATE</th><th>NAME_STATE</th><th>CODE_REGION</th><th>NAME_REGION</th><th>GEOMETRY</th></tr>
-    </thead>
-    <tbody>
-        <tr><th>0</th><td>11.0</td><td>RO</td><td>Rondônia</td><td>1.0</td><td>Norte</td><td>MULTIPOLYGON (((-63.32721 -7.97672, -62.86662 ...</td></tr>
-        <tr><th>1</th><td>12.0</td><td>AC</td><td>Acre</td><td>1.0</td><td>Norte</td><td>MULTIPOLYGON (((-73.18253 -7.33550, -72.58477 ...</td></tr>
-        <tr><th>2</th><td>13.0</td><td>AM</td><td>Amazonas</td><td>1.0</td><td>Norte</td><td>MULTIPOLYGON (((-67.32609 2.02971, -67.31682 2...</td></tr>
-        <tr><th>3</th><td>14.0</td><td>RR</td><td>Roraima</td><td>1.0</td><td>Norte</td><td>MULTIPOLYGON (((-60.20051 5.26434, -60.19273 5...</td></tr>
-        <tr><th>4</th><td>15.0</td><td>PA</td><td>Pará</td><td>1.0</td><td>Norte</td><td>MULTIPOLYGON (((-54.95431 2.58369, -54.93542 2...</td></tr>
-    </tbody>
-</table>
+:::{.column-page}
+
+|   | CODE_STATE | ABBREV_STATE | NAME_STATE | CODE_REGION | NAME_REGION | GEOMETRY                                          |
+|:-:|:----------:|:------------:|------------|:-----------:|:-----------:|-------------------------------------------------- |
+| 0 | 11         | RO           | Rondônia   | 1           | Norte       | MULTIPOLYGON (((-63.32721 -7.97672, -62.86662... |
+| 1 | 12         | AC           | Acre       | 1           | Norte       | MULTIPOLYGON (((-73.18253 -7.33550, -72.58477... |
+| 2 | 13         | AM           | Amazonas   | 1           | Norte       | MULTIPOLYGON (((-67.32609 2.02971, -67.31682...   |
+| 3 | 14         | RR           | Roraima    | 1           | Norte       | MULTIPOLYGON (((-60.20051 5.26434, -60.19273...   |
+| 4 | 15         | PA           | Pará       | 1           | Norte       | MULTIPOLYGON (((-54.95431 2.58369, -54.93542...   |
+
+:::
 
 ### Fazendo merge
 
@@ -132,18 +127,13 @@ br_uf_d = br_uf_d[["geometry", "Área plantada (Hectares)"]]
 br_uf_d.head()
 ```
 
-<table>
-    <thead>
-        <tr><th></th><th>GEOMETRY</th><th>ÁREA PLANTADA (HECTARES)</th></tr>
-    </thead>
-    <tbody>
-        <tr><th>0</th><td>MULTIPOLYGON (((-63.32721 -7.97672, -62.86662 ...</td><td>185413</td></tr>
-        <tr><th>1</th><td>MULTIPOLYGON (((-73.18253 -7.33550, -72.58477 ...</td><td>30140</td></tr>
-        <tr><th>2</th><td>MULTIPOLYGON (((-67.32609 2.02971, -67.31682 2...</td><td>3612</td></tr>
-        <tr><th>3</th><td>MULTIPOLYGON (((-60.20051 5.26434, -60.19273 5...</td><td>9155</td></tr>
-        <tr><th>4</th><td>MULTIPOLYGON (((-54.95431 2.58369, -54.93542 2...</td><td>226708</td></tr>
-    </tbody>
-</table>
+|   | GEOMETRY                                         | ÁREA PLANTADA (HECTARES) |
+|:-:|--------------------------------------------------|-------------------------:|
+| 0 | MULTIPOLYGON (((-63.32721 -7.97672, -62.86662... |                   185413 |
+| 1 | MULTIPOLYGON (((-73.18253 -7.33550, -72.58477... |                    30140 |
+| 2 | MULTIPOLYGON (((-67.32609 2.02971, -67.31682...  |                     3612 |
+| 3 | MULTIPOLYGON (((-60.20051 5.26434, -60.19273...  |                     9155 |
+| 4 | MULTIPOLYGON (((-54.95431 2.58369, -54.93542...  |                   226708 |
 
 ### Finalmente plotando o mapa
 

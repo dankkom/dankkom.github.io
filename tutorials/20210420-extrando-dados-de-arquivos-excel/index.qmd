@@ -1,6 +1,7 @@
 ---
 title: "Extraindo dados de arquivos Excel"
 date: 2021-04-20
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636
@@ -72,7 +73,11 @@ df = pd.read_excel(
 df.head()
 ```
 
+:::{.column-page}
+
 ![](https://images2.imgbox.com/48/57/DpoiLNaF_o.png)
+
+:::
 
 Veja que é preciso tratar os nomes das colunas. Principalmente, é preciso corrigir os nomes das olunas do segundo nível (as colunas "Unnamed" 😣).
 
@@ -105,7 +110,11 @@ df.columns = pd.MultiIndex.from_tuples(new_columns)
 df.head()
 ```
 
+:::{.column-page}
+
 ![](https://images2.imgbox.com/0f/2c/B2Zt62PA_o.png)
+
+:::
 
 O código para ler os dados de uma planilha está feito. Vou colocá-lo em uma função para usar no loop para ler todas as planilhas do arquivo.
 

@@ -1,6 +1,7 @@
 ---
 title: "Cron Jobs no Linux: como automatizar a execução de scripts"
 date: 2021-12-23
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636

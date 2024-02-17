@@ -1,6 +1,7 @@
 ---
 title: "Pandas read_csv: como ler um arquivo CSV no Python"
 date: 2021-11-28
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636
@@ -29,6 +30,8 @@ df = pd.read_csv("test.csv")
 df
 ```
 
+:::{.column-page-right}
+
 ```
      PassengerId  Pclass                                          Name  ...      Fare  Cabin  Embarked
 0            892       3                              Kelly, Mr. James  ...    7.8292    NaN         Q
@@ -44,6 +47,8 @@ df
 417         1309       3                      Peter, Master. Michael J  ...   22.3583    NaN         C
 [418 rows x 11 columns]
 ```
+
+:::
 
 Simples, não?
 

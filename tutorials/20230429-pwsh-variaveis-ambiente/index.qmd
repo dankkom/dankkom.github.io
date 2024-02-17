@@ -1,6 +1,7 @@
 ---
 title: "Definindo variáveis de ambiente no Windows com PowerShell"
-date: 2023-04-29T14:00:00-03:00
+date: 2023-04-29
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636

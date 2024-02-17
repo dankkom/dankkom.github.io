@@ -1,6 +1,7 @@
 ---
 title: "Livros gratuitos sobre R (online)"
-date: 2020-10-08T08:00:00-03:00
+date: 2020-10-08
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636

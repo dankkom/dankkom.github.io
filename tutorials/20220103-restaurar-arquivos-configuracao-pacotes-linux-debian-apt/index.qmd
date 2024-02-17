@@ -1,6 +1,7 @@
 ---
 title: "Restaurar arquivos configuração de pacotes no Linux Debian com APT"
 date: 2022-01-03
+lang: pt
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636
