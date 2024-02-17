@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /filtro-hp-python-statsmodels
+  - /posts/filtro-hp-python-statsmodels
 categories: [Python, "Filtro HP", statsmodels, Econometria, Estatística]
 ---
 

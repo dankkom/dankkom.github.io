@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /instalar-geopandas-windows
+  - /posts/instalar-geopandas-windows
 categories: ["Python", "GeoPandas", "Windows"]
 ---
 

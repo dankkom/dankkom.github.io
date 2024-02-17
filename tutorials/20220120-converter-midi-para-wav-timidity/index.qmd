@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /converter-midi-para-wav-timidity
+  - /posts/converter-midi-para-wav-timidity
 categories: ["MIDI", "WAV", "Áudio"]
 ---
 

@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /python-pandas-read-csv
+  - /posts/python-pandas-read-csv
 categories: ["Python", "Programação", "CSV", "Dados", "Extração de Dados"]
 ---
 

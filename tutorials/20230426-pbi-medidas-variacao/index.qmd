@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /power-bi-medidas-variacao-series-temporais
+  - /posts/power-bi-medidas-variacao-series-temporais
 categories: ["Microsoft Power BI", "BI"]
 ---
 

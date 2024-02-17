@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
     - /extraindo-dados-de-arquivos-excel
+    - /posts/extraindo-dados-de-arquivos-excel
 categories: ["Python", "Microsoft Excel", "Extração de Dados", "Dados"]
 ---
 

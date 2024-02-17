@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /cron-jobs-linux-automatizar-scripts
+  - /posts/cron-jobs-linux-automatizar-scripts
 categories: ["Linux", "SysAdmin"]
 ---
 

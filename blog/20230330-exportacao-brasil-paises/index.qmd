@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /exportacao-brasil-destinos
+  - /posts/exportacao-brasil-destinos
 categories: ["Balança Comercial", "Comércio Exterior", "Visualização de Dados", "Economia"]
 ---
 

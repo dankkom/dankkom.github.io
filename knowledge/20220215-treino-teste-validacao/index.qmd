@@ -7,6 +7,7 @@ author:
 slug: treino-teste-validacao
 aliases:
     - /treino-teste-validacao
+    - /posts/treino-teste-validacao
 categories: ["Machine Learning"]
 ---
 

@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
     - /copiar-chaves-ssh-wsl
+    - /posts/copiar-chaves-ssh-wsl
 categories: ["Linux", "SysAdmin", "SSH"]
 ---
 

@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /sqlite-remover-linhas-duplicadas
+  - /posts/sqlite-remover-linhas-duplicadas
 categories: ["SQLite", "Base de Dados", "SQL"]
 ---
 

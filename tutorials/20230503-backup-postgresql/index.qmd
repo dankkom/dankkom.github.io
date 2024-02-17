@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /script-backup-postgresql
+  - /posts/script-backup-postgresql
 categories: [
     "Base de Dados",
     "Backup",

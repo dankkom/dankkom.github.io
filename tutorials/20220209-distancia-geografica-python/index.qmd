@@ -6,6 +6,7 @@ author:
     orcid: 0000-0002-8086-3636
 aliases:
   - /distancia-geografica-python
+  - /posts/distancia-geografica-python
 categories: ["Python"]
 ---
 
