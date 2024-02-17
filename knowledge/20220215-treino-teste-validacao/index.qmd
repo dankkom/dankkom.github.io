@@ -4,7 +4,6 @@ date: 2022-02-15
 author:
   - name: Daniel Komesu
     orcid: 0000-0002-8086-3636
-slug: treino-teste-validacao
 aliases:
     - /treino-teste-validacao
     - /posts/treino-teste-validacao
