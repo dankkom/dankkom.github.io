@@ -1,0 +1,12 @@
+---
+title: "Knowledge"
+listing:
+  contents: knowledge
+  type: default
+  categories: false
+  sort-ui: true
+  sort: date desc
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---
