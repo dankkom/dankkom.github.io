@@ -1,0 +1,8 @@
+---
+title: "Daniel Komesu"
+page-layout: full
+title-block-banner: true
+listing:
+  contents: posts
+  sort: "date desc"
+---
