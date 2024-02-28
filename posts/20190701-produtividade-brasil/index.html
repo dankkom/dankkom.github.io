@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Komesu">
+
+<title>dkko.me - Produtividade no Brasil</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RLSNHYP5C3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RLSNHYP5C3', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">dkko.me</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Produtividade no Brasil</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Produtividade</div>
+                <div class="quarto-category">Economia</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Daniel Komesu <a href="https://orcid.org/0000-0002-8086-3636" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">1 de julho de 2019</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#referencial-teórico" id="toc-referencial-teórico" class="nav-link active" data-scroll-target="#referencial-teórico">Referencial Teórico</a></li>
+  <li><a href="#definição-de-produtividade" id="toc-definição-de-produtividade" class="nav-link" data-scroll-target="#definição-de-produtividade">Definição de produtividade</a>
+  <ul class="collapse">
+  <li><a href="#educação" id="toc-educação" class="nav-link" data-scroll-target="#educação">Educação</a></li>
+  <li><a href="#automação" id="toc-automação" class="nav-link" data-scroll-target="#automação">Automação</a></li>
+  <li><a href="#instituições" id="toc-instituições" class="nav-link" data-scroll-target="#instituições">Instituições</a></li>
+  </ul></li>
+  <li><a href="#evolução-da-produtividade-no-brasil" id="toc-evolução-da-produtividade-no-brasil" class="nav-link" data-scroll-target="#evolução-da-produtividade-no-brasil">Evolução da produtividade no Brasil</a>
+  <ul class="collapse">
+  <li><a href="#abertura-comercial" id="toc-abertura-comercial" class="nav-link" data-scroll-target="#abertura-comercial">Abertura comercial</a></li>
+  <li><a href="#educação-1" id="toc-educação-1" class="nav-link" data-scroll-target="#educação-1">Educação</a></li>
+  <li><a href="#ambiente-de-negócios-e-mudança-institucional" id="toc-ambiente-de-negócios-e-mudança-institucional" class="nav-link" data-scroll-target="#ambiente-de-negócios-e-mudança-institucional">Ambiente de negócios e mudança institucional</a></li>
+  </ul></li>
+  <li><a href="#considerações-finais" id="toc-considerações-finais" class="nav-link" data-scroll-target="#considerações-finais">Considerações finais</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<p>É amplamente discutida na academia a necessidade de aumentar a produtividade da economia brasileira para o país alcançar os níveis de renda e bem-estar, semelhantes às nações desenvolvidas, almejados pela sociedade. Nos últimos 30 anos a produtividade média do trabalhador brasileiro está muito aquém do ideal para atingir esse objetivo. E, no entanto, o país necessita mais do que nunca aumentar a sua produtividade para enfrentar os desafios impostos pelas mudanças demográficas e problemas estruturais da economia brasileira.</p>
+<!--more-->
+<p>Praticamente todos os países do mundo vivem uma mudança na sua estrutura etária, com queda da fecundidade e da taxa de mortalidade, causando o envelhecimento da população <span class="citation" data-cites="camarano2013">(<a href="#ref-camarano2013" role="doc-biblioref">CAMARANO; KANSO; FERNANDES, 2013</a>)</span>. O impacto desse processo sobre o mercado de trabalho é preocupante, uma vez que diminui a População em Idade Ativa (PIA) e aumenta a população idosa, que demanda recursos dos sistemas de aposentadorias e de saúde públicas. É razoável supor que, com a continuação desse processo, uma parcela cada vez menor da população terá de sustentar os aposentados e que esses trabalhadores deverão ser altamente produtivos. No Brasil o problema assume forte característica fiscal, dado que a Previdência Social é altamente deficitária.</p>
+<p>Soma-se a isso a preocupação da crescente automação com Inteligência Artificial (IA) nas empresas, que tem efeitos pouco conhecidos sobre o mercado de trabalho. Se por um lado a automação parece ser uma ameaça à criação de empregos, por outro lado ela pode ajudar no aumento da produtividade da economia brasileira.</p>
+<p>Espera-se que nas próximas décadas a força de trabalho brasileira diminuirá relativamente à população total e, como principal consequência, deve aumentar a exigência de maior produtividade para sustentar o nível da produção, da renda e da qualidade de vida dos brasileiros. O desenvolvimento de técnicas e ferramentas mais complexas e a crescente automação fará com que as empresas aumentem suas exigências para contratação de profissionais, enquanto parte das ocupações existentes vão desaparecer e forçar a realocação de emprego das pessoas que as exerciam.</p>
+<p>Este texto é uma revisão da literatura mais recente sobre o mercado de trabalho e a produtividade da economia brasileira, com vistas ao rápido envelhecimento populacional e aos avanços tecnológicos em inteligência artificial aplicados à automação de tarefas.</p>
+<p>Como apoio, usou-se textos da consultoria McKinsey Global Institute (MGI), do Banco Mundial, do Fundo Monetário Internacional (FMI), do Instituto de Pesquisa Econômica Aplicada (IPEA) e diversos de autores que escreveram sobre produtividade e os impactos do progresso tecnológico na economia.</p>
+<p>Foram usados os dados do censo populacional e os microdados da Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC) publicadas pelo Instituto Brasileiro de Geografia e Estatística (IBGE) para analisar o emprego e desemprego, o nível de escolaridade e a renda. Os números de alunos matriculados e os valores de investimento público em educação foram obtidos no site do Instituto Nacional de Pesquisas Educacionais Anísio Teixeira (INEP). Para comparações internacionais de ambiente de negócios e produtividade foram utilizados dados do Banco Mundial e da Organização para a Cooperação e Desenvolvimento Econômico (OCDE).</p>
+<section id="referencial-teórico" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="referencial-teórico">Referencial Teórico</h2>
+<p>Durante o século XX, o mundo experienciou grandes progressos sociais e econômicos. Exemplo disso é o aumento da longevidade, uma das grandes conquistas sociais do século XX. A humanidade obteve imensos desenvolvimentos científicos que permitiram que a sociedade elevasse seu padrão de vida a níveis nunca imaginados.</p>
+<p>O Brasil também acompanhou esse avanço. O país passou de uma economia baseada, majoritariamente, na produção e exportação de produtos agropecuários no início do século passado, para uma economia mais diversificada, com o setor da indústria e de serviços tornando-se predominantes. Essa transformação foi acompanhada por uma melhora nas condições de vida da população. Por exemplo, no último século a esperança de vida ao nascer aumentou, enquanto a taxa bruta de mortalidade caiu acentuadamente. A renda <em>per capita</em> brasileira, que era de menos de três mil dólares em 1960, passou para aproximadamente onze mil dólares no ano de 2017. A desigualdade de renda, medida pelo índice de Gini, vem caindo de forma acentuada e contínua desde meados da década de 1990. E, ainda que em patamar elevado, a concentração de renda está diminuindo no Brasil <span class="citation" data-cites="worldbank2018c">(<a href="#ref-worldbank2018c" role="doc-biblioref">BANCO MUNDIAL, 2018a</a>)</span>.</p>
+<p>Ao passo que as condições socioeconômicas no Brasil melhoraram, o mesmo não se deu com a produtividade, que está estagnada há pelo menos três décadas. Entre os anos de 1996 a 2015, a principal fonte de crescimento da economia brasileira foi o aumento do estoque de capital e da força de trabalho. Mudanças demográficas, como a expansão da força de trabalho, do maior nível de emprego e da população, combinados com aumento da população com educação de nível médio, foram responsáveis por cerca de dois terços do crescimento geral da economia brasileira, enquanto a contribuição da produtividade foi limitada. Em comparação com as economias avançadas e outras economias emergentes, o Brasil teve um crescimento insignificante do valor adicionado por trabalhador, exceto pelo setor agropecuário <span class="citation" data-cites="worldbank2018a">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>)</span>.</p>
+<p>A combinação de produtividade estagnada e do rápido envelhecimento populacional tem preocupado economistas e formuladores de políticas públicas. Segundo projeções do <span class="citation" data-cites="ibge2018a">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE (<a href="#ref-ibge2018a" role="doc-biblioref">2018a</a>)</span>, o crescimento da PIA deve se estabilizar em torno de 2037, enquanto a população idosa continuará crescendo, chegando a representar 25% dos brasileiros em 2060.</p>
+<p>A única maneira de manter o nível de renda diante do declínio da força de trabalho é aumentando a produtividade. Com o fim do bônus demográfico<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <span class="citation" data-cites="ibge2018a">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE (<a href="#ref-ibge2018a" role="doc-biblioref">2018a</a>)</span>, as perspectivas para a economia ficam ainda mais preocupantes.</p>
+<div class="no-row-height column-margin column-container"><p><sup>1</sup>&nbsp;O bônus demográfico refere-se à situação de crescimento da força de trabalho mais rápido do que o crescimento das populações dependentes (crianças de até 14 anos e idosos acima de 65 anos, fora da força de trabalho). Segundo projeção do <span class="citation" data-cites="ibge2018a">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE (<a href="#ref-ibge2018a" role="doc-biblioref">2018a</a>)</span>, o bônus demográfico acabou em 2018.</p></div></section>
+<section id="definição-de-produtividade" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="definição-de-produtividade">Definição de produtividade</h2>
+<p>A produtividade é uma medida de eficiência da utilização dos fatores de produção (capital, trabalho, terra etc.) para a produção de bens e serviços para a sociedade. O crescimento da produtividade é fundamental para gerar empregos melhores, aumentar o padrão de vida das pessoas e elevar a qualidade dos produtos <span class="citation" data-cites="worldbank2018a">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>)</span>.</p>
+<p>Existem várias formas de calcular a produtividade, sendo que as mais comuns são a produtividade do trabalho (PT) e a produtividade total dos fatores (PTF). Enquanto a PT mede a riqueza produzida por trabalhador, a PTF considera, além do trabalho, o estoque de capital na economia, e representa a eficiência da combinação de insumos no processo produtivo.</p>
+<p>Até meados da década de 1980, os economistas usavam o modelo de Solow<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> para explicar as diferenças de renda entre as economias. Nesse modelo o crescimento no longo-prazo ocorre graças ao progresso tecnológico, suposto exógeno <span class="citation" data-cites="pessoa2006">(<a href="#ref-pessoa2006" role="doc-biblioref">PESSÔA, 2006</a>)</span>. Mais recentemente incluiu-se o capital humano no cálculo da produtividade, de modo a ponderar essa medida por um índice do nível de educação dos trabalhadores. Na obra “A Riqueza das Nações”, de Adam Smith, no século XVIII, foi o primeiro a relacionar a educação dos trabalhadores ao aumento da produtividade, através da divisão social do trabalho e da especialização. No século XX esse tema ressurgiu com a ideia de educação como capital humano e, desde então, a educação é considerada uma das variáveis nos modernos modelos de crescimento econômico <span class="citation" data-cites="tafner2018">(<a href="#ref-tafner2018" role="doc-biblioref">TAFNER, 2018</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><p><sup>2</sup>&nbsp;No clássico “A contribution to the theory of economic growth” de Robert M. Solow, publicado na Review of Economics and Statistics, 1956.</p></div><p>Segundo a teoria do capital humano, ao se elevar a escolaridade e as habilidades dos trabalhadores, <em>ceteris paribus</em>, a produtividade aumenta. Matematicamente, a PTF é a parte do crescimento da renda não explicada pela variação dos fatores capital e trabalho, de modo que seu cálculo é o resíduo de uma função de produção. A maioria dos estudos da PTF normalmente usam uma função de produção do tipo Cobb-Douglas para estimá-la (Equação 1).</p>
+<p>Equação 1:</p>
+<p><span class="math display">\[Y_t=A_t (K_t^\alpha L_t^\beta)\]</span></p>
+<p>Nessa equação <span class="math inline">\(K\)</span> e <span class="math inline">\(L\)</span> representam, respectivamente, o estoque de capital e a força de trabalho no período <span class="math inline">\(t\)</span>; os expoentes <span class="math inline">\(\alpha\)</span> e <span class="math inline">\(\beta\)</span> são as participações na economia dos respectivos fatores de produção<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. O termo <span class="math inline">\(A\)</span> é a produtividade dessa economia, que é obtida como um resíduo do aumento do produto <span class="math inline">\(Y\)</span> não explicada pelo aumento dos fatores capital e trabalho.</p>
+<div class="no-row-height column-margin column-container"><p><sup>3</sup>&nbsp;Dependendo da soma dos expoentes () e (), os retornos de escala podem ser crescentes (soma maior que um, com aumento do produto maior do que o aumento dos insumos), decrescentes (soma menor que um, com aumento do produto menor do que o aumento dos insumos) ou constantes (soma igual a um, com aumento do produto igual ao aumento dos insumos utilizados).</p><p><sup>4</sup>&nbsp;Livro “On The Principles of Political Economy and Taxation” de David Ricardo, publicado na Inglaterra, no século XIX.</p><p><sup>5</sup>&nbsp;Segundo <span class="citation" data-cites="pindyck2013">PINDYCK; RUBINFELD (<a href="#ref-pindyck2013" role="doc-biblioref">2013</a>)</span>, produtividade marginal é o produto adicional obtido ao se acrescentar uma unidade a mais de um insumo.</p></div><p>De acordo com a Teoria Neoclássica, o curto prazo é um período no qual os estoques de todos os fatores de produção, exceto um, estão dados, assim como o nível tecnológico <span class="citation" data-cites="lopes2017">(<a href="#ref-lopes2017" role="doc-biblioref">LOPES; VASCONCELLOS, 2017</a>)</span>. É consenso considerar, no curto prazo, o trabalho como o único fator variável. Segundo a Lei dos Rendimentos Físicos Marginais Decrescentes de David Ricardo<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, os fatores apresentam retornos decrescentes de escala, ou seja, “quanto maior a quantidade utilizada de trabalho, menor será sua produtividade marginal<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> deste fator, dado o estoque de capital e a tecnologia” (<em>ibid.</em>, p.&nbsp;108). Com isso, teoricamente as empresas contratam trabalhadores até que a produtividade marginal do trabalho seja nula, de modo a maximizar o produto por funcionário.</p>
+<p>O aumento da produtividade pode elevar a produção, alterando a curva da função de produção da economia. A introdução de inovação tecnológica — aquisição de máquinas e equipamentos ou implementação de processo — pode afetar a demanda por trabalho tanto no sentido de diminuir, aumentar ou manter-se constante.</p>
+<p>Embora haja críticas e limitações no cálculo da PTF pela função Cobb-Douglas<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, ela é um bom indicador para analisar o nível de produtividade da economia e sua tendência. Estudos da PTF brasileira nas últimas décadas, em geral, mostram estagnação, ou mesmo diminuição, da produtividade<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
+<div class="no-row-height column-margin column-container"><p><sup>6</sup>&nbsp;A função Cobb-Douglas, por exemplo, é questionada se é realmente apropriada para representar a produção agregada da economia. Há ainda dificuldades quanto às definições de medidas de produto, dos fatores e à estimação dos parâmetros da função de produção <span class="citation" data-cites="ellery2014">(<a href="#ref-ellery2014" role="doc-biblioref">ELLERY JR., 2014</a>)</span>. Outro exemplo: o capital humano é definido como a quantidade média de anos de estudo por trabalhador, assim essa equação não capta informações como a qualidade da educação <span class="citation" data-cites="tafner2018">(<a href="#ref-tafner2018" role="doc-biblioref">TAFNER, 2018</a>)</span>.</p><p><sup>7</sup>&nbsp;Ver, por exemplo, <span class="citation" data-cites="negri2015">DE NEGRI; CAVALCANTE (<a href="#ref-negri2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="ellery2014">ELLERY JR. (<a href="#ref-ellery2014" role="doc-biblioref">2014</a>)</span> e <span class="citation" data-cites="worldbank2018a">BANCO MUNDIAL (<a href="#ref-worldbank2018a" role="doc-biblioref">2018b</a>)</span>.</p></div><section id="educação" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="educação">Educação</h3>
+<p>Apesar do capital humano ter aumentado nas últimas décadas no Brasil, principalmente devido à ampliação do acesso ao ensino público a partir da década de 1990, a educação no país ainda é de baixa qualidade. Os jovens estão desengajados e a população, em geral, subestima os ganhos de renda com a educação <span class="citation" data-cites="tafner2018 worldbank2018a worldbank2018b">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>, <a href="#ref-worldbank2018b" role="doc-biblioref">2018c</a>; <a href="#ref-tafner2018" role="doc-biblioref">TAFNER, 2018</a>)</span>.</p>
+<blockquote class="blockquote">
+<p>Talvez o maior fator que isoladamente explique a baixa produtividade do trabalhador brasileiro, em comparação por exemplo ao trabalhador americano, seja o atraso educacional da força de trabalho em nossa economia. […] políticas que ataquem somente a margem quantitativa – isto é, universalização dos diversos níveis (pré-escolar, básico e secundário) – estão tendo baixíssima eficiência em alterar o quadro. <span class="citation" data-cites="pessoa2006">(<a href="#ref-pessoa2006" role="doc-biblioref">PESSÔA, 2006, p. 1</a>)</span></p>
+</blockquote>
+<p>A educação é um dos principais gargalos da economia brasileira. A baixa qualidade do sistema educacional pode ser apontada como a raiz de vários problemas socioeconômicos que o país enfrenta, como a criminalidade, a proliferação de doenças, a extrema pobreza etc. Nas últimas décadas a educação teve avanços na margem quantitativa, mas não na qualitativa. Diante da previsão de diminuição da força de trabalho devido ao envelhecimento populacional, o Brasil precisa melhorar a qualidade do ensino em todos os níveis para aumentar sua produtividade e contrabalançar os efeitos negativos desse processo.</p>
+<p>Como contraponto à teoria do capital humano, <span class="citation" data-cites="tafner2018">TAFNER (<a href="#ref-tafner2018" role="doc-biblioref">2018</a>)</span> cita a “teoria da sinalização”. Em resumo, ela argumenta que os maiores salários não estão relacionados a maiores níveis de educação, mas sim devido às habilidades inatas dos trabalhadores, sendo que a escolaridade apenas sinalizaria tais habilidades. Usa-se como evidência a favor dessa teoria, comumente, o “efeito-diploma” observado em estudos de diferencial de salários em que se apresenta descontinuidades na taxa de retorno da educação em pontos que correspondem à conclusão de ciclos educacionais.</p>
+<p>No entanto, <span class="citation" data-cites="tafner2018">TAFNER (<a href="#ref-tafner2018" role="doc-biblioref">2018, p. 292</a>)</span> pondera que:</p>
+<blockquote class="blockquote">
+<p>parece mais sensato admitir que existem fatores combinados. Se, de um lado, há sólidas evidências de que a quantidade e a qualidade da educação obtida pelos indivíduos elevam sua capacidade de discernimento e de tomada de decisões mais complexas, de outro, ao concluir certas etapas do processo de escolarização, o indivíduo estaria sinalizando outras habilidades não ligadas intrinsecamente ao aprendizado acadêmico, mas a outros atributos inatos, como capacidade de aprendizado, perseverança, disciplina, dedicação e empenho, fatores relevantes e decisivos no mercado de trabalho. <span class="citation" data-cites="tafner2018">(<a href="#ref-tafner2018" role="doc-biblioref">TAFNER, 2018, p. 292</a>)</span></p>
+</blockquote>
+<p>Um ponto importante no debate da educação brasileira é o desalento dos jovens. A geração “nem-nem”<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> brasileira forma uma parcela significativa da PIA que não estuda, nem trabalha, nem está em busca de emprego. Muitos jovens, e inclusive pais, encaram a frequência escolar apenas como um mero requisito que as empresas impõem para se candidatar em vagas de emprego ou para prestar um concurso público. A remuneração deve ser compatível com a lei de oferta e demanda e com o nível de qualificação exigido do trabalhador para que haja incentivos à formação profissional. Caso o mercado não dê sinais dessa correlação ao jovem trabalhador, obviamente que ele não terá engajamento para melhorar sua escolaridade.</p>
+<div class="no-row-height column-margin column-container"><p><sup>8</sup>&nbsp;Geração nem-nem, ou jovens nem-nem, são definidos como a população entre 15 e 29 anos que nem estudam, nem trabalham e nem procuram emprego. Também são denominados NEETs (<em>not in employment, education, or training</em>) na sigla em inglês.</p></div><p>O desengajamento dos jovens é um alerta para os formuladores de políticas públicas que querem melhorar os índices de capital humano no Brasil, pois a adoção da tecnologia está modificando as competências demandadas pelos empregadores. Há uma busca crescente por profissionais com habilidades cognitivas e analíticas de mais alto nível, tais como raciocínio matemático, capacidade de realizar com eficácia atividades não rotineiras, como interagir com computadores, além de habilidades socioemocionais, tais como expressão oral e clareza ao falar <span class="citation" data-cites="worldbank2018b">(<a href="#ref-worldbank2018b" role="doc-biblioref">BANCO MUNDIAL, 2018c</a>)</span>.</p>
+<p>Os jovens são os mais prejudicados pelas crises econômicas, pois são mais vulneráveis ao desemprego. Ao contrário do que se pode pensar, a população jovem enfrenta maior dificuldade de ser contratada em relação à população mais velha, fato constatado quando se analisa as taxas de desemprego por grupos de idade. Além disso, como são profissionais em começo de carreira, os jovens recebem menor remuneração e têm baixa probabilidade de ter uma poupança para se manterem no período em que estão à procura de um novo emprego.</p>
+</section>
+<section id="automação" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="automação">Automação</h3>
+<p>A crescente automação nas empresas tem grande potencial de elevar a produtividade das empresas, entretanto, há incertezas quanto aos seus efeitos no mercado de trabalho, principalmente por parte dos trabalhadores, que temem o desemprego em massa que poderia ser causado pela aceleração desse processo.</p>
+<p>Desde a década de 1990, a rápida ampliação do acesso à <em>Internet</em> e a evolução do aprendizado de máquina<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> utilizando ferramentas de <em>big data</em><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> permitiu que a automação ampliasse enormemente sua capacidade de substituir os trabalhadores humanos nas mais diversas ocupações. O progresso científico e tecnológico no passado, de fato, não causou aumento de desemprego e/ou diminuição de salários. Ao contrário, a tecnologia possibilitou que as pessoas ocupadas no setor agrícola pudessem trabalhar na manufatura ou no setor de comércio e de serviços <span class="citation" data-cites="acemoglu2018">(<a href="#ref-acemoglu2018" role="doc-biblioref">ACEMOGLU; RESTREPO, 2018</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><p><sup>9</sup>&nbsp;Aprendizado de máquina (<em>machine learning</em>) é um subcampo da inteligência artificial que estuda modelos estatísticos e algoritmos usados por computadores para realizar tarefas específicas sem precisar de instruções explicitas, dependendo apenas de padrões e inferência.</p><p><sup>10</sup>&nbsp;<em>Big data</em> é um termo que descreve um grande volume de dados gerados e armazenados, que os softwares de processamento tradicionais ainda não conseguem lidar em um tempo tolerável.</p><p><sup>11</sup>&nbsp;<em>Deep learning</em> (aprendizagem profunda em português) é um ramo do aprendizado de máquina que usa várias camadas de abstrações de redes neurais artificiais para criar modelos computacionais que podem aprender e fazer previsões sobre dados.</p></div><p>Argumenta-se que a automação libera os trabalhadores das tarefas rotineiras, permitindo que eles foquem seus esforços no que importa para a empresa e se preocupem menos sobre os detalhes de sua atividade. Porém, é importante observar que a tecnologia de IA baseada em técnicas como <em>deep learning</em><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> era inviável até recentemente. Os progressos obtidos nos últimos anos permitiram a criação de algoritmos capazes de realizar tarefas bastante sofisticadas, que até então só humanos conseguiam fazer.</p>
+<p>Apesar de ser tema de intenso debate em estudos sobre mercado de trabalho, não há consenso sobre os impactos da IA no mercado de trabalho. Analisar as implicações da automação é muito mais complexo do que simplesmente correlacionar o aumento da automação com o aumento da produtividade ou do desemprego <span class="citation" data-cites="acemoglu2018">(<a href="#ref-acemoglu2018" role="doc-biblioref">ACEMOGLU; RESTREPO, 2018</a>)</span>. As características da automação e da força de trabalho podem alterar significativamente o resultado líquido desse processo. A única certeza é que a automação implica no deslocamento do emprego para outros setores, sendo a qualificação da mão-de-obra afetada o fator fundamental que determina a variação do nível de desemprego.</p>
+<p><span class="citation" data-cites="acemoglu2018">ACEMOGLU; RESTREPO (<a href="#ref-acemoglu2018" role="doc-biblioref">2018</a>)</span> argumentam que há várias forças compensatórias atuando no processo de automação que contrabalançam a diminuição da demanda por trabalho, dos salários e do emprego. Uma das forças compensatórias mais poderosas é a criação de novas tarefas em que o trabalho tem vantagens comparativas. Essas novas tarefas aumentam a demanda por trabalho e o salário de equilíbrio, ao criar um efeito de reintegração que compensa o deslocamento da mão-de-obra, e tendem a elevar a participação do trabalho na economia.</p>
+<p>No entanto, essas novas tarefas requerem trabalhadores mais qualificados ou mesmo novas qualificações a serem adquiridas, havendo o risco de a automação aumentar a desigualdade quando houver incompatibilidade das habilidades das pessoas. As novas tarefas vão requerer que os trabalhadores sejam altamente qualificados e até mesmo que sejam criadas habilidades novas. A escassez de profissionais qualificados pode resultar num ajustamento muito mais lento <span class="citation" data-cites="acemoglu2018">(<a href="#ref-acemoglu2018" role="doc-biblioref">ACEMOGLU; RESTREPO, 2018</a>)</span>.</p>
+</section>
+<section id="instituições" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="instituições">Instituições</h3>
+<p>Muitos problemas observados na economia brasileira estão relacionados às instituições políticas e econômicas. Elas são importantes para o desenvolvimento econômico, pois definem as “regras do jogo” para os agentes econômicos <span class="citation" data-cites="acemoglu2012">(<a href="#ref-acemoglu2012" role="doc-biblioref">ACEMOGLU; ROBINSON, 2012</a>)</span>. As instituições econômicas determinam incentivos e restrições para os diferentes agentes, moldando desse modo os resultados econômicos da nação. Essas instituições incluem o direito de propriedade, o respeito aos contratos e às leis, a segurança, a liberdade de escolha, entre outras.</p>
+<p>A construção de instituições econômicas depende das instituições políticas, classificadas em dois tipos: extrativas e inclusivas. As do tipo extrativas não promovem a integração da comunidade nas decisões políticas e permitem que a elite possa se perpetuar no poder. As instituições inclusivas, por outro lado, são baseadas no pluralismo e promovem a prosperidade econômica ao estabelecer um ambiente seguro e estável, além de igual oportunidade a todas as pessoas <span class="citation" data-cites="barbosa2012">(<a href="#ref-barbosa2012" role="doc-biblioref">BARBOSA, 2012</a>)</span>.</p>
+<section id="concorrência-e-abertura-comercial" class="level4">
+<h4 class="anchored" data-anchor-id="concorrência-e-abertura-comercial">Concorrência e abertura comercial</h4>
+<p>Uma das causas do baixo crescimento da produtividade brasileira, segundo o <span class="citation" data-cites="worldbank2018a">BANCO MUNDIAL (<a href="#ref-worldbank2018a" role="doc-biblioref">2018b</a>)</span>, é a concorrência limitada que as empresas brasileiras enfrentam, tanto interna quanto externamente. Apesar do processo de abertura comercial na década de 1990, que foi um dos principais causadores dos ganhos de produtividade no período <span class="citation" data-cites="rossi1999">ROSSI JR.; FERREIRA (<a href="#ref-rossi1999" role="doc-biblioref">1999</a>)</span>, o Brasil ainda tem uma economia bastante fechada. Em 2015 os fluxos comerciais representaram menos de um terço do PIB <span class="citation" data-cites="worldbank2018a">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>)</span>.</p>
+<p>Evidências mostram que políticas protecionistas têm efeitos negativos na competitividade das indústrias locais, pois as empresas, protegidas da concorrência internacional, têm menores incentivos para investir em tecnologia, inovação e treinamento para aumentar sua produtividade e diminuir o custo de seus produtos <span class="citation" data-cites="rossi1999">(<a href="#ref-rossi1999" role="doc-biblioref">ROSSI JR.; FERREIRA, 1999</a>)</span>. O protecionismo também representa um empecilho à aquisição de máquinas e equipamentos mais eficientes do exterior, e desestimula a adoção da automação, que poderiam aumentar sobremaneira a produtividade das empresas.</p>
+<p>As barreiras regulatórias para a entrada e saída de produtos do país provocam uma baixa integração nas cadeias globais de valor e limitam a exposição das empresas nacionais à concorrência internacional, o que prejudica a competitividade e a produtividade. O setor industrial, por exemplo, se beneficiaria com a diminuição de barreiras à importação de máquinas e equipamentos, atividade econômica que constitui um importante canal de atualização tecnológica da indústria brasileira <span class="citation" data-cites="messa2015">(<a href="#ref-messa2015" role="doc-biblioref">MESSA, 2015</a>)</span>.</p>
+<p>As barreiras às importações reduzem a concorrência internacional para os produtores nacionais, o que prejudica os incentivos ao aumento da eficiência e à inovação e encarece a compra de insumos e bens de capital do exterior. O baixo nível de comércio internacional prejudica a integração dos mercados interno e externo, e pode ser atribuída às políticas protecionistas, além da má qualidade do ambiente institucional do país.</p>
+<p>As barreiras comerciais também são prejudiciais para as indústrias que precisam investir em máquinas e equipamentos produzidos no exterior. A importação de bens de capital seria importante para a atualização do parque industrial brasileiro, de forma a aumentar a eficiência e diminuir os custos de produção, melhorando assim a competitividade nacional.</p>
+</section>
+<section id="mercados-bancário-e-de-capitais" class="level4">
+<h4 class="anchored" data-anchor-id="mercados-bancário-e-de-capitais">Mercados bancário e de capitais</h4>
+<p>Outro problema que prejudica a alocação eficiente de capitais no Brasil é o mercado de crédito altamente oligopolizado, concentrado em quatro grandes bancos. Esse tipo de estrutura de mercado contribui para os altos <em>spreads</em> bancários observados no país. Opções alternativas, que não o empréstimo em bancos (como a abertura de capital em bolsa de valores), incluem processos burocráticos e caros para as empresas, além de um público doméstico de investidores incipiente.</p>
+<p>As políticas de crédito adotadas pelo governo durante os anos de 2007 a 2015, tais como o crédito subsidiado, concedido pelo Banco Nacional de Desenvolvimento Econômico e Social (BNDES) a grandes empresas, contribuíram para o crescimento do endividamento público e concentração de mercado no país. A escassez e dificuldade de acesso de crédito de longo prazo às micro e pequenas empresas impedem a aquisição de máquinas e equipamentos que poderiam aumentar sua produtividade. O crédito subsidiado do BNDES bloqueou parcialmente um importante canal de transmissão da política monetária conduzida pelo Banco Central do Brasil (Bacen), através da taxa de juros, o que obrigou a autarquia a praticar taxas de juros mais elevadas para controlar a inflação. A mudança da Taxa de Juros de Longo Prazo (TJLP) para a Taxa de Longo Prazo (TLP) foi um avanço significativo para diminuir as distorções no mercado de crédito e, no mínimo, melhorar a alocação de capital <span class="citation" data-cites="branco2017">(<a href="#ref-branco2017" role="doc-biblioref">BRANCO, 2017</a>)</span>.</p>
+<p>As grandes firmas que recebem crédito do BNDES, além de não necessitarem dos recursos de um banco de desenvolvimento, não têm incentivos para investir em empreendimentos de alta rentabilidade e, por conseguinte, de maior produtividade.</p>
+</section>
+<section id="custo-brasil-e-doing-business" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="custo-brasil-e-doing-business">Custo Brasil e Doing Business</h4>
+<p>O complexo sistema tributário, as barreiras regulatórias que dificultam a entrada de empresas competidoras no mercado nacional e a insegurança jurídica são importantes fatores para o conhecido Custo Brasil<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>, que gera enormes prejuízos à cadeia produtiva e encarece os produtos brasileiros, diminui a competitividade internacional, e prejudica a produtividade <span class="citation" data-cites="worldbank2018a">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>)</span>. Além dos elevados custos de transação, o Brasil apresenta uma grande proporção de empresas com baixíssima produtividade, que permanecem no mercado mobilizando fatores de produção que poderiam ser utilizados de forma mais eficiente em empresas mais produtivas <span class="citation" data-cites="veloso2018">(<a href="#ref-veloso2018" role="doc-biblioref">VELOSO, 2018</a>)</span>.</p>
+<div class="no-row-height column-margin column-container"><p><sup>12</sup>&nbsp;Custo Brasil é o termo dado ao elevado custo da cadeia produtiva brasileira devido a vários fatores endógenos da economia nacional.</p></div><p>A dificuldade de fazer negócios no Brasil é enorme, fato evidenciado pelo <em>ranking Doing Business</em> do Banco Mundial. Esse <em>ranking</em> compara a facilidade de fazer negócios em 190 países, medindo e analisando a regulamentação do ambiente de negócios nas economias locais. No <em>ranking</em> de 2019 o Brasil ficou em 109º lugar, atrás de países como Chile, México e China, por exemplo <span class="citation" data-cites="worldbank2019">(<a href="#ref-worldbank2019" role="doc-biblioref">BANCO MUNDIAL, 2019</a>)</span>.</p>
+<p>Há espaço considerável para melhoria das políticas públicas e regulamentações brasileiras. O atual ambiente regulatório precisa ser repensado para: oferecer mais previsibilidade e segurança aos agentes econômicos; estimular a concorrência; e induzir a uma alocação mais eficiente de recursos <span class="citation" data-cites="fazenda2017">(<a href="#ref-fazenda2017" role="doc-biblioref">MINISTÉRIO DA FAZENDA, 2017</a>)</span>. Contudo, a inércia no âmbito das reformas institucionais necessárias é uma enorme ameaça ao desenvolvimento econômico do Brasil no longo prazo.</p>
+<p>A corrupção na esfera política e a falta de vontade política talvez sejam as maiores ameaças a uma mudança institucional no Brasil. Os decisores de políticas públicas brasileiros são muito influenciáveis por grupos de pressão organizados. Sindicatos, lobistas e associações que defendem apenas os próprios interesses, ao invés de pensar no país, são imensos obstáculos que atrasam o desenvolvimento da nação.</p>
+</section>
+</section>
+</section>
+<section id="evolução-da-produtividade-no-brasil" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="evolução-da-produtividade-no-brasil">Evolução da produtividade no Brasil</h2>
+<p>No período de 1995 a 2017 houve significativa expansão do estoque de capital fixo no país. Segundo a série histórica disponibilizada pelo <span class="citation" data-cites="ipea2017">INSTITUTO DE PESQUISA ECONÔMICA APLICADA — IPEA (<a href="#ref-ipea2017" role="doc-biblioref">2017</a>)</span>, o Brasil teve crescimento médio de 2,59% a.a. da média anual de estoque líquido de capital dessazonalizado entre 1995 e 2017. Nesse mesmo período, dados do <span class="citation" data-cites="worldbank2018c">BANCO MUNDIAL (<a href="#ref-worldbank2018c" role="doc-biblioref">2018a</a>)</span> apontam crescimento médio do Produto Interno Bruto (PIB) de 2,28% a.a. e expansão de 1,88% a.a. da força de trabalho. Ou seja, a relação PIB/Estoque de Capital diminuiu nos últimos anos, fazendo a PTF cair (<a href="#fig-1" class="quarto-xref">Figura&nbsp;1</a>).</p>
+<div class="page-columns page-full">
+<div id="fig-1" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="https://images2.imgbox.com/e1/b2/3yL6luvF_o.png" class="img-fluid figure-img column-page">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Produto, fatores de produção e suas respectivas produtividades no Brasil, 1995-2017.<br>Fonte: Elaboração própria com dados do <span class="citation" data-cites="worldbank2018c">BANCO MUNDIAL (<a href="#ref-worldbank2018c" role="doc-biblioref">2018a</a>)</span> e do <span class="citation" data-cites="ipea2017">INSTITUTO DE PESQUISA ECONÔMICA APLICADA — IPEA (<a href="#ref-ipea2017" role="doc-biblioref">2017</a>)</span>.<br>Nota: a razão Y/L representa a produtividade do trabalho. Y/K representa a produtividade do capital, ou seja, quanto cada unidade de capital gera de produto.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Segundo relatório do Banco Mundial (2018a), a baixa produtividade brasileira está mais relacionada às ineficiências dentro dos setores produtivos do que a estrutura de produção da economia, devido à concorrência limitada e às políticas que distorcem a alocação de recursos e reduzem os incentivos à inovação. Se o Brasil tivesse uma alocação da força de trabalho setorial semelhante à dos Estados Unidos, haveria um ganho de 68% na produtividade. Por outro lado, se a produtividade setorial brasileira convergisse para as taxas estadunidenses, o aumento seria de 430% <span class="citation" data-cites="veloso2018 worldbank2018a">(<a href="#ref-veloso2018" role="doc-biblioref">VELOSO, 2018</a>; <em>apud</em> <a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>)</span>.</p>
+<section id="abertura-comercial" class="level3">
+<h3 class="anchored" data-anchor-id="abertura-comercial">Abertura comercial</h3>
+<p>A abertura comercial promovida pelo governo na década de 1990 teve efeitos positivos na produtividade do trabalho <span class="citation" data-cites="rossi1999 sae worldbank2018a">(<a href="#ref-worldbank2018a" role="doc-biblioref">BANCO MUNDIAL, 2018b</a>; <a href="#ref-rossi1999" role="doc-biblioref">ROSSI JR.; FERREIRA, 1999</a>; <a href="#ref-sae" role="doc-biblioref">SECRETARIA ESPECIAL DE ASSUNTOS ESTRATÉGICOS – SAE, 2018</a>)</span>. Na década de 2000, durante o ciclo de alta das <em>commodities</em>, o Brasil teve um aumento marginal da produtividade, porém não conseguiu manter esse ganho (<a href="#fig-2" class="quarto-xref">Figura&nbsp;2</a>).</p>
+<div id="fig-2" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://images2.imgbox.com/01/eb/4TFJhsuj_o.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Evolução da Produtividade do Trabalho e da Produtividade Total dos Fatores antes e após abertura comercial, Brasil, 1975-2014.<br>Fonte: <span class="citation" data-cites="sae">SECRETARIA ESPECIAL DE ASSUNTOS ESTRATÉGICOS – SAE (<a href="#ref-sae" role="doc-biblioref">2018, p. 16</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Embora o indicador de produtividade do trabalho mostre aumento no período, a PTF caiu bastante desde o final da década de 1970. Como mostrado na <a href="#fig-1" class="quarto-xref">Figura&nbsp;1</a>, o estoque de capital fixo cresceu significativamente de 1995 a 2017, indicando que a produtividade do capital é baixa, provavelmente devido à ineficiência do uso do capital gerada pelas distorções na alocação de recursos na economia <span class="citation" data-cites="feu2003">(<a href="#ref-feu2003" role="doc-biblioref">FEU, 2003</a>)</span>.</p>
+</section>
+<section id="educação-1" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="educação-1">Educação</h3>
+<p>Os níveis de instrução da população brasileira melhoraram nas últimas décadas, principalmente devido aos esforços de universalização do acesso ao ensino básico. A PNADC do 2º trimestre de 2018 mostra que o nível de instrução da população brasileira é maior para os jovens, enquanto a população idosa apresenta alta proporção de pessoas sem instrução (<a href="#fig-3" class="quarto-xref">Figura&nbsp;3</a>).</p>
+<div class="page-columns page-full">
+<div id="fig-3" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="https://images2.imgbox.com/0a/45/9sV1Ic7D_o.png" class="img-fluid figure-img column-body-outset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Proporção da população por grupos de idade e nível de educação, Brasil, 2º trimestre de 2018.<br>Fonte: Elaboração própria com base nos microdados da PNADC <span class="citation" data-cites="ibge2018b">(<a href="#ref-ibge2018b" role="doc-biblioref">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE, 2018b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Cabe destacar a maior proporção de pessoas com nível fundamental incompleto na população mais idosa, enquanto a população jovem e adulta apresenta maior proporção de pessoas com nível superior, evidenciando o aumento do capital humano nas últimas décadas.</p>
+<p>Entre 2000 e 2015 o Investimento Público Direto em Educação (IPDE) subiu de 3,88% do PIB para 5,08% do PIB <span class="citation" data-cites="inep2018">(<a href="#ref-inep2018" role="doc-biblioref">INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA - INEP, 2018</a>)</span>. A <a href="#fig-4" class="quarto-xref">Figura&nbsp;4</a> apresenta os valores do IPDE como percentual do PIB <em>per capita</em> por aluno. Em 2015, o IPDE no ensino básico correspondeu a cerca de 22% do PIB <em>per capita</em> por aluno. No ensino superior, por outro lado, o investimento foi maior do que 80% do PIB <em>per capita</em> por aluno.</p>
+<div class="page-columns page-full">
+<div id="fig-4" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="https://images2.imgbox.com/e1/47/zMcx2dag_o.png" class="img-fluid figure-img column-page">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Investimento público direto em educação por aluno e nível de ensino, % do PIB per capita por aluno, Brasil, 2000 a 2015.<br>Fonte: Elaboração própria com dados do <span class="citation" data-cites="inep2018">INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA - INEP (<a href="#ref-inep2018" role="doc-biblioref">2018</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>A desigualdade entre os valores de investimento por estudante do ensino superior e do ensino básico é extremamente alta, não condizente com a média dos países da OCDE <span class="citation" data-cites="nascimento2017">(<a href="#ref-nascimento2017" role="doc-biblioref">NASCIMENTO; VERHINE, 2017</a>)</span>. Mesmo levando em consideração que o ensino superior exige maior investimento por aluno, isso não justifica tal disparidade.</p>
+<p>Segundo <span class="citation" data-cites="heckman2006">HECKMAN (<a href="#ref-heckman2006" role="doc-biblioref">2006</a>)</span>, a curva das taxas de retorno do investimento em capital humano é decrescente com a idade, isto é, o retorno de programas destinados às crianças em idade pré-escolar é maior do que de programas destinados a crianças no ensino fundamental, médio, universitários e pós-escolares. A situação brasileira é, portanto, o oposto do que <span class="citation" data-cites="heckman2006">HECKMAN (<a href="#ref-heckman2006" role="doc-biblioref">2006</a>)</span> argumenta, com um baixo investimento per capita na educação básica em relação ao ensino superior.</p>
+<p>Até o ano de 2013, aproximadamente, também havia diferenças no investimento entre os níveis do ensino básico (<a href="#fig-4" class="quarto-xref">Figura&nbsp;4</a>). Em 2005 esse <em>gap</em> começou a se fechar, acompanhado por um aumento no investimento como percentual do PIB <em>per capita</em> por aluno. A aparente tendência de convergência dos investimentos nos níveis básico e superior pode ser explicada, em grande parte, pela mudança demográfica em curso no país. A quantidade de alunos matriculados na educação básica vem diminuindo desde 2009, enquanto na educação superior o número está aumentando <span class="citation" data-cites="inep2019">INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA - INEP (<a href="#ref-inep2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>Segundo dados da <span class="citation" data-cites="ocde2018">ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO — OCDE (<a href="#ref-ocde2018" role="doc-biblioref">2018</a>)</span>, o Brasil é um dos países que mais destinam recursos públicos à educação, entretanto tem um dos menores percentuais de população adulta com ensino superior completo e uma proporção de jovens nem-nem acima da média. Isso indica ineficiências no sistema educacional brasileiro.</p>
+<p>As empresas estão mudando o perfil de funcionário que buscam contratar para compor suas equipes. Há maior exigência para profissionais com habilidades de relações sociais e percepção emocional, que precisam interagir com pessoas, e menos exigência para funções burocráticas, repetitivas, em ambientes previsíveis, e que não requerem interação social ou criatividade.</p>
+<p>Para que os trabalhadores consigam realocação no mercado de trabalho é preciso qualificação e aquisição de novas habilidades. Em países em desenvolvimento, como o Brasil, as ocupações de média qualificação devem experimentar forte crescimento na demanda, diferentemente nos países desenvolvidos, que devem ter crescimento nas ocupações de alta qualificação e queda nas de média e baixa qualificação <span class="citation" data-cites="mckinsey2017">(<a href="#ref-mckinsey2017" role="doc-biblioref">MCKINSEY GLOBAL INSTITUTE — MGI, 2017</a>)</span>. À medida que um país se desenvolve, a demanda por trabalho tende a favorecer os trabalhadores altamente qualificados, enquanto os menos qualificados ficam mais vulneráveis ao desemprego.</p>
+</section>
+<section id="ambiente-de-negócios-e-mudança-institucional" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="ambiente-de-negócios-e-mudança-institucional">Ambiente de negócios e mudança institucional</h3>
+<p>Segundo as pesquisas do <em>Doing Business</em> de 2008 a 2019, o Brasil fez algumas reformas no sentido de melhorar o ambiente de negócios. No <em>Doing Business</em> 2019, o Brasil ficou em 109º lugar no <em>ranking</em>, no conjunto de 190 países.</p>
+<p>Apesar dos esforços para reformar o ambiente de negócios, o Brasil perdeu posições no <em>ranking</em>. Isso é explicado pelo avanço mais rápido dos outros países em suas reformas. Outro ponto importante é o regresso brasileiro no tópico de registro de propriedades, que impôs leis que tornaram mais difícil e mais caro a transferência de propriedades.</p>
+<p>Em alguns tópicos o Brasil tem boa performance na pesquisa. Por exemplo, na obtenção de eletricidade o país obteve pontuação no quartil superior da distribuição (<a href="#fig-5" class="quarto-xref">Figura&nbsp;5</a>). A pontuação brasileira em relação à execução de contratos também é boa, seguida da proteção dos investidores minoritários. Isso, no entanto, não é suficiente para elevar o ambiente de negócios nacional ao patamar de países desenvolvidos.</p>
+<div class="page-columns page-full">
+<div id="fig-5" class="quarto-figure quarto-figure-center quarto-float anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<img src="https://images2.imgbox.com/fc/d8/AJ24gqZ3_o.png" class="img-fluid figure-img column-body-outset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5: Pontuação no Doing Business 2019 do Brasil em relação à distribuição dos outros países da pesquisa.<br>Fonte: Elaboração própria com dados do <span class="citation" data-cites="worldbank2019">BANCO MUNDIAL (<a href="#ref-worldbank2019" role="doc-biblioref">2019</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>A dificuldade e demora no pagamento de impostos no Brasil é bastante conhecida e, no entanto, não houve progresso significativo no sentido de reformar o sistema tributário nas últimas décadas.</p>
+</section>
+</section>
+<section id="considerações-finais" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-finais">Considerações finais</h2>
+<p>O crescimento da economia brasileira nas últimas décadas teve como base a acumulação de fatores de produção (capital e trabalho), com pouca contribuição da produtividade. A produtividade brasileira permaneceu estagnada nas últimas décadas com um ambiente de negócios ainda muito atrasado, distorções nos incentivos para a alocação eficiente de capital e políticas educacionais pouco eficientes.</p>
+<p>Embora a automação possa impulsionar a produtividade nem sempre ela traz os efeitos compensatórios discutidos por <span class="citation" data-cites="acemoglu2018">ACEMOGLU; RESTREPO (<a href="#ref-acemoglu2018" role="doc-biblioref">2018</a>)</span>. É essencial o investimento em educação, treinamento e realocação de emprego dos trabalhadores, principalmente tendo em vista da crescente presença das ferramentas digitais no meio de trabalho. Esse investimento pode ser financiado pelo Estado e pelas empresas, tendo ênfase na pesquisa e desenvolvimento de tarefas e processos mais eficientes, em que o trabalho tenha vantagens comparativas.</p>
+<p>Para a <span class="citation" data-cites="mckinsey2017">MCKINSEY GLOBAL INSTITUTE — MGI (<a href="#ref-mckinsey2017" role="doc-biblioref">2017</a>)</span>, o impulso de produtividade que a automação pode dar às economias de países com uma estrutura demográfica semelhante à brasileira deve ser complementada com inovações de processos, elevação do nível de educação e adoção mais acelerada de novas tecnologias. Para que países como o Brasil obtenham resultados benéficos da automação, os formuladores de políticas públicas e as lideranças empresariais precisam adotar medidas de apoio à transição dos trabalhadores no aprendizado das novas tecnologias e das novas tarefas que devem surgir.</p>
+<p>Boa parte das soluções para os problemas apresentados e discutidos neste trabalho dependem fortemente de políticas públicas de qualidade e de reformas institucionais. Os formuladores de políticas devem dar prioridade à criação de empregos e reintegração dos trabalhadores, além de assegurar o aumento da produtividade.</p>
+<p>Desde o governo Temer as lideranças políticas tem dado mais ênfase no discurso reformista, com propostas para desburocratizar o ambiente de negócios brasileiro. A pauta de maior abertura comercial tem mais chances de ser discutida e implementada. As reformas da Previdência Social e do sistema tributário idem. Apesar do discurso com viés mais liberal e reformista, ainda existem grandes dificuldades de aprovar essas reformas.</p>
+<p>Talvez o maior obstáculo para a economia brasileira nos próximos anos seja a instabilidade política e os fortes grupos de pressão organizados que impedem as mudanças institucionais. A esfera política é muito influenciada por grupos de <em>lobby</em>, como sindicatos, empresários e associações de setores específicos da economia.</p>
+<p>O elevado grau de incerteza na política desestimula os empresários e investidores a aplicar seus recursos com foco no longo prazo. Para que as reformas institucionais, necessárias para o aumento da produtividade, avancem, é preciso que as lideranças políticas se desvencilhem dos interesses dessas elites.</p>
+<p>Sugere-se que futuros estudos sobre este tema desenvolvam políticas de apoio à realocação de emprego dos trabalhadores substituídos pela automação e fomento à criação de novas formas de trabalhar, de modo a aproveitar plenamente as oportunidades da automação e das tecnologias disruptivas da crescente economia compartilhada. A melhora na eficiência do sistema educacional brasileiro e as reformas institucionais são condições <em>sine qua non</em> para elevar a produtividade e, por consequência, o nível de bem-estar social.</p>
+<p>As reformas das leis trabalhistas, do sistema da previdência social e do sistema tributário são condições necessárias, mas não suficientes para dar base a um desenvolvimento próspero e sustentável. Também é necessário repensar as redes de proteção social e desenvolver medidas para aumentar as habilidades dos trabalhadores e meios para promover uma realocação mais dinâmica dos empregos. Os formuladores de políticas precisam ficar atentos aos tipos de tecnologias de automação adotados pelas empresas. Incentivos regulatórios e tributários que levem os agentes econômicos a não investir em criação de tarefas em favor de tecnologias de automação podem levar à má alocação de capital na economia e prejudicar a produtividade <span class="citation" data-cites="acemoglu2018">(<a href="#ref-acemoglu2018" role="doc-biblioref">ACEMOGLU; RESTREPO, 2018</a>)</span>.</p>
+<p>A ampliação e qualificação na coleta de dados econômicos e sociais podem ajudar sensivelmente os formuladores de políticas públicas a fazer decisões conscientes baseadas em evidências <span class="citation" data-cites="mckinsey2017">(<a href="#ref-mckinsey2017" role="doc-biblioref">MCKINSEY GLOBAL INSTITUTE — MGI, 2017</a>)</span>. A mensuração dos impactos das políticas públicas é fundamental para guiar as escolhas que devem ser feitas pela sociedade para alcançar os níveis de renda e de bem-estar dos países desenvolvidos.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
+<div id="ref-acemoglu2018" class="csl-entry" role="listitem">
+ACEMOGLU, D.; RESTREPO, P. Artificial Intelligence, Automation and Work. <strong>MIT Department of Economics Working Paper Series</strong>, n. 18-01, 2018.
+</div>
+<div id="ref-acemoglu2012" class="csl-entry" role="listitem">
+ACEMOGLU, D.; ROBINSON, J. A. <strong>Por que as nações fracassam: as origens do poder, da prosperidade e da pobreza</strong>. Rio de Janeiro: Elsevier, 2012.
+</div>
+<div id="ref-worldbank2018a" class="csl-entry" role="listitem">
+BANCO MUNDIAL. <strong>Emprego e Crescimento: A Agenda da Produtividade</strong>. Washington, D.C.: World Bank Group, b2018.
+</div>
+<div id="ref-worldbank2018b" class="csl-entry" role="listitem">
+BANCO MUNDIAL. <strong>Competências e Empregos: Uma Agenda para a Juventude</strong>. Washington, D.C.: World Bank Group, c2018.
+</div>
+<div id="ref-worldbank2018c" class="csl-entry" role="listitem">
+BANCO MUNDIAL. <strong>World Development Indicators (WDI)</strong>. Disponível em: &lt;<a href="https://data.worldbank.org/indicator/NV.IND.TOTL.ZS">https://data.worldbank.org/indicator/NV.IND.TOTL.ZS</a>&gt;.
+</div>
+<div id="ref-worldbank2019" class="csl-entry" role="listitem">
+BANCO MUNDIAL. <strong>Doing Business 2019</strong>. Washington, D.C.: World Bank Group, 2019.
+</div>
+<div id="ref-barbosa2012" class="csl-entry" role="listitem">
+BARBOSA, F. H. Por que as Nações Fracassam? <strong>Revista Conjuntura Macroeconômica</strong>, v. 66, n. 5, p. 28–29, mai. 2012.
+</div>
+<div id="ref-branco2017" class="csl-entry" role="listitem">
+BRANCO, R. C. <strong>Qual é o papel do BNDES?</strong> Sociedade Nacional de Agricultura/AgriForum, 7 jul. 2017. Disponível em: &lt;<a href="http://agriforum.agr.br/qual-e-o-papel-do-bndes/">http://agriforum.agr.br/qual-e-o-papel-do-bndes/</a>&gt;
+</div>
+<div id="ref-camarano2013" class="csl-entry" role="listitem">
+CAMARANO, A. A.; KANSO, S.; FERNANDES, D. Envelhecimento populacional, perda da capacidade laborativa e políticas públicas brasileiras entre 1992 e 2011. <strong>Textos para Discussão do IPEA</strong>, n. 1890, out. 2013.
+</div>
+<div id="ref-negri2015" class="csl-entry" role="listitem">
+DE NEGRI, F.; CAVALCANTE, L. R. (EDS.). <strong>Produtividade no Brasil: desempenho e determinantes</strong>. Brasília: IPEA/ABDI, 2015. v. 2
+</div>
+<div id="ref-ellery2014" class="csl-entry" role="listitem">
+ELLERY JR., R. <strong>Desafios para o cálculo da produtividade total dos fatores</strong>. (F. De Negri, L. R. Cavalcante, Eds.)Produtividade no Brasil: Desempenho e Determinantes. <strong>Anais</strong>...Brasília: ABDI/IPEA, 2014.
+</div>
+<div id="ref-feu2003" class="csl-entry" role="listitem">
+FEU, A. <strong>A Produtividade do Capital no Brasil de 1950 a 2002</strong>. tese de doutorado—[s.l.] Universidade de Brasília, dez. 2003.
+</div>
+<div id="ref-heckman2006" class="csl-entry" role="listitem">
+HECKMAN, J. J. Skill formation and the economics of investing in disadvantaged children. <strong>Science</strong>, v. 312, n. 5782, p. 1900–1902, 2006.
+</div>
+<div id="ref-ibge2018a" class="csl-entry" role="listitem">
+INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE. <strong>Projeções da População: Brasil e Unidades da Federação — Revisão 2018</strong>. [s.l.] IBGE; IBGE, a2018.
+</div>
+<div id="ref-ibge2018b" class="csl-entry" role="listitem">
+INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA — IBGE. <strong>Pesquisa Nacional por Amostra de Domicílios Contínua: Microdados da Divulgação Trimestral</strong>. IBGE; IBGE, b2018. Disponível em: &lt;<a href="https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html">https://www.ibge.gov.br/estatisticas-novoportal/sociais/populacao/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html</a>&gt;
+</div>
+<div id="ref-ipea2017" class="csl-entry" role="listitem">
+INSTITUTO DE PESQUISA ECONÔMICA APLICADA — IPEA. <strong>Indicadores Ipea Trimestrais de Estoque de Capital e de Investimento Líquido</strong>. IPEA, out. 2017. Disponível em: &lt;<a href="http://www.ipea.gov.br/cartadeconjuntura/index.php/2017/10/11/indicadores-ipea-trimestrais-de-estoque-de-capital-e-de-investimento-liquido/">http://www.ipea.gov.br/cartadeconjuntura/index.php/2017/10/11/indicadores-ipea-trimestrais-de-estoque-de-capital-e-de-investimento-liquido/</a>&gt;
+</div>
+<div id="ref-inep2018" class="csl-entry" role="listitem">
+INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA - INEP. <strong>Indicadores Financeiros Educacionais</strong>. Brasília: [s.n.].
+</div>
+<div id="ref-inep2019" class="csl-entry" role="listitem">
+INSTITUTO NACIONAL DE ESTUDOS E PESQUISAS EDUCACIONAIS ANÍSIO TEIXEIRA - INEP. <strong>Microdados - INEP</strong>. INEP; INEP, 2019. Disponível em: &lt;<a href="http://portal.inep.gov.br/web/guest/microdados">http://portal.inep.gov.br/web/guest/microdados</a>&gt;
+</div>
+<div id="ref-lopes2017" class="csl-entry" role="listitem">
+LOPES, L. M.; VASCONCELLOS, M. A. S. DE (EDS.). <strong>Manual de Macroeconomia: Básico e Intermediário</strong>. 3. ed. São Paulo: Editora Atlas, 2017.
+</div>
+<div id="ref-mckinsey2017" class="csl-entry" role="listitem">
+MCKINSEY GLOBAL INSTITUTE — MGI. <strong>Jobs Lost, Jobs Gained: Workforce Transitions in a Time of Automation</strong>. [s.l: s.n.].
+</div>
+<div id="ref-messa2015" class="csl-entry" role="listitem">
+MESSA, A. <strong>Determinantes da produtividade na indústria brasileira</strong>. (F. De Negri, L. R. (org). Cavalcante, Eds.)Produtividade no Brasil: Desempenho e Determinantes. <strong>Anais</strong>...Brasília: ABDI/IPEA, 2015.
+</div>
+<div id="ref-fazenda2017" class="csl-entry" role="listitem">
+MINISTÉRIO DA FAZENDA. <strong>Reforma do Ambiente de Negócios e o Doing Business</strong>., 31 out. 2017.
+</div>
+<div id="ref-nascimento2017" class="csl-entry" role="listitem">
+NASCIMENTO, P. A. M. M.; VERHINE, R. E. Considerações sobre o investimento público em educação superior no Brasil. <strong>Radar: tecnologia, produção e comércio exterior</strong>, n. 49, p. 7–12, fev. 2017.
+</div>
+<div id="ref-ocde2018" class="csl-entry" role="listitem">
+ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO — OCDE. <strong>OECD Data</strong>. Paris (França)OCDE; OCDE, 2018. Disponível em: &lt;<a href="https://data.oecd.org/">https://data.oecd.org/</a>&gt;
+</div>
+<div id="ref-pessoa2006" class="csl-entry" role="listitem">
+PESSÔA, S. DE A. Perspectivas de Crescimento no Longo Prazo para o Brasil: Questões em Aberto. <strong>Ensaios Econômicos da EPGE</strong>, n. 609, p. 1–21, jan. 2006.
+</div>
+<div id="ref-pindyck2013" class="csl-entry" role="listitem">
+PINDYCK, R. S.; RUBINFELD, D. L. <strong>Microeconomia</strong>. 8. ed. São Paulo: Editora Pearson Universidades, 2013.
+</div>
+<div id="ref-rossi1999" class="csl-entry" role="listitem">
+ROSSI JR., J. L.; FERREIRA, P. C. Evolução da produtividade industrial brasileira e abertura comercial. <strong>Textos para Discussão do IPEA</strong>, n. 651, p. 1–33, jun. 1999.
+</div>
+<div id="ref-sae" class="csl-entry" role="listitem">
+SECRETARIA ESPECIAL DE ASSUNTOS ESTRATÉGICOS – SAE. <strong>Abertura Comercial para o Desenvolvimento</strong>. [s.l: s.n.]. Disponível em: &lt;<a href="http://bit.ly/2TSlcsM">http://bit.ly/2TSlcsM</a>&gt;. Acesso em: 1 jun. 2018.
+</div>
+<div id="ref-tafner2018" class="csl-entry" role="listitem">
+TAFNER, P. <strong>Educação Básica no Brasil: Evolução Recente, Fragilidades, Impasses e Desafios</strong>. (J. A. (org). De Negri, B. C. (org). Araújo, R. (org). Bacelette, Eds.)Desafios da Nação: artigos de apoio. <strong>Anais</strong>...Brasília: IPEA; IPEA, 2018.
+</div>
+<div id="ref-veloso2018" class="csl-entry" role="listitem">
+VELOSO, F. <a href="https://blogdoibre.fgv.br/posts/por-onde-comecar-reformas">Por Onde Começar as Reformas?</a> <strong>Blog do IBRE</strong>, 8 out. 2018.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © dkko.me
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../legal.html">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Website Powered by Quarto
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

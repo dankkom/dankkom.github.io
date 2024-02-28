@@ -1,0 +1,35 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/20230709-naming-things-in-excel/index.html",
+      "/posts/20230519-filtro-hp-python-statsmodels/index.html",
+      "/posts/20230503-backup-postgresql/index.html",
+      "/posts/20230429-pwsh-variaveis-ambiente/index.html",
+      "/posts/20230426-pbi-medidas-variacao/index.html",
+      "/posts/20230330-exportacao-brasil-paises/index.html",
+      "/posts/20230301-snis-2021-tarifas-municipais/index.html",
+      "/posts/20220724-analise-balanca-comercial-petroleo-derivados/index.html",
+      "/posts/20220401-codigos-strftime-strptime/index.html",
+      "/posts/20220218-underfitting-e-overfitting/index.html",
+      "/posts/20220216-sqlite-remover-linhas-duplicadas/index.html",
+      "/posts/20220215-treino-teste-validacao/index.html",
+      "/posts/20220209-distancia-geografica-python/index.html",
+      "/posts/20220202-aprendizado-supervisionado-vs-nao-supervisionado/index.html",
+      "/posts/20220202-docker/index.html",
+      "/posts/20220130-trade-off-vies-variancia/index.html",
+      "/posts/20220122-configurar-linux/index.html",
+      "/posts/20220122-instalar-geopandas-windows/index.html",
+      "/posts/20220120-converter-midi-para-wav-timidity/index.html",
+      "/posts/20220108-copiar-chaves-ssh-wsl/index.html",
+      "/posts/20220103-restaurar-arquivos-configuracao-pacotes-linux-debian-apt/index.html",
+      "/posts/20211223-cron-jobs-linux-automatizar-scripts/index.html",
+      "/posts/20211128-python-pandas-read-csv/index.html",
+      "/posts/20210420-extrando-dados-de-arquivos-excel/index.html",
+      "/posts/20201008-livros-gratuitos-sobre-r-online/index.html",
+      "/posts/20200929-python-geopandas-mapas-coropleticos/index.html",
+      "/posts/20190701-produtividade-brasil/index.html",
+      "/posts/20181130-balanca-comercial-brasil-petroleo/index.html"
+    ]
+  }
+]

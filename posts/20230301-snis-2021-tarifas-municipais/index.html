@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Komesu">
+
+<title>dkko.me - Visualizando a Evolução das Tarifas Municipais do Saneamento Básico no Brasil</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RLSNHYP5C3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RLSNHYP5C3', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">dkko.me</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Visualizando a Evolução das Tarifas Municipais do Saneamento Básico no Brasil</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Saneamento Básico</div>
+                <div class="quarto-category">Visualização de Dados</div>
+                <div class="quarto-category">Economia</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Daniel Komesu <a href="https://orcid.org/0000-0002-8086-3636" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">1 de março de 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#dados" id="toc-dados" class="nav-link active" data-scroll-target="#dados">Dados</a></li>
+  <li><a href="#tratamento" id="toc-tratamento" class="nav-link" data-scroll-target="#tratamento">Tratamento</a>
+  <ul class="collapse">
+  <li><a href="#tarifa-média-por-região" id="toc-tarifa-média-por-região" class="nav-link" data-scroll-target="#tarifa-média-por-região">Tarifa média por região</a></li>
+  <li><a href="#remoção-de-outliers-pelo-método-do-intervalo-interquartil" id="toc-remoção-de-outliers-pelo-método-do-intervalo-interquartil" class="nav-link" data-scroll-target="#remoção-de-outliers-pelo-método-do-intervalo-interquartil">Remoção de <em>outliers</em> pelo método do intervalo interquartil</a></li>
+  <li><a href="#filtro-hodrick-prescott" id="toc-filtro-hodrick-prescott" class="nav-link" data-scroll-target="#filtro-hodrick-prescott">Filtro Hodrick-Prescott</a></li>
+  </ul></li>
+  <li><a href="#análise-das-tarifas-médias-de-água-e-esgoto" id="toc-análise-das-tarifas-médias-de-água-e-esgoto" class="nav-link" data-scroll-target="#análise-das-tarifas-médias-de-água-e-esgoto">Análise das Tarifas Médias de Água e Esgoto</a>
+  <ul class="collapse">
+  <li><a href="#boxplot-das-tarifas-médias-municipais-por-grande-região-do-brasil-2021" id="toc-boxplot-das-tarifas-médias-municipais-por-grande-região-do-brasil-2021" class="nav-link" data-scroll-target="#boxplot-das-tarifas-médias-municipais-por-grande-região-do-brasil-2021">Boxplot das Tarifas Médias Municipais por Grande Região do Brasil (2021)</a></li>
+  <li><a href="#mapa-da-tarifa-média-municipal-2021" id="toc-mapa-da-tarifa-média-municipal-2021" class="nav-link" data-scroll-target="#mapa-da-tarifa-média-municipal-2021">Mapa da Tarifa Média Municipal (2021)</a></li>
+  <li><a href="#tendências-das-tarifas-médias-municipais-2002-2021" id="toc-tendências-das-tarifas-médias-municipais-2002-2021" class="nav-link" data-scroll-target="#tendências-das-tarifas-médias-municipais-2002-2021">Tendências das Tarifas Médias Municipais (2002-2021)</a></li>
+  </ul></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão">Conclusão</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://images2.imgbox.com/ab/bd/xArPPcUW_o.gif" class="img-fluid figure-img"></p>
+<figcaption>Tarifas médias municipais de sanemento básico entre 1995 e 2021</figcaption>
+</figure>
+</div>
+<p>Nos últimos anos, o saneamento básico tem sido um dos principais temas discutidos no Brasil. Com o objetivo de promover o acesso universal aos serviços de abastecimento de água e esgotamento sanitário, o governo brasileiro vem implementando políticas públicas para garantir o acesso à água tratada e ao tratamento de esgoto em todo o país. No entanto, apesar dos esforços, ainda existem muitos desafios a serem enfrentados nessa área.</p>
+<!--more-->
+<p>Uma das questões mais importantes em relação ao saneamento básico é o acesso à informação sobre as tarifas cobradas pelos serviços. Afinal, para entender melhor os desafios que ainda precisam ser superados e promover uma gestão mais eficiente do setor, é fundamental conhecer os valores praticados pelas concessionárias de serviços públicos.</p>
+<p>Nesse contexto, a visualização de dados pode ser uma ferramenta valiosa. Por meio de gráficos, tabelas e mapas, é possível entender melhor a evolução das tarifas ao longo do tempo, bem como comparar os valores praticados em diferentes regiões do país. Neste artigo, vamos explorar uma visualização de dados que apresenta as tarifas médias municipais de saneamento básico no Brasil entre 1995 e 2021.</p>
+<section id="dados" class="level2">
+<h2 class="anchored" data-anchor-id="dados">Dados</h2>
+<p>Para este texto foram utilizados os seguintes conjuntos de dados:</p>
+<ul>
+<li><strong>SNIS Série Histórica - Água e Esgoto - Desagregado</strong>: O Sistema Nacional de Informações sobre Saneamento (SNIS) é um importante instrumento de gestão para o setor de saneamento básico no Brasil. Ele é responsável por coletar, armazenar e disseminar informações sobre o acesso à água potável, esgotamento sanitário e limpeza urbana em todo o país. Os dados do SNIS, semi-processados, são disponibilizados no repositório <a href="https://github.com/viridisdata/snis-rawdata">viridisdata/snis-rawdata</a>, no Github, facilitando o download. A página de <em>releases</em> do repositório disponibiliza links para downloads de arquivos ZIP contendo os dados no formato <em>Comma Separated Values</em> (CSV). Neste texto será utilizado o release 2022.12.b, que contém dados de 1995 a 2021.</li>
+<li><strong>Shapefiles dos Municípios</strong>: Para a criação de mapas coropléticos é necessário a malha da divisão administrativa dos municípios brasileiros. Felizmente o Instituto Brasileiro de Geografia e Estatística (IBGE) fornece os arquivos <em>shapefile</em> das divisões do território nacional na sua <a href="https://www.ibge.gov.br/geociencias/downloads-geociencias.html">página de downloads</a>. Para este texto utilizou-se a divisão territorial de 2021.</li>
+<li><strong>Índice de Preços ao Consumidor Amplo (IPCA) do IBGE</strong>: Como serão analisados dados de preços que se estendem por um longo período de tempo (26 anos), faz-se necessário o ajuste pela inflação. O IBGE calcula o IPCA, que é o índice de inflação oficial do país. Para obter esses dados, o Sistema IBGE de Recuperação Automática (SIDRA) fornece uma API para facilitar a coleta. Os dados do IPCA estão disponíveis na <a href="https://sidra.ibge.gov.br/tabela/1737">tabela 1737 do SIDRA</a>. Para a coleta desses dados, utilizou-se o pacote <code>sidrapy</code>.</li>
+<li><strong>Tabela de Municípios - Diretórios Brasileiros - Base dos Dados</strong>: Para facilitar o trabalho com dados geográficos utilizou-se essa tabela para o join entre os shapefiles do IBGE e os dados do SNIS. Fonte: <a href="https://basedosdados.org/dataset/br-bd-diretorios-brasil?bdm_table=municipio">Base dos Dados</a></li>
+</ul>
+</section>
+<section id="tratamento" class="level2">
+<h2 class="anchored" data-anchor-id="tratamento">Tratamento</h2>
+<section id="tarifa-média-por-região" class="level3">
+<h3 class="anchored" data-anchor-id="tarifa-média-por-região">Tarifa média por região</h3>
+<p>Ao longo dos tempo a fórmula de cálculo de vários indicadores do SNIS mudou. Segundo a documentação no site do SNIS, a tarifa média é calculada pelas fórmulas a seguir.</p>
+<p>Para o ano de 1995:</p>
+<p><span class="math display">\[tm = \frac{FN001}{(AG011 + ES007) \times 1000}\]</span></p>
+<p>Para os anos de 1996-1997:</p>
+<p><span class="math display">\[tm = \frac{FN002 + FN003}{(AG011 + ES007) \times 1000}\]</span></p>
+<p>Para os anos de 1998-2006:</p>
+<p><span class="math display">\[tm = \frac{FN002 + FN003 + FN007}{(AG011 + ES007) \times 1000}\]</span></p>
+<p>Para os anos de 2007-2021:</p>
+<p><span class="math display">\[tm = \frac{FN002 + FN003 + FN007 + FN038}{(AG011 + ES007) \times 1000}\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(tm\)</span> é a tarifa média em R$/m³;</li>
+<li><span class="math inline">\(FN001\)</span> é a Receita operacional direta total em R$/ano;</li>
+<li><span class="math inline">\(FN002\)</span> é a Receita operacional direta de água em R$/ano;</li>
+<li><span class="math inline">\(FN003\)</span> é a Receita operacional direta de esgoto em R$/ano;</li>
+<li><span class="math inline">\(FN007\)</span> é a Receita operacional direta de água exportada (bruta ou tratada) em R$/ano;</li>
+<li><span class="math inline">\(FN038\)</span> é a Receita operacional direta - esgoto bruto importado em R$/ano;</li>
+<li><span class="math inline">\(AG011\)</span> é o Volume de água faturado em 1.000 m³/ano;</li>
+<li><span class="math inline">\(ES007\)</span> é o Volume de esgotos faturado em 1.000 m³/ano.</li>
+</ul>
+</section>
+<section id="remoção-de-outliers-pelo-método-do-intervalo-interquartil" class="level3">
+<h3 class="anchored" data-anchor-id="remoção-de-outliers-pelo-método-do-intervalo-interquartil">Remoção de <em>outliers</em> pelo método do intervalo interquartil</h3>
+<p>As tarifas médias por municípios apresentam alta dispersão, por isso, para apresentar os dados num mapa, por exemplo, foram removidos valores outliers.</p>
+<p>O método do intervalo interquartil é um método comumente usado para identificar e remover outliers em um conjunto de dados. Ele é baseado na diferença entre o primeiro e o terceiro quartis de um conjunto de dados. O primeiro quartil é o valor que divide os dados em duas partes iguais, onde 25% dos dados são menores que esse valor, enquanto o terceiro quartil é o valor que divide os dados em duas partes iguais, onde 75% dos dados são menores que esse valor.</p>
+<p>Para aplicar o método do intervalo interquartil, primeiro precisamos calcular o primeiro e o terceiro quartis dos dados. Em seguida, calculamos a diferença entre esses dois valores, que é chamada de “amplitude interquartil” ou IQR.</p>
+<p>O Intervalo Interquartil é definido como:</p>
+<p><span class="math display">\[IQR = Q_3 - Q_1\]</span></p>
+<p>Onde <span class="math inline">\(Q_1\)</span> e <span class="math inline">\(Q_3\)</span> são o primeiro e o terceiro quartis da distribuição. Depois, calculamos o limite inferior (<span class="math inline">\(L_{inf}\)</span>) e o limite superior (<span class="math inline">\(L_{sup}\)</span>), que são dados por:</p>
+<p><span class="math display">\[L_{inf} = Q_1 - 1.5 \times IQR\]</span></p>
+<p><span class="math display">\[L_{sup} = Q_3 + 1.5 \times IQR\]</span></p>
+<p>Qualquer valor que esteja fora desse intervalo é considerado um outlier. Então, podemos remover esses valores do conjunto de dados e trabalhar apenas com os dados que estão dentro do intervalo. É importante observar que esses limites são apenas um guia e que, em alguns casos, eles podem não ser os mais apropriados para identificar outliers. É sempre importante analisar os dados e usar o bom senso na aplicação desse método.</p>
+</section>
+<section id="filtro-hodrick-prescott" class="level3">
+<h3 class="anchored" data-anchor-id="filtro-hodrick-prescott">Filtro Hodrick-Prescott</h3>
+<p>Além da alta variância intra-anual, os valores de tarifa média municipal também apresentam alta volatilidade, ou seja, alta variância ao longo do tempo. Para eliminar esse ruído optou-se por suavizar as séries com o Filtro Hodrick–Prescott.</p>
+<p>O <a href="https://en.wikipedia.org/wiki/Hodrick%E2%80%93Prescott_filter">filtro Hodrick-Prescott (HP)</a> é um método utilizado para suavizar séries temporais, como séries de dados econômicos. Ele é chamado de filtro porque remove a componente cíclica de uma série temporal, deixando apenas a componente tendencial. Isso é útil quando se deseja obter uma representação mais clara da tendência subjacente em uma série temporal, ao invés de ser distraído pelos movimentos cíclicos mais curtos.</p>
+<p>O filtro HP é implementado através de uma técnica de minimização de quadrados, onde se minimiza a soma dos quadrados dos resíduos entre a série original e a série suavizada. O parâmetro de suavização é um hiperparâmetro que controla o grau de suavização aplicado à série. Quanto maior o valor do parâmetro de suavização, mais suavizada a série ficará, mas também haverá um maior atraso na transmissão da tendência subjacente. Portanto, é importante escolher um valor adequado para o parâmetro de suavização de acordo com as necessidades específicas da análise.</p>
+<p>A equação do filtro HP é dada por:</p>
+<p><span class="math display">\[\min_{\tau}\left(\sum_{t=1}^T {(y_t - \tau_t)^2 } + \lambda \sum_{t=2}^{T-1} {[(\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1})]^2}\right)\]</span></p>
+<p>onde <span class="math inline">\(y_t\)</span> é o valor da série no período <span class="math inline">\(t\)</span>, <span class="math inline">\(\tau_t\)</span> é o valor da série suavizada no período <span class="math inline">\(t\)</span>, e <span class="math inline">\(\lambda\)</span> é o parâmetro de suavização.</p>
+<p>A primeira parte da equação, <span class="math inline">\(\sum_{t=1}^T\left(y_t - \tau_t\right)^2\)</span>, representa a soma dos quadrados dos resíduos entre a série original e a série suavizada. A segunda parte da equação, <span class="math inline">\(\sum_{t=2}^{T-1} {[(\tau_{t+1} - \tau_t) - (\tau_t - \tau_{t-1} )]^2 }\)</span>, é chamada de termo de suavização e penaliza as variações das taxas de crescimento da tendência <span class="math inline">\(\tau_t\)</span>. O parâmetro <span class="math inline">\(\lambda\)</span> controla o grau de suavização aplicado à série, sendo que quanto maior o valor de <span class="math inline">\(\lambda\)</span>, mais suavizada a série ficará.</p>
+<p>O objetivo da equação do filtro HP é minimizar a soma dos quadrados dos resíduos e, ao mesmo tempo, manter a suavização da série através do termo de suavização. Isso é alcançado através da otimização dos valores de <span class="math inline">\(a_t\)</span>, que são os valores da série suavizada.</p>
+<p>O filtro HP é amplamente utilizado em análises econômicas, mas também pode ser útil em outros contextos onde se deseja suavizar séries temporais para obter uma representação mais clara da tendência subjacente. Ele é uma ferramenta valiosa para a análise de séries temporais, pois permite identificar tendências e padrões subjacentes que podem ser obscurecidos por flutuações cíclicas.</p>
+<p>Neste texto foi utilizado o parâmetro <span class="math inline">\(\lambda=1\)</span>. <a href="https://amzn.to/3KJGxl5">O recomendado pela literatura</a> é que se utilize <span class="math inline">\(\lambda=1/7\)</span> para séries com frequência anual, porém, como as séries do SNIS apresentam muita volatilidade, optou-se por um valor maior.</p>
+</section>
+</section>
+<section id="análise-das-tarifas-médias-de-água-e-esgoto" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="análise-das-tarifas-médias-de-água-e-esgoto">Análise das Tarifas Médias de Água e Esgoto</h2>
+<p>Antes de plotar as séries temporais, é sempre bom dar uma olhada em como estão os dados fazendo uma análise exploratória.</p>
+<section id="boxplot-das-tarifas-médias-municipais-por-grande-região-do-brasil-2021" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="boxplot-das-tarifas-médias-municipais-por-grande-região-do-brasil-2021">Boxplot das Tarifas Médias Municipais por Grande Região do Brasil (2021)</h3>
+<p>O Gráfico 1 mostra os boxplots das distribuições de tarifa média municipais por Unidade Federativa em 2021 em ordem crescente do valor mediano. A mediana mais baixa é do estado do Amazonas, seguido de Mato Grosso, Acre, Amapá, Pará e Roraima. São Paulo, sem dúvidas o estado mais representativo, aparece em sétimo lugar nesse <em>ranking</em>.</p>
+<p>No outro extremo, o estado do Rio Grande do Sul apresenta a mediana mais alta de todas, além da maior amplitude. O estado é seguido por Santa Catarina, Goiás, Distrito Federal (este apenas com Brasília), Paraná, Alagoas e Rio de Janeiro.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/0d/46/eBCA8wq1_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 1 - Boxplot das tarifas médias municipais por Unidade Federativa, 2021<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="mapa-da-tarifa-média-municipal-2021" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="mapa-da-tarifa-média-municipal-2021">Mapa da Tarifa Média Municipal (2021)</h3>
+<p>O mapa no Gráfico 2 mostra as tarifas médias de água e esgoto nos municípios brasileiros em 2021. Alguns municípios, que apresentaram valores muito acima da média foram omitidos para não prejudicar a visualização.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/d9/36/0EchmLuX_o.png" class="img-fluid figure-img column-screen-inset"></p>
+<figcaption>Gráfico 2 - Mapa das Tarifas Médias Municipais, 2021<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>Observa-se que é possível distinguir a fronteira de alguns estados apenas pelo contraste das cores. Notadamente, essa distinção é melhor observada para os estados de São Paulo e Rio Grande do Sul.</p>
+<p>Por exemplo, São Paulo têm os municípios as tarífas médias municipais baixas em comparação aos estados vizinhos, o que faz com que o contraste destaque claramente a divisão territorial paulista.</p>
+<p>O estado do Rio Grande do Sul, por outro lado, por ter os municípios com tarifas médias mais altas do Brasil, é claramente distinguível no mapa.</p>
+<p>Essa diferença de tarifas médias entre municípios vizinhos, porém de estados diferentes, pode ser atribuída ao modo como os governos estaduais regulam o setor de saneamento básico, o que interfere diretamente nas tarifas.</p>
+</section>
+<section id="tendências-das-tarifas-médias-municipais-2002-2021" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="tendências-das-tarifas-médias-municipais-2002-2021">Tendências das Tarifas Médias Municipais (2002-2021)</h3>
+<p>A seguir são apresentados os gráficos para as séries temporais das tarifas médias municipais de água e esgoto, de 2002 a 2021. Optou-se não apresentar os dados antes de 2002 por esse período apresentar muita variação e outliers, prejudicando a visualização dos dados.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/3f/71/VVtySHUj_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 3 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Norte, deflacionado<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>A região Norte apresenta três grupos de séries temporias que divergiram ao longo dos anos.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/54/36/es5Xb2vy_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 4 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Nordeste, deflacionado<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>As tarifas médias dos municípios da região Nordeste são as que mais “andam juntas” de todas as regiões. Olhando somente para esses dados é possível dizer que os prestadores da região têm uma estrutura de saneamento básico bastante similar entre si.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/a7/24/9pddVjSP_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 5 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Centro-Oeste, deflacionado<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>O Centro-Oeste tem apenas um grupo de séries temporais que andam juntas.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/c9/76/e5lZg7Hu_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 6 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Sudeste, deflacionado<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>As tarifas municipais na região Sudeste apresentam dois grupos de séries temporais que “andam juntas”.</p>
+<div class="page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="https://images2.imgbox.com/72/21/VlJBLhut_o.png" class="img-fluid figure-img column-page"></p>
+<figcaption>Gráfico 7 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Sul, deflacionado<br>Fonte: Elaborado com dados do SNIS</figcaption>
+</figure>
+</div>
+</div>
+<p>As tarifas municipais da região Sul apresentam grande dispersão, com três grupos de séries temporais observáveis, coincidindo com o número de estados. Os municípios do Rio Grande do Sul apresentam as tarifas mais caras.</p>
+</section>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<p>Os dados do <strong>SNIS - Série Histórica</strong> são uma importante fonte de informação para o desenho de políticas públicas baseadas em evidências. Apesar da qualidade desses dados, o fato de existir e estar em acesso público é importante para que os gestores públicos e pesquisadores que querem avaliar a qualidade dos serviços de saneamento básico no país.</p>
+<p>O Brasil ainda enfrenta desafios significativos no que diz respeito ao saneamento básico universal. De acordo com os dados do SNIS, cerca de 93,86 milhões de pessoas no país ainda não têm acesso a serviços de esgoto tratado, o que representa cerca de 44,18% da população. Além disso, cerca de 33,2 milhões de pessoas, ou 15,8% da população, ainda não têm acesso a água potável. Essa falta de acesso a serviços de saneamento básico adequados tem impactos negativos na saúde das pessoas, na qualidade de vida e no meio ambiente. Portanto, é crucial que o Brasil avance na agenda do saneamento básico universal, para garantir que todos tenham acesso a serviços de água e esgoto de qualidade. Isso pode ser alcançado através de investimentos em infraestrutura, políticas públicas eficazes e parcerias com a iniciativa privada.</p>
+<p>A análise exploratória mostrou que os municípios do estado de São Paulo têm tarifas médias mais baixas do que seus vizinhos de outros estados. Por outro lado, os municípios do Rio Grande do Sul têm as tarifas médias mais altas do Brasil.</p>
+<p>Os contrastes observados no mapa, que coincidem com a divisão dos estados brasileiros, indicam que o modo como o governo de cada estado atua sobre o setor de saneamento básico tem grande importância na definição das tarifas.</p>
+<p>Os gráficos das tendências das tarifas municipais mostram que existem municípios que seguem um tendência em comum, possivelmente refletindo fatores ambientais ou regulatórios da região.</p>
+<hr>
+<p><a href="https://github.com/dankkom/snis-analysis-2021">Repositório git no GitHub com os notebooks dessa análise</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © dkko.me
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../legal.html">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Website Powered by Quarto
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Komesu">
+
+<title>dkko.me - A Importância da Nomeação de Células e Intervalos em Planilhas Excel: Melhores Práticas para uma Organização Eficiente</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RLSNHYP5C3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RLSNHYP5C3', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">dkko.me</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">A Importância da Nomeação de Células e Intervalos em Planilhas Excel: Melhores Práticas para uma Organização Eficiente</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Programação</div>
+                <div class="quarto-category">Naming Things</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Daniel Komesu <a href="https://orcid.org/0000-0002-8086-3636" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">9 de julho de 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i.imgflip.com/7pwmxy.jpg" class="img-fluid figure-img"></p>
+<figcaption>There are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton</figcaption>
+</figure>
+</div>
+<p>Como disse o renomado cientista da computação Phil Karlton, “Existem apenas duas coisas difíceis na Ciência da Computação: invalidação de cache e nomear coisas”. Embora a frase seja irônica, ela destaca uma realidade comum enfrentada por desenvolvedores e usuários de planilhas Excel: a importância da nomeação adequada de células e intervalos.</p>
+<p>Em meio a todos os desafios enfrentados na programação e organização de dados, a escolha de nomes significativos para variáveis e objetos desempenha um papel crucial na legibilidade, compreensão e manutenção eficiente dos dados.</p>
+<p>Neste texto, discutiremos a importância da nomeação de células e intervalos em planilhas Excel, destacando as melhores práticas a serem seguidas para uma organização eficiente.</p>
+<!--more-->
+<section id="por-que-nomear-células-e-intervalos-no-excel" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-nomear-células-e-intervalos-no-excel">1. Por que nomear células e intervalos no Excel?</h2>
+<section id="legibilidade-e-compreensão" class="level3">
+<h3 class="anchored" data-anchor-id="legibilidade-e-compreensão">1.1 Legibilidade e Compreensão</h3>
+<p>A nomeação adequada de células e intervalos em uma planilha Excel torna o documento mais legível e compreensível. Ao atribuir nomes descritivos e significativos às células e intervalos, você pode identificar rapidamente o propósito e o conteúdo de cada elemento. Nomes claros ajudam tanto o criador da planilha quanto outros usuários a entenderem melhor a estrutura e a finalidade de cada dado.</p>
+<p>Por exemplo, em vez de se referir a uma célula como “B34”, é mais útil atribuir um nome como “ReceitaMensal”. Isso não apenas facilita a identificação do conteúdo da célula, mas também torna mais claro para outros usuários como essa célula é relevante para os cálculos e análises realizados na planilha.</p>
+</section>
+<section id="facilitando-a-manutenção-e-a-depuração" class="level3">
+<h3 class="anchored" data-anchor-id="facilitando-a-manutenção-e-a-depuração">1.2 Facilitando a Manutenção e a Depuração</h3>
+<p>Ao nomear células e intervalos de forma adequada, você facilita a manutenção e a depuração da planilha ao longo do tempo. Quando você retorna a uma planilha após um período de ausência, nomes descritivos ajudam a entender rapidamente a função e o significado de cada elemento. Essa clareza economiza tempo e esforço ao procurar por erros ou ao realizar alterações nas fórmulas e nos cálculos.</p>
+<p>Imagine tentar entender uma planilha complexa com centenas de células sem nomes significativos. Seria um desafio encontrar os pontos relevantes e entender a lógica subjacente. No entanto, com nomes descritivos, você pode navegar pela planilha com muito mais facilidade e ter uma visão mais clara do fluxo dos dados.</p>
+</section>
+<section id="comunicação-eficiente" class="level3">
+<h3 class="anchored" data-anchor-id="comunicação-eficiente">1.3 Comunicação Eficiente</h3>
+<p>A nomeação adequada de células e intervalos também facilita a comunicação eficiente com outros membros da equipe ou usuários da planilha. Nomes descritivos permitem que todos entendam rapidamente o propósito e o conteúdo de diferentes partes do documento. Isso promove uma colaboração mais eficaz, pois os envolvidos podem se referir a células e intervalos por meio de nomes comuns, evitando confusões ou mal-entendidos.</p>
+<p>Ao compartilhar uma planilha com colegas de trabalho ou clientes, nomes descritivos tornam mais fácil para eles acompanhar e entender as informações. Isso reduz a necessidade de explicações adicionais e facilita a análise e a tomada de decisões com base nos dados apresentados.</p>
+</section>
+<section id="reutilização-e-documentação-embutida" class="level3">
+<h3 class="anchored" data-anchor-id="reutilização-e-documentação-embutida">1.4 Reutilização e Documentação Embutida</h3>
+<p>Nomes adequados também permitem a reutilização de fórmulas e cálculos em diferentes partes da planilha. Ao atribuir nomes a intervalos de células que contêm dados específicos, você pode referenciar esses intervalos em fórmulas sem precisar digitar novamente os endereços das células.</p>
+<p>Além disso, a nomeação de células e intervalos serve como uma forma de documentação embutida. Ao ler a planilha, nomes descritivos fornecem informações sobre o propósito e a função das entidades nomeadas. Isso ajuda a entender o fluxo de dados e a lógica subjacente sem a necessidade de comentários adicionais. A documentação embutida facilita a manutenção e a atualização da planilha no futuro, tanto para o criador original quanto para outros usuários.</p>
+</section>
+</section>
+<section id="impacto-da-ausência-de-variáveis-nomeadas-um-exemplo-prático" class="level2">
+<h2 class="anchored" data-anchor-id="impacto-da-ausência-de-variáveis-nomeadas-um-exemplo-prático">2. Impacto da Ausência de Variáveis Nomeadas: Um Exemplo Prático</h2>
+<p><img src="https://images2.imgbox.com/11/55/XDNYfP7e_o.jpg" class="img-fluid"></p>
+<p>Para ilustrar a importância da nomeação de células e intervalos em planilhas Excel, vamos considerar um exemplo prático em que não existem variáveis nomeadas. Imagine uma planilha financeira complexa com várias fórmulas e cálculos interdependentes.</p>
+<p>Sem nomes descritivos para as células e intervalos relevantes, trabalhar nessa planilha seria uma tarefa árdua e propensa a erros. Aqui estão alguns desafios que surgiriam:</p>
+<ul>
+<li><strong>Dificuldade na identificação das dependências:</strong> Sem nomes adequados, é difícil identificar rapidamente quais células e intervalos estão sendo referenciados em cada fórmula. Você teria que rastrear manualmente as fórmulas para identificar as células relevantes, tornando a depuração um processo demorado e propenso a erros. Por exemplo, uma fórmula poderia ser “=B3*C5+D8/E2”. Sem nomes descritivos, você teria que lembrar o conteúdo de cada célula referenciada e realizar a correspondência manualmente.</li>
+<li><strong>Falta de clareza na compreensão dos cálculos:</strong> Sem nomes descritivos, é difícil compreender a lógica e o propósito de um determinado cálculo. Por exemplo, você pode ter uma fórmula que realiza um cálculo complexo de impostos ou uma análise estatística. Sem nomes descritivos, outras pessoas que acessam a planilha podem encontrar dificuldades em entender como os resultados foram obtidos.</li>
+<li><strong>Dificuldade na depuração de fórmulas extensas e aninhadas:</strong> A falta de nomes adequados em células e intervalos em uma planilha Excel pode resultar em uma tarefa desafiadora de depurar uma série de fórmulas complexas que dependem umas das outras (<a href="https://en.wikipedia.org/wiki/Dependency_hell">dependency hell</a>). Vamos considerar um exemplo em que várias fórmulas são aninhadas, criando uma cadeia de dependências. Suponha que você esteja trabalhando em uma planilha financeira que envolve cálculos de receita, despesas e lucro líquido. A fórmula para o lucro líquido depende da receita total subtraída das despesas totais. Além disso, a receita total é calculada com base em outros valores, como vendas e taxas de impostos aplicadas. Cada um desses valores é obtido por meio de fórmulas diferentes que, por sua vez, dependem de outras células e intervalos. Sem nomes descritivos, depurar essa cadeia de fórmulas aninhadas se torna uma tarefa árdua.</li>
+</ul>
+<p>Esses desafios destacam a importância da nomeação de células e intervalos em planilhas Excel. Ao utilizar nomes descritivos, você elimina a necessidade de lembrar e rastrear constantemente endereços de células específicas. Isso facilita a compreensão, a manutenção e a colaboração com outras pessoas na planilha.</p>
+<p>Com nomes significativos, a fórmula “=ReceitaMensal*CustoUnitario” é muito mais intuitiva e legível do que “=B3*C5”. Além disso, qualquer alteração na planilha pode ser feita atualizando apenas os nomes das células ou intervalos relevantes, evitando a necessidade de modificar manualmente todas as fórmulas relacionadas.</p>
+<p>A falta de nomes adequados dificulta a depuração eficiente de fórmulas aninhadas. No entanto, ao nomear células e intervalos com nomes descritivos e significativos, você simplifica o processo de depuração. Com nomes apropriados, é possível identificar rapidamente as dependências, entender a lógica das fórmulas aninhadas e encontrar possíveis erros com mais facilidade.</p>
+<p>Portanto, a nomeação de células e intervalos em planilhas Excel é essencial para garantir uma organização eficiente, clareza na compreensão dos dados, facilidade na manutenção e redução de erros. Ao enfrentar uma série de fórmulas complexas e aninhadas em uma planilha Excel, é essencial adotar a prática de nomeação adequada de células e intervalos. Isso torna a tarefa de depurar e manter as fórmulas muito mais eficiente e menos propensa a erros. É uma prática recomendada que melhora significativamente a produtividade e a qualidade do trabalho realizado na planilha.</p>
+</section>
+<section id="melhores-práticas-para-a-nomeação-de-células-e-intervalos" class="level2">
+<h2 class="anchored" data-anchor-id="melhores-práticas-para-a-nomeação-de-células-e-intervalos">3. Melhores Práticas para a Nomeação de Células e Intervalos</h2>
+<p>Aqui estão algumas melhores práticas a serem seguidas ao nomear células e intervalos em planilhas Excel:</p>
+<ol type="1">
+<li><strong>Seja descritivo e significativo:</strong> Escolha nomes que descrevam claramente o conteúdo ou o propósito de cada célula ou intervalo.</li>
+<li><strong>Seja conciso:</strong> Mantenha os nomes curtos e diretos ao ponto, evitando torná-los muito longos.</li>
+<li><strong>Use nomes consistentes:</strong> Mantenha uma convenção de nomenclatura consistente em toda a planilha, para facilitar a identificação e a localização de células e intervalos relacionados.</li>
+<li><strong>Evite espaços e caracteres especiais:</strong> Use letras, números e underscores para separar palavras nos nomes, evitando espaços e caracteres especiais.</li>
+<li><strong>Evite confusões com funções ou fórmulas:</strong> Evite usar nomes que possam entrar em conflito com funções ou fórmulas do Excel para evitar confusões.</li>
+<li><strong>Utilize nomes de tabela:</strong> Se estiver trabalhando com tabelas, atribua nomes significativos às tabelas para facilitar a referência aos dados.</li>
+</ol>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">4. Conclusão</h2>
+<p>A nomeação adequada de células e intervalos em planilhas Excel desempenha um papel fundamental na organização eficiente dos dados, na legibilidade, na compreensão, na manutenção, na colaboração e na reutilização de fórmulas. Ao seguir as melhores práticas de nomeação, você torna sua planilha mais fácil de entender, navegar e compartilhar com outros usuários. Lembre-se de que a nomeação adequada é uma forma de documentação embutida que facilita o uso e a manutenção da planilha ao longo do tempo. Invista tempo e cuidado na escolha de nomes significativos e consistentes, e aproveite os benefícios de uma planilha bem organizada e compreensível.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © dkko.me
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../legal.html">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Website Powered by Quarto
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

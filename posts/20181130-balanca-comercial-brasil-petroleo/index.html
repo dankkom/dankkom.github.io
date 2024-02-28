@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Komesu">
+
+<title>dkko.me - Balança comercial do Brasil de 2008 a 2017: Uma análise com ênfase nos combustíveis derivados de petróleo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RLSNHYP5C3"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-RLSNHYP5C3', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">dkko.me</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Balança comercial do Brasil de 2008 a 2017: Uma análise com ênfase nos combustíveis derivados de petróleo</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Balança Comercial</div>
+                <div class="quarto-category">Economia</div>
+                <div class="quarto-category">Petróleo</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Daniel Komesu <a href="https://orcid.org/0000-0002-8086-3636" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Data de Publicação</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">30 de novembro de 2018</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#panorama-geral-do-comércio-exterior-brasileiro" id="toc-panorama-geral-do-comércio-exterior-brasileiro" class="nav-link active" data-scroll-target="#panorama-geral-do-comércio-exterior-brasileiro">Panorama geral do Comércio Exterior brasileiro</a>
+  <ul class="collapse">
+  <li><a href="#saldo-da-balança-comercial" id="toc-saldo-da-balança-comercial" class="nav-link" data-scroll-target="#saldo-da-balança-comercial">Saldo da Balança Comercial</a></li>
+  <li><a href="#principais-países" id="toc-principais-países" class="nav-link" data-scroll-target="#principais-países">Principais países</a></li>
+  <li><a href="#abertura-comercial" id="toc-abertura-comercial" class="nav-link" data-scroll-target="#abertura-comercial">Abertura Comercial</a></li>
+  </ul></li>
+  <li><a href="#balança-comercial-de-petróleo-e-derivados" id="toc-balança-comercial-de-petróleo-e-derivados" class="nav-link" data-scroll-target="#balança-comercial-de-petróleo-e-derivados">Balança Comercial de Petróleo e Derivados</a>
+  <ul class="collapse">
+  <li><a href="#preço-do-petróleo-e-derivados" id="toc-preço-do-petróleo-e-derivados" class="nav-link" data-scroll-target="#preço-do-petróleo-e-derivados">Preço do petróleo e derivados</a></li>
+  <li><a href="#produção-e-processamento-de-petróleo" id="toc-produção-e-processamento-de-petróleo" class="nav-link" data-scroll-target="#produção-e-processamento-de-petróleo">Produção e processamento de petróleo</a></li>
+  </ul></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão">Conclusão</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<div class="column-screen">
+<p><img src="https://images2.imgbox.com/8e/03/ty8mgZnx_o.jpg" class="img-fluid"></p>
+</div>
+<p>Este trabalho analisa a evolução das exportações e importações brasileiras entre os anos de 2008 e 2017, com foco nos combustíveis derivados de petróleo (diesel, gasolina, querosene etc.), motivado pela recente paralisação dos caminhoneiros em decorrência da alta dos preços desses produtos.</p>
+<!--more-->
+<p>Utilizando dados do <span class="citation" data-cites="mdic2">MINISTÉRIO DA INDÚSTRIA, COMÉRCIO EXTERIOR E SERVIÇOS – MDIC (<a href="#ref-mdic2" role="doc-biblioref">2018a</a>)</span> das exportações e importações brasileiras, analisa-se a evolução do saldo da balança comercial do Brasil. Com dados da <span class="citation" data-cites="anp">AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS – ANP (<a href="#ref-anp" role="doc-biblioref">2018</a>)</span>, observa-se superávit na balança comercial de petróleo bruto déficit no de derivados. Houve queda de processamento de petróleo nas refinarias brasileiras, a despeito do crescimento da produção de petróleo nacional. O mercado interno de combustíveis é dependente de importações de óleo do exterior, visto que o petróleo brasileiro não tem as características adequadas para a produção de gasolina.</p>
+<p>Este trabalho está dividido em quatro seções, sendo esta introdução a primeira. A segunda seção apresenta um panorama geral da balança comercial brasileira desde 1997, com uma breve análise dos períodos de superávit e déficit, os principais países com que o Brasil faz comércio e o grau de abertura comercial brasileiro. A terceira seção analisa o mercado doméstico de combustíveis derivados do petróleo. A quarta e última seção compreende as conclusões do estudo, com sugestões para futuras pesquisas sobre a balança comercial brasileira e a dependência do país no petróleo importado.</p>
+<section id="panorama-geral-do-comércio-exterior-brasileiro" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="panorama-geral-do-comércio-exterior-brasileiro">Panorama geral do Comércio Exterior brasileiro</h2>
+<section id="saldo-da-balança-comercial" class="level3">
+<h3 class="anchored" data-anchor-id="saldo-da-balança-comercial">Saldo da Balança Comercial</h3>
+<p>O Brasil, desde a abertura comercial no começo da década de 1990, avançou bastante quanto à abertura ao comércio com outros países. O Gráfico 1 mostra a evolução anual das exportações e importações brasileiras em valores free-on-board (FOB) em dólares e o saldo.</p>
+<p><img src="https://images2.imgbox.com/8b/d4/hxakqeRu_o.png" class="img-fluid"></p>
+<p>A partir do ano 2001 observou-se um grande crescimento do volume de importações e exportações brasileiras, acumulando contínuos superávits até 2013. Nesse período de 13 anos, o superávit acumulado foi de 326,6 bilhões de reais. Em 2009, devido à crise financeira nos Estados Unidos, o comércio exterior teve uma queda acentuada, mas se recuperou rapidamente no ano seguinte. Do final de 2002 a meados de 2011 viu-se uma grande valorização da taxa de câmbio brasileira, com uma breve interrupção apenas durante a crise financeira.</p>
+<p>De julho de 2011 a outubro de 2018 o real desvalorizou em relação ao dólar cerca de 58%, reduzindo o poder de compra dos brasileiros em relação à oferta externa. Como muitos produtos produzidos no Brasil contém elementos vindos de outros países, a forte alta do dólar teve impacto na inflação e no custo das empresas.</p>
+</section>
+<section id="principais-países" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="principais-países">Principais países</h3>
+<p>A Tabela 1 apresenta os dados da balança comercial brasileira em relação aos dez países com maior corrente de comércio em 2017. A China é, atualmente, o maior parceiro de comércio exterior do Brasil, seguido dos Estados Unidos, Argentina, Alemanha, Países Baixos, Japão, Chile, Coréia do Sul e Índia.</p>
+<p><img src="https://images2.imgbox.com/d0/9e/TnY0diRy_o.png" class="img-fluid"></p>
+<p>Chama atenção o impressionante aumento das exportações brasileiras para a China (187,5%) e para a Índia (322,7%), revertendo um cenário de déficit em 2008 para superávit em 2017. O comércio com os Países Baixos apresenta superávit constante e significativo ao longo do tempo, apesar de ter havido queda das exportações e aumento das importações nesse período. A balança comercial com a Alemanha, por outro lado, traz déficits consistentemente para o Brasil.</p>
+<div class="page-columns page-full"><p>O Chile, que assinou acordo de livre comércio com o Brasil em novembro de 2018, dobrou o saldo positivo na balança comercial brasileiro, de 0,8 bilhões de dólares, para 1,6 bilhões de dólares entre 2008 e 2017.</p><div class="no-row-height column-margin column-container"><span class="margin-aside">O acordo de livre comércio (ALC) assinado pelos países, segundo o <span class="citation" data-cites="mdic1">MINISTÉRIO DA INDÚSTRIA, COMÉRCIO EXTERIOR E SERVIÇOS – MDIC (<a href="#ref-mdic1" role="doc-biblioref">2018b</a>)</span>, “expande, atualiza e moderniza acordo comercial prévio, de 1996, responsável por eliminar tarifas de importação no intercâmbio bilateral de bens”.</span></div></div>
+</section>
+<section id="abertura-comercial" class="level3">
+<h3 class="anchored" data-anchor-id="abertura-comercial">Abertura Comercial</h3>
+<p>Apesar do avanço na abertura comercial, o Brasil ainda é um país muito fechado. O grau de abertura de um país é calculado pela razão entre a soma das exportações e importações pelo seu Produto Interno Bruto  —  PIB <span class="citation" data-cites="silva2019">(<a href="#ref-silva2019" role="doc-biblioref">DA SILVA, 2019</a>)</span>, ou seja:</p>
+<p><span class="math display">\[GA=\frac{X+M}{PIB}\]</span></p>
+<p>Onde: <span class="math inline">\(X\)</span> e <span class="math inline">\(M\)</span> representam os valores de exportações e importações, respectivamente, e <span class="math inline">\(GA\)</span> é o grau de abertura comercial do país.</p>
+<p>O Gráfico 2 mostra um ranking de grau de abertura comercial de 45 países calculado a partir de dados do <span class="citation" data-cites="worldbank">BANCO MUNDIAL (<a href="#ref-worldbank" role="doc-biblioref">2018</a>)</span>.</p>
+<p><img src="https://images2.imgbox.com/62/73/IXnnJT1C_o.png" class="img-fluid"></p>
+<p>Para a construção desse ranking foram escolhidos os países que atendiam a três critérios:</p>
+<ul>
+<li>Área territorial maior do que 100 mil quilômetros quadrados;</li>
+<li>Média dos últimos 10 anos da população maior do que 10 milhões de pessoas; e</li>
+<li>Média dos últimos 10 anos do PIB em dólares, a valores constantes de 2010, maior do que US$ 50 bilhões.</li>
+</ul>
+<p>Para o cálculo foram usados os dados de exportação, importação e PIB nas moedas locais dos países. Por fim, o grau de abertura no Gráfico 2 é uma média dos valores obtidos para os anos de 2008 a 2017. O grau de abertura do Brasil no ano de 2017 foi de aproximadamente 25% do PIB, posicionando o país entre os mais fechados do mundo.</p>
+<p>O baixo grau de abertura comercial do Brasil é explicado pelos altos impostos de importação e pelas barreiras não-tarifárias que dificultam e encarecem a entrada de produtos demandados por empresas e pessoas do país. Muitos economistas defendem que o país precisa avançar na integração comercial com o resto do mundo, pois além de baixar os custos de insumos e produtos importados, também aumentaria as exportações e melhoraria a eficiência da economia brasileira. Para isso acontecer, é preciso “uma política de requalificação centralizada nos trabalhadores afetados temporariamente pela liberalização, tendo em consideração fatores geográficos, estruturais, curriculares e orçamentários para sua implementação.” <span class="citation" data-cites="sae">(<a href="#ref-sae" role="doc-biblioref">SECRETARIA ESPECIAL DE ASSUNTOS ESTRATÉGICOS – SAE, 2018, p. 7</a>)</span>.</p>
+</section>
+</section>
+<section id="balança-comercial-de-petróleo-e-derivados" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="balança-comercial-de-petróleo-e-derivados">Balança Comercial de Petróleo e Derivados</h2>
+<p>A <span class="citation" data-cites="anp">AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS – ANP (<a href="#ref-anp" role="doc-biblioref">2018</a>)</span> publica estatísticas da balança comercial de petróleo e seus derivados mensalmente em seu site. Segundo esses dados, o Brasil tem significativo superávit na importação e exportação de petróleo bruto (Gráfico 3).</p>
+<p><img src="https://images2.imgbox.com/8b/7e/9QytRd9b_o.png" class="img-fluid"></p>
+<p>Por outro lado, o resultado da balança comercial de derivados de petróleo apresenta déficit em magnitude quase igual ao de petróleo bruto (Gráfico 4), anulando grande parte do saldo positivo da conta de petróleo e derivados.</p>
+<p><img src="https://images2.imgbox.com/15/d0/wphCAUT9_o.png" class="img-fluid"></p>
+<p>A partir de 2016 o saldo da balança comercial de petróleo de derivados passou a ser positivo <span class="citation" data-cites="ibp">(<a href="#ref-ibp" role="doc-biblioref">INSTITUTO BRASILEIRO DE PETRÓLEO, 2018?</a>)</span> em mais de 2 bilhões de dólares anuais, principalmente pela queda das importações de petróleo bruto. Nos anos de 2009 e 2010, o Brasil teve saldo positivo mas em valores bem menores (592 milhões e 271 milhões de dólares respectivamente).</p>
+<p>A explicação para o superávit do petróleo bruto e déficit dos derivados de petróleo é o tipo e a qualidade do petróleo produzido no Brasil e o déficit na capacidade instalada de refino do óleo. O <span class="citation" data-cites="nexojornal2">CASTRO (<a href="#ref-nexojornal2" role="doc-biblioref">2018</a>)</span> explica:</p>
+<blockquote class="blockquote">
+<p>O Brasil é o nono maior produtor de petróleo do mundo, segundo dados de 2017 da EIA (U.S. Energy Information Administration, agência de informações energéticas do governo americano). Mas isso não quer dizer que o país não dependa do mercado externo. São dois os motivos principais.O primeiro é que parte do petróleo extraído no Brasil é considerado pesado, difícil e caro para o refino que produz combustíveis. Isso significa que o país vende parte de seu petróleo para fora e compra o petróleo mais apropriado para o refino do exterior.Além disso, o país não tem capacidade instalada suficiente para a produção de todo o combustível de que necessita — e precisa comprar uma pequena parte já pronta de outros países. <span class="citation" data-cites="nexojornal2">(<a href="#ref-nexojornal2" role="doc-biblioref">CASTRO, 2018</a>)</span>.</p>
+</blockquote>
+<p>O Brasil é altamente dependente do petróleo do mercado externo e, portanto, o preço internacional do petróleo afeta diretamente o custo da gasolina, diesel e outros produtos derivados do óleo. A paralisação dos caminhoneiros que ocorreu em maio de 2018 foi motivada, segundo os líderes do movimento, pela alta do preço do óleo diesel <span class="citation" data-cites="bbc">(<a href="#ref-bbc" role="doc-biblioref">MOURA, 2018</a>)</span>.</p>
+<section id="preço-do-petróleo-e-derivados" class="level3">
+<h3 class="anchored" data-anchor-id="preço-do-petróleo-e-derivados">Preço do petróleo e derivados</h3>
+<p>A mudança na política de preços da Petrobras, principal empresa do setor, de reajustes diários nas refinarias, que aumentou a volatilidade dos preços, é outra crítica manifestada pelos apoiadores da paralisação dos caminhoneiros. De fato, o preço do litro da gasolina e do diesel teve vários reajustes desde o anúncio dessa nova política.</p>
+<p>Com o objetivo de refletir o preço do petróleo no mercado internacional, os preços dos combustíveis vendidos pelas refinarias da Petrobras são reajustados sempre que for necessário. O represamento dos preços da gasolina durante o primeiro governo Dilma (2011–2014), que causou prejuízos bilionários à empresa foi um dos motivos para a mudança na política de preços da empresa <span class="citation" data-cites="moraes">(<a href="#ref-moraes" role="doc-biblioref">MORAES, 2018</a>)</span>.</p>
+<p><img src="https://images2.imgbox.com/72/dc/XGgZgNQV_o.png" class="img-fluid"></p>
+<p>Entre 2011 e final de 2014 o preço médio do barril de petróleo bruto esteve em patamares bastante elevados (Gráfico 5). A taxa de câmbio, vale lembrar, se desvalorizou nesse período, como mostrado no Gráfico 1b, o que contribuiu para elevar o preço do petróleo mesmo em momentos de relativa estabilidade dos preços internacionais. No entanto, houve poucos ajustes nos preços dos combustíveis pela Petrobras, geralmente abaixo do aumento do preço do petróleo em moeda local.</p>
+<p><img src="https://images2.imgbox.com/c4/a0/wt1wHI5X_o.png" class="img-fluid"></p>
+<p>De fato, o preço real da gasolina vem caindo desde o início da década de 2000 <span class="citation" data-cites="nexojornal1">(<a href="#ref-nexojornal1" role="doc-biblioref">ALMEIDA; ZANLORENSSI, 2017</a>)</span>. A forte alta dos preços recentemente (Gráfico 6), e sua excessiva oscilação nos postos de gasolina, entretanto, foi visto negativamente pela sociedade. Para amenizar as oscilações de curto-prazo poderia ser adotado um mecanismo de suavização de preços para diminuir a volatilidade e os riscos/incertezas percebidos pelos agentes econômicos em relação aos preços dos combustíveis <span class="citation" data-cites="coady2012">(<a href="#ref-coady2012" role="doc-biblioref">COADY et al., 2012</a>)</span>.</p>
+</section>
+<section id="produção-e-processamento-de-petróleo" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="produção-e-processamento-de-petróleo">Produção e processamento de petróleo</h3>
+<p>A produção de petróleo brasileiro está em crescimento desde 2000, e não aparenta estar desacelerando (Gráfico 6). No primeiro trimestre de 2000, a produção foi de 3,8 milhões de barris equivalentes de petróleo (bep), e no terceiro trimestre de 2018 a produção ultrapassou os 142 milhões de bep.</p>
+<p>Por outro lado, o processamento de petróleo nas refinarias apresenta tendência de queda a partir do último trimestre de 2014. Os processamentos de petróleo nacional e importado tiveram queda de -13,4% e -52,4%, respectivamente, no último trimestre de 2018 em relação ao último trimestre de 2014, representando um decréscimo somado de -38,2 bilhões de bep processados.</p>
+<p><img src="https://images2.imgbox.com/99/43/PkyB5YWo_o.png" class="img-fluid"></p>
+<p>A produção dos produtos derivados de petróleo nas refinarias brasileiras também teve significativa queda a partir de 2015 (Gráfico 7). A produção de óleo diesel sofreu a maior variação negativa. A gasolina automotiva (GASOLINA A) também teve queda de produção, mas em volume absoluto menor do que o do diesel.</p>
+<p><img src="https://images2.imgbox.com/78/c6/nmqfn35b_o.png" class="img-fluid"></p>
+<div class="page-columns page-full"><p>A Petrobras está executando um plano de venda de ativos (desinvestimentos) que inclui a venda de refinarias e isso pode ter impactado a produção e processamento de petróleo e derivados no Brasil. A redução de produção de derivados de petróleo pode estar relacionada ao aumento da ociosidade das refinarias em operação no país.</p><div class="no-row-height column-margin column-container"><span class="margin-aside">Ver <span class="citation" data-cites="cartacapital">CARTACAPITAL (<a href="#ref-cartacapital" role="doc-biblioref">2018</a>)</span>.</span></div></div>
+</section>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<p>No ano de 2017 o país registrou um recorde histórico de superávit na balança comercial, com saldo positivo de 67 bilhões de dólares. Todavia, o Brasil ainda é uma economia bastante fechada em relação ao resto do mundo. Uma política bem planejada de abertura comercial poderia ajudar na crônica estagnação da produtividade brasileira e aumentar a competitividade da indústria brasileira, bem como levar a uma redução dos preços dos bens em geral para a sociedade.</p>
+<p>A oferta de gasolina e óleo diesel no mercado doméstico é bastante dependente do comércio internacional, pois o petróleo produzido no país não é adequado para a produção desses combustíveis. O represamento dos preços dos combustíveis, num período de alta dos preços internacionais do petróleo, pela Petrobras entre 2011 e 2014 causou prejuízos bilionários à empresa. A política de preços adotada pelo governo Temer, para corrigir esse problema, levou a uma grande volatilidade dos preços para os consumidores. Isso, mais a rápida alta recente dos preços da gasolina e óleo diesel, motivou a paralisação dos caminhoneiros em maio de 2018.</p>
+<p>Por último, neste trabalho, observou-se que o plano de desinvestimentos da Petrobras pode estar relacionado com a redução do processamento de petróleo nas refinarias do país e queda da produção interna de gasolina, óleo diesel e outros derivados de petróleo.</p>
+<p>Sugere-se que futuros estudos sobre o tema abordem a estrutura de mercado de refino de petróleo e distribuição de combustíveis no país. O número de refinarias no Brasil é considerado baixo para a demanda existente e um aumento de empresas no setor poderia fortalecer o fornecimento de gasolina e diesel para as indústrias e a população em geral.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
+<div id="ref-anp" class="csl-entry" role="listitem">
+AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCOMBUSTÍVEIS – ANP. <strong>Dados estatísticos</strong>. Disponível em: &lt;<a href="http://www.anp.gov.br/dados-estatisticos">http://www.anp.gov.br/dados-estatisticos</a>&gt;. Acesso em: 29 nov. 2018.
+</div>
+<div id="ref-nexojornal1" class="csl-entry" role="listitem">
+ALMEIDA, R.; ZANLORENSSI, G. <strong>A trajetória do preço do combustível no Brasil nos últimos 17 anos</strong>. Disponível em: &lt;<a href="https://www.nexojornal.com.br/grafico/2017/10/16/A-trajet%C3%B3ria-do-pre%C3%A7o-do-combust%C3%ADvel-no-Brasil-nos-%C3%BAltimos-17-anos">https://www.nexojornal.com.br/grafico/2017/10/16/A-trajet%C3%B3ria-do-pre%C3%A7o-do-combust%C3%ADvel-no-Brasil-nos-%C3%BAltimos-17-anos</a>&gt;. Acesso em: 28 nov. 2018.
+</div>
+<div id="ref-worldbank" class="csl-entry" role="listitem">
+BANCO MUNDIAL. <strong>World Open Data</strong>. Disponível em: &lt;<a href="https://data.worldbank.org/">https://data.worldbank.org/</a>&gt;. Acesso em: 28 nov. 2018.
+</div>
+<div id="ref-cartacapital" class="csl-entry" role="listitem">
+CARTACAPITAL. <strong>A redução dos investimentos da Petrobras e a queda do emprego no Sul</strong>. Disponível em: &lt;<a href="https://www.cartacapital.com.br/economia/a-reducao-dos-investimentos-da-petrobras-e-a-queda-do-emprego-no-sul">https://www.cartacapital.com.br/economia/a-reducao-dos-investimentos-da-petrobras-e-a-queda-do-emprego-no-sul</a>&gt;. Acesso em: 29 nov. 2018.
+</div>
+<div id="ref-nexojornal2" class="csl-entry" role="listitem">
+CASTRO, J. R. <strong>7 perguntas sobre o mercado de combustíveis no Brasil</strong>. Disponível em: &lt;<a href="https://www.nexojornal.com.br/expresso/2018/05/24/7-perguntas-sobre-o-mercado-de-combust%C3%ADveis-no-Brasil">https://www.nexojornal.com.br/expresso/2018/05/24/7-perguntas-sobre-o-mercado-de-combust%C3%ADveis-no-Brasil</a>&gt;. Acesso em: 28 nov. 2018.
+</div>
+<div id="ref-coady2012" class="csl-entry" role="listitem">
+COADY, D. et al. <strong>Automatic Fuel Pricing Mechanisms with Price Smoothing: Design, Implementation, and Fiscal Implications</strong>: Technical Notes e Manuals. [s.l.] International Monetary Fund – IMF, dez. 2012. Disponível em: &lt;<a href="https://www.imf.org/external/pubs/ft/tnm/2012/tnm1203.pdf">https://www.imf.org/external/pubs/ft/tnm/2012/tnm1203.pdf</a>&gt;. Acesso em: 30 nov. 2018.
+</div>
+<div id="ref-silva2019" class="csl-entry" role="listitem">
+DA SILVA, O. M. <strong>O grau de abertura de um país ao comércio internacional</strong>. Disponível em: &lt;<a href="http://www.mpdefesa.ufv.br/2019/08/30/artigo-o-grau-de-abertura-de-um-pais-ao-comercio-internacional/">http://www.mpdefesa.ufv.br/2019/08/30/artigo-o-grau-de-abertura-de-um-pais-ao-comercio-internacional/</a>&gt;. Acesso em: 17 fev. 2024.
+</div>
+<div id="ref-fmi" class="csl-entry" role="listitem">
+FMI, F. M. I. –. <strong>IMF Primary Commodity Prices</strong>. Disponível em: &lt;<a href="http://bit.ly/2zBCxhb">http://bit.ly/2zBCxhb</a>&gt;. Acesso em: 30 nov. 2018.
+</div>
+<div id="ref-ibp" class="csl-entry" role="listitem">
+INSTITUTO BRASILEIRO DE PETRÓLEO, G. E. B. –. I. <strong>Evolução da balança comercial de petróleo e derivados</strong>. Disponível em: &lt;<a href="http://bit.ly/2P6o2XE">http://bit.ly/2P6o2XE</a>&gt;. Acesso em: 27 nov. 2018.
+</div>
+<div id="ref-mdic2" class="csl-entry" role="listitem">
+MINISTÉRIO DA INDÚSTRIA, COMÉRCIO EXTERIOR E SERVIÇOS – MDIC. <strong>Comex Stat</strong>. Disponível em: &lt;<a href="http://comexstat.mdic.gov.br/pt/home">http://comexstat.mdic.gov.br/pt/home</a>&gt;. Acesso em: 27 nov. 2018a.
+</div>
+<div id="ref-mdic1" class="csl-entry" role="listitem">
+MINISTÉRIO DA INDÚSTRIA, COMÉRCIO EXTERIOR E SERVIÇOS – MDIC. <strong>Brasil e Chile assinam acordo de livre comércio</strong>. Disponível em: &lt;<a href="http://www.mdic.gov.br/index.php/noticias/3695-brasil-e-chile-assinam-acordo-de-livre-comercio">http://www.mdic.gov.br/index.php/noticias/3695-brasil-e-chile-assinam-acordo-de-livre-comercio</a>&gt;. Acesso em: 30 nov. 2018b.
+</div>
+<div id="ref-moraes" class="csl-entry" role="listitem">
+MORAES, M. <strong>Manual para não-economistas: entenda a crise dos combustíveis</strong>. Disponível em: &lt;<a href="https://mercadopopular.org/economia/manual-para-nao-economistas-entenda-crise-dos-combustiveis/">https://mercadopopular.org/economia/manual-para-nao-economistas-entenda-crise-dos-combustiveis/</a>&gt;. Acesso em: 2 dez. 2018.
+</div>
+<div id="ref-bbc" class="csl-entry" role="listitem">
+MOURA, R. <strong>A cronologia da crise do diesel, do controle de preços de Dilma à greve dos caminhoneiros</strong>. Disponível em: &lt;<a href="https://www.bbc.com/portuguese/brasil-44239437">https://www.bbc.com/portuguese/brasil-44239437</a>&gt;. Acesso em: 2 dez. 2018.
+</div>
+<div id="ref-ipea" class="csl-entry" role="listitem">
+PESQUISA ECONÔMICA APLICADA – IPEA, I. DE. <strong>IpeaData</strong>. Disponível em: &lt;<a href="http://ipeadata.gov.br/Default.aspx">http://ipeadata.gov.br/Default.aspx</a>&gt;. Acesso em: 28 nov. 2018.
+</div>
+<div id="ref-sae" class="csl-entry" role="listitem">
+SECRETARIA ESPECIAL DE ASSUNTOS ESTRATÉGICOS – SAE. <strong>Abertura Comercial para o Desenvolvimento</strong>. [s.l: s.n.]. Disponível em: &lt;<a href="http://bit.ly/2TSlcsM">http://bit.ly/2TSlcsM</a>&gt;. Acesso em: 1 jun. 2018.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © dkko.me
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../legal.html">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Website Powered by Quarto
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dankkom">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/daniel-komesu/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/dankkom">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
