@@ -6,10 +6,6 @@ website:
   image: "favicon.png"
   favicon: "favicon.png"
   navbar:
-    left:
-      - articles.qmd
-      - tutorials.qmd
-      - knowledge.qmd
     right:
       - text: About
         href: about.qmd
@@ -33,6 +29,7 @@ website:
         href: https://www.linkedin.com/in/daniel-komesu/
       - icon: twitter
         href: https://twitter.com/dankkom
+  google-analytics: G-RLSNHYP5C3
 
 format:
   html:
