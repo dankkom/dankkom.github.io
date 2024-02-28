@@ -54,3 +54,9 @@ pandas | Jupyter | Flask
 R Programming Language
 
 PostgreSQL
+
+## Publications
+
+Komesu, D. K., Margarido, M. A., & Shikida, P. F. A. (2023). Análise estatística do perfil do setor penitenciário do estado de São Paulo. **REVISTA BRASILEIRA DE EXECUÇÃO PENAL - RBEP**, 4(2), 283–301. Recuperado de [https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585](https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585)
+
+Margarido, M. A., Shikida, P. F. A., & Komesu, D. K. (2023). Elasticidades no mercado brasileiro de cigarros. **Práticas De Administração Pública**, 6(2), 65–90. [https://periodicos.ufsm.br/pap/article/view/84176](https://periodicos.ufsm.br/pap/article/view/84176)
