@@ -8,7 +8,7 @@ author:
 aliases:
   - /posts/naming-things-in-excel
 categories: [Programação, "Naming Things"]
-katex: false
+image: "https://i.imgflip.com/7pwmxy.jpg"
 ---
 
 ![There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton](https://i.imgflip.com/7pwmxy.jpg)

@@ -9,6 +9,7 @@ aliases:
   - /exportacao-brasil-destinos
   - /posts/exportacao-brasil-destinos
 categories: ["Balança Comercial", "Comércio Exterior", "Visualização de Dados", "Economia"]
+image: "https://images2.imgbox.com/c8/4e/b6i7U7Pt_o.png"
 ---
 
 ![](https://images2.imgbox.com/c8/4e/b6i7U7Pt_o.png)

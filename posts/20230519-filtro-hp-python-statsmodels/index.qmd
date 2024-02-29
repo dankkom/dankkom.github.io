@@ -9,6 +9,7 @@ aliases:
   - /filtro-hp-python-statsmodels
   - /posts/filtro-hp-python-statsmodels
 categories: [Python, "Filtro HP", statsmodels, Econometria, Estatística]
+image: "https://images2.imgbox.com/6a/2e/RnIgT5rT_o.png"
 ---
 
 Num texto anterior eu utilizei o Filtro Hodrick-Prescott (HP) para suavizar séries temporais das tarifas municipais de saneamento básico do Brasil. Neste texto vou explicar passo a passo como aplicar o Filtro HP em séries temporais no Python com o pacote statsmodels para analisar ciclos e tendências.
