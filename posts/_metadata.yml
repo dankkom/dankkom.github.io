@@ -6,3 +6,6 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# Add Table of Contents at the right sidebar
+toc: true
