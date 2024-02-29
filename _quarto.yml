@@ -5,6 +5,7 @@ website:
   title: "dkko.me"
   image: "favicon.png"
   favicon: "favicon.png"
+  page-navigation: true
   navbar:
     right:
       - text: About
