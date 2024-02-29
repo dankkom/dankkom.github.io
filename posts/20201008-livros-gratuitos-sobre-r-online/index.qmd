@@ -5,7 +5,6 @@ aliases:
     - /livros-gratuitos-sobre-r-online
     - /posts/livros-gratuitos-sobre-r-online
 categories: ["Programação", "R", "Livros"]
-image: ../../favicon.png
 ---
 
 Neste post listo alguns livros online sobre R totalmente gratuitos. A lista compreende desde níveis introdutórios até R avançado aplicado à econometria, computação geoespacial, inferência estatística e análise de pesquisas amostrais complexas.
