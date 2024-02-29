@@ -19,6 +19,7 @@ about:
     - icon: lattes
       text: Lattes
       href: http://lattes.cnpq.br/4839987313912355
+toc: true
 ---
 
 Economist graduated at Univesidade Paulista (UNIP). Have worked as technical advisor at São Paulo State’s Agriculture and Supply Department, where specialized in data intensive related tasks, such as data collection, transformation and visualization. Actually, works at Pezco Economics as data science consultant, specializing in data extraction, transformation and visualization. Automatizes data collection and transformation of macroeconomic data for reports. Also does data collection, transformation and visualizations of specific data for several studies at the consultancy.
@@ -57,6 +58,8 @@ PostgreSQL
 
 ## Publications
 
-Komesu, D. K., Margarido, M. A., & Shikida, P. F. A. (2023). Análise estatística do perfil do setor penitenciário do estado de São Paulo. **REVISTA BRASILEIRA DE EXECUÇÃO PENAL - RBEP**, 4(2), 283–301. Recuperado de [https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585](https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585)
+KOMESU, Daniel Kiyoyudi; MARGARIDO, Mário Antônio; SHIKIDA, Pery Francisco Assis. Análise estatística do perfil do setor penitenciário do estado de São Paulo. **REVISTA BRASILEIRA DE EXECUÇÃO PENAL-RBEP**, v. 4, n. 2, p. 283-301, 2023. [https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585](https://rbepdepen.depen.gov.br/index.php/RBEP/article/view/585)
 
-Margarido, M. A., Shikida, P. F. A., & Komesu, D. K. (2023). Elasticidades no mercado brasileiro de cigarros. **Práticas De Administração Pública**, 6(2), 65–90. [https://periodicos.ufsm.br/pap/article/view/84176](https://periodicos.ufsm.br/pap/article/view/84176)
+MARGARIDO, Mario Antonio; SHIKIDA, Pery Francisco Assis; KOMESU, Daniel Kiyoyudi. Elasticidades no mercado brasileiro de cigarros. **Práticas de Administração Pública**, v. 6, n. 2, p. 65-90, 2022. [https://periodicos.ufsm.br/pap/article/view/84176](https://periodicos.ufsm.br/pap/article/view/84176)
+
+CATTANI, Yan Nonato et al. Measuring the health and fiscal outcomes of solid waste management operations by intergovernmental arrangements: The case of public consortia in Brazil. **Heliyon**, p. e26032, 2024. [https://doi.org/10.1016/j.heliyon.2024.e26032](https://doi.org/10.1016/j.heliyon.2024.e26032)
