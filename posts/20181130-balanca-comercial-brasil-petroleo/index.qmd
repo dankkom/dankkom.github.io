@@ -1,17 +1,12 @@
 ---
 title: "Balança comercial do Brasil de 2008 a 2017: Uma análise com ênfase nos combustíveis derivados de petróleo"
-date: 2018-11-30T08:00:00-03:00
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
+date: 2018-11-30
 bibliography: references.bib
 csl: ../associacao-brasileira-de-normas-tecnicas.csl
 aliases:
     - /balanca-comercial-brasil-petroleo
 categories: ["Balança Comercial", "Economia", "Petróleo"]
 image: "https://images2.imgbox.com/8e/03/ty8mgZnx_o.jpg"
-toc: true
 nocite: |
   @fmi, @ipea
 ---

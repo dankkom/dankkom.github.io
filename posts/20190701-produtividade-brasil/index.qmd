@@ -1,10 +1,6 @@
 ---
 title: "Produtividade no Brasil"
-date: 2019-07-01T08:00:00-03:00
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
+date: 2019-07-01
 bibliography: references.bib
 csl: ../associacao-brasileira-de-normas-tecnicas.csl
 reference-location: margin
@@ -12,7 +8,6 @@ aliases:
     - /produtividade-brasil
 categories: ["Produtividade", "Economia"]
 image: "https://images2.imgbox.com/e1/b2/3yL6luvF_o.png"
-toc: true
 ---
 
 É amplamente discutida na academia a necessidade de aumentar a produtividade da economia brasileira para o país alcançar os níveis de renda e bem-estar, semelhantes às nações desenvolvidas, almejados pela sociedade. Nos últimos 30 anos a produtividade média do trabalhador brasileiro está muito aquém do ideal para atingir esse objetivo. E, no entanto, o país necessita mais do que nunca aumentar a sua produtividade para enfrentar os desafios impostos pelas mudanças demográficas e problemas estruturais da economia brasileira.

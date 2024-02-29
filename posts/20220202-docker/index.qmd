@@ -1,10 +1,6 @@
 ---
 title: "[Vídeo] Como usar Docker e Docker Compose em 12 minutos"
 date: 2022-02-02
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /docker
     - /posts/docker

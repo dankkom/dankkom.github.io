@@ -1,10 +1,6 @@
 ---
 title: "PIP: Como instalar o GeoPandas no Windows (sem Conda)"
 date: 2022-01-22
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
   - /instalar-geopandas-windows
   - /posts/instalar-geopandas-windows

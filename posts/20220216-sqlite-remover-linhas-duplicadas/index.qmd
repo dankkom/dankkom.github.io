@@ -1,10 +1,6 @@
 ---
 title: "SQLite: como remover linhas duplicadas"
 date: 2022-02-16
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
   - /sqlite-remover-linhas-duplicadas
   - /posts/sqlite-remover-linhas-duplicadas

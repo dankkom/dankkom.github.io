@@ -1,10 +1,6 @@
 ---
 title: "Como copiar chaves SSH do Windows para o WSL"
 date: 2022-01-08
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /copiar-chaves-ssh-wsl
     - /posts/copiar-chaves-ssh-wsl

@@ -1,10 +1,6 @@
 ---
 title: "Aprendizado supervisionado vs não-supervisionado"
 date: 2022-02-02
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /aprendizado-supervisionado-vs-nao-supervisionado
     - /posts/aprendizado-supervisionado-vs-nao-supervisionado

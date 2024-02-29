@@ -1,10 +1,6 @@
 ---
 title: "Extraindo dados de arquivos Excel"
 date: 2021-04-20
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /extraindo-dados-de-arquivos-excel
     - /posts/extraindo-dados-de-arquivos-excel

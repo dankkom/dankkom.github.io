@@ -1,10 +1,6 @@
 ---
 title: "Checklist para configurar um servidor Linux seguro"
 date: 2022-01-22
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
   - /configurar-linux
   - /posts/configurar-linux

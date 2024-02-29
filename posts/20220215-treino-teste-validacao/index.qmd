@@ -1,10 +1,6 @@
 ---
 title: "Divisão de dados em Treino, Validação e Teste para Machine Learning"
 date: 2022-02-15
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /treino-teste-validacao
     - /posts/treino-teste-validacao

@@ -1,10 +1,6 @@
 ---
 title: "Pandas read_csv: como ler um arquivo CSV no Python"
 date: 2021-11-28
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
   - /python-pandas-read-csv
   - /posts/python-pandas-read-csv

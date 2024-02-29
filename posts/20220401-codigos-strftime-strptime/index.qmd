@@ -1,10 +1,6 @@
 ---
 title: "Códigos de Formato de Data e Hora: strftime(), strptime()"
 date: 2022-04-01
-lang: pt
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /codigos-strftime-strptime
     - /posts/codigos-strftime-strptime

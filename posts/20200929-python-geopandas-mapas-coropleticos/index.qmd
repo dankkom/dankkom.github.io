@@ -1,9 +1,6 @@
 ---
 title: "Como criar mapas coropléticos em Python com matplotlib e geopandas"
 date: 2020-09-29
-author:
-  - name: Daniel Komesu
-    orcid: 0000-0002-8086-3636
 aliases:
     - /python-geopandas-mapas-coropleticos
     - /posts/python-geopandas-mapas-coropleticos
