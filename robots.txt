@@ -1,1 +1,1 @@
-Sitemap: https://dankkom.github.io/sitemap.xml
+Sitemap: https://dkko.me/sitemap.xml
