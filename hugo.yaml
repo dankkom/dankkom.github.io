@@ -2,12 +2,15 @@ baseURL: "https://dkko.me/"
 languageCode: "pt-br"
 title: "Daniel Komesu"
 
-theme: ["tale"]
+theme: ["PaperMod"]
 
 params:
   Author: "Daniel Komesu"
   Description: "Python, Economics, Data Science, and other stuff"
   GoogleAnalytics4: "G-RLSNHYP5C3"
+  defaultTheme: light
+  disableThemeToggle: true
+  math: true
 
 markup:
   goldmark:
