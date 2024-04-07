@@ -20,4 +20,4 @@ A visualização foi feita com a ferramenta [flourish](https://flourish.studio).
 
 Fonte dos dados: [Estatísticas de Comércio Exterior em Dados Abertos](https://www.gov.br/produtividade-e-comercio-exterior/pt-br/assuntos/comercio-exterior/estatisticas/base-de-dados-bruta)
 
-Pacote Python para baixar os dados da Balança Comercial/Comércio Exterior do Brasil: [comexdown](https://github.com/viridis-data/comexdown)
+Pacote Python para baixar os dados da Balança Comercial/Comércio Exterior do Brasil: [comexdown](https://github.com/dankkom/comexdown)
