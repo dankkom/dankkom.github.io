@@ -5,6 +5,7 @@ author: Komesu, D. K.
 slug: python-geopandas-mapas-coropleticos
 aliases:
     - /python-geopandas-mapas-coropleticos
+    - /posts/20200929-python-geopandas-mapas-coropleticos/index.html
 tags: ["Programação", "Python", "Mapas", "Visualização de Dados"]
 ---
 

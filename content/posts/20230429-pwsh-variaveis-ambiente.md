@@ -3,6 +3,8 @@ title: "Definindo variáveis de ambiente no Windows com PowerShell"
 date: 2023-04-29T14:00:00-03:00
 author: Komesu, D. K.
 slug: pwsh-variaveis-ambiente-windows
+aliases:
+    - /posts/20230429-pwsh-variaveis-ambiente/index.html
 tags: ["Microsoft Windows", "Powershell", "SysAdmin"]
 ---
 

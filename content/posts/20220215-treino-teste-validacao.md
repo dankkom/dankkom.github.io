@@ -5,6 +5,7 @@ author: Komesu, D. K.
 slug: treino-teste-validacao
 aliases:
     - /treino-teste-validacao
+    - /posts/20220215-treino-teste-validacao/index.html
 tags: ["Machine Learning"]
 ---
 

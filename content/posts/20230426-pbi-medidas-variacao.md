@@ -2,7 +2,10 @@
 title: "Microsoft Power BI: Medidas de Variação em Séries Temporais"
 date: 2023-04-26T16:00:00-03:00
 author: Komesu, D. K.
-slug: power-bi-medidas-variacao-series-temporais
+slug: pbi-medidas-variacao
+aliases:
+    - /posts/power-bi-medidas-variacao-series-temporais
+    - /posts/20230426-pbi-medidas-variacao/index.html
 tags: ["Microsoft Power BI", "BI"]
 katex: true
 ---

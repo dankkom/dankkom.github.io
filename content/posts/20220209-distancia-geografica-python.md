@@ -5,6 +5,7 @@ author: Komesu, D. K.
 slug: distancia-geografica-python
 aliases:
     - /distancia-geografica-python
+    - /posts/20220209-distancia-geografica-python/index.html
 tags: ["Python"]
 ---
 
