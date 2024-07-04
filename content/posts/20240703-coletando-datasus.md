@@ -188,7 +188,12 @@ Como dito anteriormente, o datasus-fetcher baixa cada nova versão de um arquivo
 O comando `archive` tem a seguinte sintaxe:
 
 ```sh
-datasus-fetcher archive --data-dir /data --archive-data-dir /data-archive
+usage: datasus-fetcher archive [-h] --data-dir DATA_DIR --archive-data-dir ARCHIVE_DATA_DIR
+
+options:
+  -h, --help            show this help message and exit
+  --data-dir DATA_DIR
+  --archive-data-dir ARCHIVE_DATA_DIR
 ```
 
 ## Lendo os dados
