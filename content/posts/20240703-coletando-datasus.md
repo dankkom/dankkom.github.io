@@ -26,11 +26,11 @@ Por isso criei o datasus-fetcher, um pacote Python, e uma ferramenta de linha de
 
 ## O datasus-fetcher
 
-O datasus-fetcher uma _file naming convention_ para facilitar a busca dos dados necessários tanto por humanos quanto por outros sistemas automatizados (como scripts em Python e R). A FNC do datasus-fetcher é bem simples, consistindo de três partes:
+O datasus-fetcher usa uma _file naming convention_ para facilitar a busca dos dados necessários tanto por humanos quanto por outros sistemas automatizados (como scripts em Python e R). A _file naming convention_ do datasus-fetcher é bem simples, consistindo de três partes:
 
-- abreviação da base de dados (dataset)
-- partição, se houver
-- data da última modificação no servidor FTP do DATASUS
+1. abreviação da base de dados (dataset)
+2. partição, se houver
+3. data da última modificação no servidor FTP do DATASUS
 
 Essas três partes são separadas por sublinhado (_), também conhecido como underscore ou underline. Assim, o arquivo `sih-rd_2020-sp_20210102.dbc` é um arquivo da base de dados SIH-RD, particionado por estado (SP) e data de referência 2020, e foi modificado pela última vez em 2 de janeiro de 2021.
 
@@ -181,7 +181,7 @@ options:
 
 ## Movendo arquivos antigos
 
-Como dito anteriormente, o datasus-fetcher baixa cada nova versão de um arquivo com um nome diferente. Por isso, quando realizamos o download de novos arquivos podemos ter várias versões antigas salvas no diretório de dados. Isso pode ser desejável para alguns. Mas para analistas e cientistas de dados, que só querem fazer suas análises e modelos com os dados mais recentes, isso é só um incômodo. Para esses usuários existe o comando `archive`, que arquiva os dados defasados, movendo-os para outro diretório no sistema de arquivos.
+Como dito anteriormente, o datasus-fetcher baixa cada nova versão de um arquivo com um nome diferente. Isso é o design da ferramenta, pois permite acumular um histórico de versões dos arquivos de dados. Por isso, quando realizamos o download de novos arquivos podemos ter várias versões antigas salvas no diretório de dados. Isso pode ser desejável para alguns. Mas para analistas e cientistas de dados, que só querem fazer suas análises e modelos com os dados mais recentes, isso é só um incômodo. Para esses usuários existe o comando `archive`, que arquiva os dados defasados, movendo-os para outro diretório no sistema de arquivos.
 
 O comando `archive` tem a seguinte sintaxe:
 
