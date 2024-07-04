@@ -24,6 +24,8 @@ Baixar as bases do DATASUS pode ser é uma tarefa tediosa.
 
 Por isso criei o datasus-fetcher, um pacote Python, e uma ferramenta de linha de comando, para baixar os arquivos de microdados do DATASUS sem muito esforço e deixá-los de forma organizada no seu sistema de arquivos.
 
+![cat doctors](https://miro.medium.com/v2/resize:fit:720/format:webp/1*EeVfK08LIxjyE5AbiAPqEg.jpeg)
+
 ## O datasus-fetcher
 
 O datasus-fetcher usa uma _file naming convention_ para facilitar a busca dos dados necessários tanto por humanos quanto por outros sistemas automatizados (como scripts em Python e R). A _file naming convention_ do datasus-fetcher é bem simples, consistindo de três partes:
