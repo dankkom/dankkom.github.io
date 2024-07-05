@@ -24,7 +24,7 @@ Baixar as bases do DATASUS pode ser é uma tarefa tediosa.
 
 Por isso criei o datasus-fetcher, um pacote Python, e uma ferramenta de linha de comando, para baixar os arquivos de microdados do DATASUS sem muito esforço e deixá-los de forma organizada no seu sistema de arquivos.
 
-![cat doctors](https://miro.medium.com/v2/resize:fit:720/format:webp/1*EeVfK08LIxjyE5AbiAPqEg.jpeg)
+![cat doctors](https://images2.imgbox.com/42/9f/yxfHgXu1_o.jpg)
 
 ## O datasus-fetcher
 
