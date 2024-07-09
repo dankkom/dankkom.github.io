@@ -5,12 +5,35 @@ title: "Daniel Komesu"
 theme: ["PaperMod"]
 
 params:
-  Author: "Daniel Komesu"
-  Description: "Python, Economics, Data Science, and other stuff"
+  profileMode:
+    enabled: true
+    title: "Daniel Komesu"
+    subtitle: "Python, Economics, Data Science, and other stuff"
+    imageUrl: "/android-chrome-512x512.png"
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: About Me
+        url: "/about/"
+      - name: Posts
+        url: "/posts/"
+      - name: CV Lattes
+        url: "http://lattes.cnpq.br/4839987313912355"
+      - name: ORCID
+        url: "https://orcid.org/0000-0002-8086-3636"
   GoogleAnalytics4: "G-RLSNHYP5C3"
   defaultTheme: light
   disableThemeToggle: true
   math: true
+  socialIcons:
+    - name: GitHub
+      url: https://github.com/dankkom
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/daniel-komesu/
+    - name: X
+      url: https://x.com/dankkom
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
 
 markup:
   goldmark:
