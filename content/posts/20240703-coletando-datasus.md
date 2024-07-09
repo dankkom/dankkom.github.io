@@ -4,6 +4,13 @@ date: 2024-07-03T22:00:00-03:00
 author: Komesu, D. K.
 slug: coletando-datasus
 tags: [Python, Brazil, DATASUS, Population, Data]
+description: "Neste texto apresento o datasus-fetcher, um CLI para baixar microdados do DATASUS e deixá-los de forma organizada no seu sistema de arquivos."
+cover:
+  image: https://images2.imgbox.com/42/9f/yxfHgXu1_o.jpg
+  alt: "Imagem de gatos doutores usando computadores"
+  caption: "Imagem de gatos doutores usando computadores. Fonte: Google Gemini."
+ShowToc: true
+TocOpen: true
 ---
 
 O Departamento de Informática do SUS (DATASUS) disponibiliza os microdados do sistema de saúde pública do Brasil em um servidor FTP.
@@ -23,8 +30,6 @@ O pior é que cada base segue uma convenção de nomeação de arquivo diferente
 Baixar as bases do DATASUS pode ser é uma tarefa tediosa.
 
 Por isso criei o datasus-fetcher, um pacote Python, e uma ferramenta de linha de comando, para baixar os arquivos de microdados do DATASUS sem muito esforço e deixá-los de forma organizada no seu sistema de arquivos.
-
-![cat doctors](https://images2.imgbox.com/42/9f/yxfHgXu1_o.jpg)
 
 ## O datasus-fetcher
 
