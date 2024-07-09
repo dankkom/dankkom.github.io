@@ -2,25 +2,20 @@
 title: "Coletando os dados de população dos municípios do IBGE com Python"
 date: 2024-07-09T16:00:00-03:00
 author: Komesu, D. K.
-slug: ibge-sidra-populacao-municipios
+slug: coletando-ibge-sidra-populacao-municipios
 tags: [Python, IBGE, SIDRA, Populacao, Data]
+description: "Neste texto eu mostro como baixar os dados de população municipal de três bases do IBGE, utilizando Python, e consolidá-las em uma única base."
+cover:
+  image: https://images2.imgbox.com/6b/15/aA2MFiAC_o.jpg
+  alt: "Evolução da população brasileira"
+  caption: "Evolução da população brasileira, 1970-2022. Fonte: IBGE (Censos, Contagens e Estimativas)"
+ShowToc: true
+TocOpen: true
 ---
 
 A informação da quantidade de habitantes dos municípios brasileiros é um dos dados basilares de diversos estudos. Por exemplo, combinando com outros dados quantitativos dos municípios é possível utilizá-los para calcular indicadores *per capita*, tais como o PIB per capita, a taxa de homicídios por 100 mil habitantes, a taxa de analfabetismo, entre outros. Assim, é importante ter esses dados disponíveis para análises.
 
 Neste texto eu mostro como baixar esses dados de três bases do IBGE: os Censos Demográficos (1970 a 2022), as Contagens da População (1996, 2007) e as Estimativas da População (2001 a 2021); e consolidá-las em uma única base.
-
-**Tabela de conteúdos:**
-
-- [APIs do IBGE](#apis-do-ibge)
-- [Tabelas SIDRA](#tabelas-sidra)
-  - [Censos (1970, 1980, 1991, 2000, 2010 e 2022)](#censos-1970-1980-1991-2000-2010-e-2022)
-  - [Contagens de população (1996 e 2007)](#contagens-de-população-1996-e-2007)
-  - [Estimativas da população (EstimaPop)](#estimativas-da-população-estimapop)
-- [O código](#o-código)
-- [Consolidando os arquivos](#consolidando-os-arquivos)
-- [Gráfico](#gráfico)
-- [Conclusão](#conclusão)
 
 ## APIs do IBGE
 
@@ -306,6 +301,6 @@ dados |>
 
 ## Conclusão
 
-Neste texto eu mostrei como baixar os dados de população dos municípios do Brasil do IBGE. Esses dados são muito importantes para diversos estudos e análises, e agora você pode baixá-los e consolidá-los em um único arquivo.
+> Don't repeat yourself! Automatize!
 
-![Don't repeat yourself! Automatize!](https://images2.imgbox.com/0d/3f/DPyd1DGQ_o.jpg)
+Neste texto eu mostrei como baixar os dados de população dos municípios do Brasil do IBGE. Esses dados são muito importantes para diversos estudos e análises, e agora você pode baixá-los e consolidá-los em um único arquivo.
