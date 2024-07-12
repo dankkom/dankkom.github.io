@@ -38,8 +38,7 @@ Para acessar os dados do SIDRA, é necessário passar os parâmetros para a API.
 Podemos passar os seguintes parâmetros para a API:
 
 - código da tabela
-- nível territoria
-- unidades territoriais
+- nível territorial & unidades territoriais
 - variáveis
 - classificações e categorias
 
