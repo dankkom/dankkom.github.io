@@ -6,6 +6,10 @@ title: "About Me"
 [[LinkedIn](https://www.linkedin.com/in/daniel-komesu/)]
 [[Twitter](https://twitter.com/dankkom)]
 
+My ORCID: [[0000-0002-8086-3636]](https://orcid.org/0000-0002-8086-3636)
+
+My CV Lattes: http://lattes.cnpq.br/4839987313912355
+
 ---
 
 ## Education

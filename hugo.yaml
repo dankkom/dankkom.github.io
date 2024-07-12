@@ -17,10 +17,6 @@ params:
         url: "/about/"
       - name: Posts
         url: "/posts/"
-      - name: CV Lattes
-        url: "http://lattes.cnpq.br/4839987313912355"
-      - name: ORCID
-        url: "https://orcid.org/0000-0002-8086-3636"
   GoogleAnalytics4: "G-RLSNHYP5C3"
   defaultTheme: light
   disableThemeToggle: true
@@ -49,11 +45,6 @@ menu:
       name: "About Me"
       title: "About Me"
       url: "/about/"
-      weight: 0
-    - identifier: "legal"
-      name: "Legal"
-      title: "Legal"
-      url: "/legal/"
       weight: 0
     - identifier: "posts"
       name: "Posts"
