@@ -58,7 +58,7 @@ pipx install datasus-fetcher
 Ou ainda, se você quiser instalar o datasus-fetcher a partir do código-fonte, você pode clonar o repositório no GitHub e instalar o pacote com o comando pip:
 
 ```sh
-git clone https://github.com/viridisdata/datasus-fetcher.git
+git clone https://github.com/dankkom/datasus-fetcher.git
 cd datasus-fetcher
 pip install .
 ```
