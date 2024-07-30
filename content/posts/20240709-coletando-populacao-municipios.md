@@ -219,7 +219,7 @@ files.extend(files_estimates)
 
 Agora vamos consolidar os arquivos baixados em um único arquivo.
 
-Primeiro vamos importar a biblioteca `pandas` e definir as funções de leitura e refinamento dos dados.
+Primeiro vamos importar a biblioteca `pandas` e definir as funções de [leitura dos arquivos CSV](https://dkko.me/posts/python-pandas-read-csv/) e refinamento dos dados.
 
 ```python
 import pandas as pd
@@ -231,13 +231,20 @@ def read_file(filepath: Path, **read_csv_args) -> pd.DataFrame:
     return data
 
 def refine(df: pd.DataFrame) -> pd.DataFrame:
-    df = df.dropna(subset="Valor").rename(
-        columns={
-            "Ano": "ano",
-            "Município (Código)": "id_municipio",
-            "Valor": "n_pessoas",
-        }
+    df = (
+        df.dropna(subset="Valor")
+        .rename(
+            columns={
+                "Ano": "ano",
+                "Município (Código)": "id_municipio",
+                "Valor": "pessoas",
+            }
+        )
+        .assign(pessoas=lambda x: x["pessoas"].astype(int))
     )
+    df[["nome_municipio", "sigla_uf"]] = df["Município"].str.split(" - ", expand=True)
+    df = df.drop(columns="Município")
+    df = df[["ano", "id_municipio", "nome_municipio", "sigla_uf", "pessoas"]]
     return df
 ```
 
@@ -247,7 +254,7 @@ Com a biblioteca `pandas` importada e as funções necessárias definidas, podem
 df = refine(
     pd.concat(
         (
-            read_file(file, usecols=("Ano", "Município (Código)", "Valor"))
+            read_file(file, usecols=("Ano", "Município (Código)", "Município", "Valor"))
             for file in files
         ),
         ignore_index=True,
@@ -263,10 +270,47 @@ O método `pd.concat` é utilizado para concatenar os DataFrames. No código aci
 
 A função `refine` é utilizada para renomear as colunas e remover linhas com valores nulos.
 
+Podemos visualizar as primeiras linhas do DataFrame utilizando o método `head`.
+
+```python
+print(df.head())
+```
+
+```
+    ano  id_municipio   nome_municipio sigla_uf  pessoas
+0  1970       1100106    Guajará-Mirim       RO    27016
+1  1970       1100205      Porto Velho       RO    84048
+2  1970       1200104        Brasiléia       AC    12311
+3  1970       1200203  Cruzeiro do Sul       AC    43584
+4  1970       1200302            Feijó       AC    15768
+```
+
+Podemos visualizar informações sobre o DataFrame utilizando o método `info`.
+
+```python
+print(df.info())
+```
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 145380 entries, 0 to 145379
+Data columns (total 5 columns):
+ #   Column          Non-Null Count   Dtype
+---  ------          --------------   -----
+ 0   ano             145380 non-null  int64
+ 1   id_municipio    145380 non-null  int64
+ 2   nome_municipio  145380 non-null  object
+ 3   sigla_uf        145380 non-null  object
+ 4   pessoas         145380 non-null  int64
+dtypes: int64(3), object(2)
+memory usage: 5.5+ MB
+None
+```
+
 Por fim, podemos salvar os dados em um arquivo CSV utilizando o método `to_csv`.
 
 ```python
-df.to_csv(data_dir / "populacao_municipios.csv", index=False, encoding="utf-8")
+df.to_csv("populacao_municipios.csv", index=False, encoding="utf-8")
 ```
 
 Pronto! Agora temos um arquivo CSV com a população dos municípios do Brasil.
