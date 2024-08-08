@@ -135,7 +135,7 @@ data_dir = Path("data")
 data_dir.mkdir(parents=True, exist_ok=True)
 ```
 
-Vamos criar uma lista no Python para colocar os caminhos dos arquivos baixados e a fonte.
+Vamos criar uma lista no Python para colocar os caminhos dos arquivos baixados.
 
 ```python
 files = []
@@ -159,8 +159,7 @@ files_census = download_table(
     classifications={"2": "0", "1": "0", "58": "0"},
     data_dir=data_dir,
 )
-for file in files_census:
-    files.append({"filepath": file, "source": "Census"})
+files.extend(files_census)
 ```
 
 Agora vamos baixar a tabela de população do Censo de 2022.
@@ -179,8 +178,7 @@ files_census_2022 = download_table(
     classifications={"2": "6794", "287": "100362", "286": "113635"},
     data_dir=data_dir,
 )
-for file in files_census_2022:
-    files.append({"filepath": file, "source": "Census"})
+files.extend(files_census_2022)
 ```
 
 Agora vamos baixar as tabelas de população das Contagens contidas nas tabelas 305 e 793 do SIDRA.
@@ -199,8 +197,7 @@ for sidra_tabela in sidra_tabelas:
         ibge_territorial_code=ibge_territorial_code,
         data_dir=data_dir,
     )
-    for file in files_counts:
-        files.append({"filepath": file, "source": "Count"})
+    files.extend(files_counts)
 ```
 
 Por fim, vamos baixar as tabelas de população das Estimativas contidas na tabela 6579 do SIDRA.
@@ -215,8 +212,7 @@ files_estimates = download_table(
     ibge_territorial_code=ibge_territorial_code,
     data_dir=data_dir,
 )
-for file in files_estimates:
-    files.append({"filepath": file, "source": "Estimative"})
+files.extend(files_estimates)
 ```
 
 ## Consolidando os arquivos
@@ -239,16 +235,16 @@ def refine(df: pd.DataFrame) -> pd.DataFrame:
         df.dropna(subset="Valor")
         .rename(
             columns={
-                "Ano": "year",
-                "Município (Código)": "id_municipality",
-                "Valor": "population",
+                "Ano": "ano",
+                "Município (Código)": "id_municipio",
+                "Valor": "pessoas",
             }
         )
-        .assign(population=lambda x: x["population"].astype(int))
+        .assign(pessoas=lambda x: x["pessoas"].astype(int))
     )
-    df[["name_municipality", "abbrev_state"]] = df["Município"].str.split(" - ", expand=True)
+    df[["nome_municipio", "sigla_uf"]] = df["Município"].str.split(" - ", expand=True)
     df = df.drop(columns="Município")
-    df = df[["year", "id_municipality", "name_municipality", "abbrev_state", "population", "source"]]
+    df = df[["ano", "id_municipio", "nome_municipio", "sigla_uf", "pessoas"]]
     return df
 ```
 
@@ -258,7 +254,7 @@ Com a biblioteca `pandas` importada e as funções necessárias definidas, podem
 df = refine(
     pd.concat(
         (
-            read_file(file["filepath"], usecols=("Ano", "Município (Código)", "Município", "Valor")).assign(source=file["source"])
+            read_file(file, usecols=("Ano", "Município (Código)", "Município", "Valor"))
             for file in files
         ),
         ignore_index=True,
@@ -314,7 +310,7 @@ None
 Por fim, podemos salvar os dados em um arquivo CSV utilizando o método `to_csv`.
 
 ```python
-df.to_csv("brazil_municipal_population.csv", index=False, encoding="utf-8")
+df.to_csv("populacao_municipios.csv", index=False, encoding="utf-8")
 ```
 
 Pronto! Agora temos um arquivo CSV com a população dos municípios do Brasil.
@@ -326,12 +322,12 @@ Por fim, a titulo de exemplo, vamos plotar um gráfico com a evolução da popul
 ```r
 library(tidyverse)
 
-dados <- read_csv("brazil_municipal_population.csv")
+dados <- read_csv("data/populacao_municipios.csv")
 
 dados |>
-  group_by(year) |>
-  summarise(population = sum(population)) |>
-  ggplot(aes(x = year, y = population / 1000000)) +
+  group_by(ano) |>
+  summarise(n_pessoas = sum(n_pessoas)) |>
+  ggplot(aes(x = ano, y = n_pessoas / 1000000)) +
   geom_line(linewidth = 1) +
   geom_point(size = 3) +
   labs(title = "Evolução da população brasileira, 1970-2022",
@@ -351,3 +347,5 @@ dados |>
 > Don't repeat yourself! Automatize!
 
 Neste texto eu mostrei como baixar os dados de população dos municípios do Brasil do IBGE. Esses dados são muito importantes para diversos estudos e análises, e agora você pode baixá-los e consolidá-los em um único arquivo.
+
+Coloquei o arquivo CSV gerado no Kaggle, você pode baixá-lo nesse endereço https://www.kaggle.com/datasets/danielkomesu/population-of-brazilian-municipalities.
