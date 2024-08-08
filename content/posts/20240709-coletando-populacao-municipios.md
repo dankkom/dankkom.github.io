@@ -135,7 +135,7 @@ data_dir = Path("data")
 data_dir.mkdir(parents=True, exist_ok=True)
 ```
 
-Vamos criar uma lista no Python para colocar os caminhos dos arquivos baixados.
+Vamos criar uma lista no Python para colocar os caminhos dos arquivos baixados e a fonte.
 
 ```python
 files = []
@@ -159,7 +159,8 @@ files_census = download_table(
     classifications={"2": "0", "1": "0", "58": "0"},
     data_dir=data_dir,
 )
-files.extend(files_census)
+for file in files_census:
+    files.append({"filepath": file, "source": "Census"})
 ```
 
 Agora vamos baixar a tabela de população do Censo de 2022.
@@ -178,7 +179,8 @@ files_census_2022 = download_table(
     classifications={"2": "6794", "287": "100362", "286": "113635"},
     data_dir=data_dir,
 )
-files.extend(files_census_2022)
+for file in files_census_2022:
+    files.append({"filepath": file, "source": "Census"})
 ```
 
 Agora vamos baixar as tabelas de população das Contagens contidas nas tabelas 305 e 793 do SIDRA.
@@ -197,7 +199,8 @@ for sidra_tabela in sidra_tabelas:
         ibge_territorial_code=ibge_territorial_code,
         data_dir=data_dir,
     )
-    files.extend(files_counts)
+    for file in files_counts:
+        files.append({"filepath": file, "source": "Count"})
 ```
 
 Por fim, vamos baixar as tabelas de população das Estimativas contidas na tabela 6579 do SIDRA.
@@ -212,7 +215,8 @@ files_estimates = download_table(
     ibge_territorial_code=ibge_territorial_code,
     data_dir=data_dir,
 )
-files.extend(files_estimates)
+for file in files_estimates:
+    files.append({"filepath": file, "source": "Estimative"})
 ```
 
 ## Consolidando os arquivos
@@ -235,16 +239,16 @@ def refine(df: pd.DataFrame) -> pd.DataFrame:
         df.dropna(subset="Valor")
         .rename(
             columns={
-                "Ano": "ano",
-                "Município (Código)": "id_municipio",
-                "Valor": "pessoas",
+                "Ano": "year",
+                "Município (Código)": "id_municipality",
+                "Valor": "population",
             }
         )
-        .assign(pessoas=lambda x: x["pessoas"].astype(int))
+        .assign(population=lambda x: x["population"].astype(int))
     )
-    df[["nome_municipio", "sigla_uf"]] = df["Município"].str.split(" - ", expand=True)
+    df[["name_municipality", "abbrev_state"]] = df["Município"].str.split(" - ", expand=True)
     df = df.drop(columns="Município")
-    df = df[["ano", "id_municipio", "nome_municipio", "sigla_uf", "pessoas"]]
+    df = df[["year", "id_municipality", "name_municipality", "abbrev_state", "population", "source"]]
     return df
 ```
 
@@ -254,7 +258,7 @@ Com a biblioteca `pandas` importada e as funções necessárias definidas, podem
 df = refine(
     pd.concat(
         (
-            read_file(file, usecols=("Ano", "Município (Código)", "Município", "Valor"))
+            read_file(file["filepath"], usecols=("Ano", "Município (Código)", "Município", "Valor")).assign(source=file["source"])
             for file in files
         ),
         ignore_index=True,
@@ -310,7 +314,7 @@ None
 Por fim, podemos salvar os dados em um arquivo CSV utilizando o método `to_csv`.
 
 ```python
-df.to_csv("populacao_municipios.csv", index=False, encoding="utf-8")
+df.to_csv("brazil_municipal_population.csv", index=False, encoding="utf-8")
 ```
 
 Pronto! Agora temos um arquivo CSV com a população dos municípios do Brasil.
@@ -322,12 +326,12 @@ Por fim, a titulo de exemplo, vamos plotar um gráfico com a evolução da popul
 ```r
 library(tidyverse)
 
-dados <- read_csv("data/populacao_municipios.csv")
+dados <- read_csv("brazil_municipal_population.csv")
 
 dados |>
-  group_by(ano) |>
-  summarise(n_pessoas = sum(n_pessoas)) |>
-  ggplot(aes(x = ano, y = n_pessoas / 1000000)) +
+  group_by(year) |>
+  summarise(population = sum(population)) |>
+  ggplot(aes(x = year, y = population / 1000000)) +
   geom_line(linewidth = 1) +
   geom_point(size = 3) +
   labs(title = "Evolução da população brasileira, 1970-2022",
