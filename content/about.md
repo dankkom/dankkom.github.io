@@ -47,26 +47,27 @@ My CV Lattes: http://lattes.cnpq.br/4839987313912355
 
 (2022-02 : present) **Data Scientist** at **Pezco Economics**<br/>_São Paulo, Brazil_
 
-* Develop data processing and analysis routines for reports and recommendations
-* Create interactive dashboards for data visualization
-* Contribute to infrastructure sector projects and studies
-* Disseminate knowledge via publications and social media
-* Support data collection, processing, analysis, and visualization across projects
+* Develop and implement data processing and analysis routines for comprehensive reports and strategic recommendations.
+* Design and maintain interactive dashboards for enhanced data visualization.
+* Create spatial data analyses and produce informative maps for infrastructure sector projects.
+* Contribute to in-depth studies and geospatial analyses across various sectors.
+* Disseminate insights and findings through publications, maps, and social media platforms.
+* Support data collection, processing, analysis, and visualization, including geospatial data, across various projects.
 
 (2018-02 : 2022-01) **Technical Advisor** at **Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
 
-* Developed data processing and analysis routines for technical reports and policy recommendations
-* Created interactive dashboards for data visualization
-* Collaborated on research projects to improve Institute publications
-* Contributed to studies supporting decision-making in the agricultural sector
-* Published technical notes and organized knowledge-sharing events
-* Assisted in developing agricultural sector technical reports
+* Developed and optimized data processing and analysis routines for technical reports and policy recommendations.
+* Created and managed interactive dashboards for effective data visualization.
+* Collaborated on research projects to enhance the quality of Institute publications.
+* Contributed to studies aiding decision-making in the agricultural sector.
+* Published technical notes and organized knowledge-sharing events.
+* Assisted in the development of comprehensive agricultural sector technical reports.
 
 (2016-02 : 2018-01) **Intern** at **Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
 
-* Collected and processed agricultural statistics from Institute databases
-* Analyzed and visualized production and price data for São Paulo agricultural products
-* Assisted with organizing events to disseminate research and promote knowledge exchange
+* Collected and processed agricultural statistics from Institute databases.
+* Analyzed and visualized data related to São Paulo’s agricultural products.
+* Assisted in organizing events to disseminate research and promote knowledge exchange.
 
 ## Education
 
