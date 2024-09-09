@@ -26,8 +26,6 @@ params:
       url: https://github.com/dankkom
     - name: LinkedIn
       url: https://www.linkedin.com/in/daniel-komesu/
-    - name: X
-      url: https://x.com/dankkom
   ShowReadingTime: true
   ShowCodeCopyButtons: true
 

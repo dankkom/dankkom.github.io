@@ -32,10 +32,8 @@ With a solid foundation in Economics and a passion for data, I transform informa
 Let's connect and explore how I can add value to your organization! 🤝
 
 **Connect with me:**
-
 [[GitHub](https://github.com/dankkom)]
 [[LinkedIn](https://www.linkedin.com/in/daniel-komesu/)]
-[[Twitter](https://twitter.com/dankkom)]
 
 My ORCID: [[0000-0002-8086-3636]](https://orcid.org/0000-0002-8086-3636)
 
@@ -45,37 +43,41 @@ My CV Lattes: http://lattes.cnpq.br/4839987313912355
 
 ## Professional Experience
 
-(2022-02 : present) **Data Scientist** at **Pezco Economics**<br/>_São Paulo, Brazil_
+**Pezco Economics**<br/>_São Paulo, Brazil_
 
-* Develop and implement data processing and analysis routines for comprehensive reports and strategic recommendations.
-* Design and maintain interactive dashboards for enhanced data visualization.
-* Create spatial data analyses and produce informative maps for infrastructure sector projects.
-* Contribute to in-depth studies and geospatial analyses across various sectors.
-* Disseminate insights and findings through publications, maps, and social media platforms.
-* Support data collection, processing, analysis, and visualization, including geospatial data, across various projects.
+* **Data Scientist** (february 2022 - present)
 
-(2018-02 : 2022-01) **Technical Advisor** at **Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
+  * Develop and implement data processing and analysis routines for comprehensive reports and strategic recommendations.
+  * Design and maintain interactive dashboards for enhanced data visualization.
+  * Create spatial data analyses and produce informative maps for infrastructure sector projects.
+  * Contribute to in-depth studies and geospatial analyses across various sectors.
+  * Disseminate insights and findings through publications, maps, and social media platforms.
+  * Support data collection, processing, analysis, and visualization, including geospatial data, across various projects.
 
-* Developed and optimized data processing and analysis routines for technical reports and policy recommendations.
-* Created and managed interactive dashboards for effective data visualization.
-* Collaborated on research projects to enhance the quality of Institute publications.
-* Contributed to studies aiding decision-making in the agricultural sector.
-* Published technical notes and organized knowledge-sharing events.
-* Assisted in the development of comprehensive agricultural sector technical reports.
+**Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
 
-(2016-02 : 2018-01) **Intern** at **Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
+* **Technical Advisor** (february 2018 - january 2022)
 
-* Collected and processed agricultural statistics from Institute databases.
-* Analyzed and visualized data related to São Paulo’s agricultural products.
-* Assisted in organizing events to disseminate research and promote knowledge exchange.
+  * Developed and optimized data processing and analysis routines for technical reports and policy recommendations.
+  * Created and managed interactive dashboards for effective data visualization.
+  * Collaborated on research projects to enhance the quality of Institute publications.
+  * Contributed to studies aiding decision-making in the agricultural sector.
+  * Published technical notes and organized knowledge-sharing events.
+  * Assisted in the development of comprehensive agricultural sector technical reports.
+
+* **Intern** (february 2016 - january 2018)
+
+  * Collected and processed agricultural statistics from Institute databases.
+  * Analyzed and visualized data related to São Paulo’s agricultural products.
+  * Assisted in organizing events to disseminate research and promote knowledge exchange.
 
 ## Education
 
-Specialization in Data Science and Analytics (2023-11 : 2025-05 _ongoing_)
+* **Specialization in Data Science and Analytics** (november 2023 - may 2025 _ongoing_)
 
-Bachelor’s degree in Economics (2015-2018)
+* **Bachelor’s degree in Economics** (2015 - 2018)
 
-Courses & Certifications:
+### Courses & Certifications:
 
 | Course name                                                                                                                                            | Institution                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
