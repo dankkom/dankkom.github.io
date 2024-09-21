@@ -7,7 +7,7 @@ theme: ["PaperMod"]
 params:
   profileMode:
     enabled: true
-    title: "Daniel Komesu"
+    title: "Komesu, D.K."
     subtitle: "Python, Economics, Data Science, and other stuff"
     imageUrl: "/android-chrome-512x512.png"
     imageWidth: 120 # custom size
