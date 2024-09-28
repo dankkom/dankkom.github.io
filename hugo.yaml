@@ -5,20 +5,8 @@ title: "dkko.me"
 theme: ["PaperMod"]
 
 params:
-  profileMode:
-    enabled: true
-    title: "Komesu, D.K."
-    subtitle: "Python, Economics, Data Science, and other stuff"
-    imageUrl: "/android-chrome-512x512.png"
-    imageWidth: 120 # custom size
-    imageHeight: 120 # custom size
-    buttons:
-      - name: About Me
-        url: "/about/"
-      - name: Posts
-        url: "/posts/"
   GoogleAnalytics4: "G-RLSNHYP5C3"
-  GoogleAdsense: true
+  GoogleAdsense: false
   defaultTheme: light
   disableThemeToggle: true
   math: true
