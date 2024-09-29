@@ -384,7 +384,7 @@ Problema resolvido! (•̀ᴗ•́)و ̑̑
 
 Para finalizar esta seção vamos encapsular o código de leitura e tratamento em funções.
 
-Primeiro uma função para a leitura do arquivo CSV contino no arquivo comprimido.
+Primeiro uma função para a leitura do arquivo CSV contido no arquivo comprimido.
 
 ```python
 def read_data(filepath: Path) -> pd.DataFrame:
