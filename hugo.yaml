@@ -10,11 +10,6 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   math: true
-  socialIcons:
-    - name: GitHub
-      url: https://github.com/dankkom
-    - name: LinkedIn
-      url: https://www.linkedin.com/in/daniel-komesu/
   ShowReadingTime: true
   ShowCodeCopyButtons: true
 
@@ -32,9 +27,4 @@ menu:
       name: "About Me"
       title: "About Me"
       url: "/about/"
-      weight: 0
-    - identifier: "posts"
-      name: "Posts"
-      title: "Posts"
-      url: "/posts/"
       weight: 0
