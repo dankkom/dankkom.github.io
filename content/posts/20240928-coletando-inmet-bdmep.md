@@ -15,7 +15,6 @@ cover:
   alt: "Temperatura horária e média diária em São Paulo em 2023"
 ShowToc: true
 TocOpen: true
-draft: true
 ---
 
 Os dados climáticos desempenham um papel crucial em diversos setores, auxiliando em estudos e previsões que impactam áreas como agricultura, planejamento urbano, e gestão de recursos naturais.
