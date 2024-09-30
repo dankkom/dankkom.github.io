@@ -22,7 +22,7 @@ O *crontab* é um arquivo texto descrevendo os comandos a serem executados pelo 
 
 Para editar o *crontab* basta rodar o comando `crontab -e`
 
-A sintaxe do cronta se o formato a seguir:
+A sintaxe do *crontab* apresenta o seguinte formato:
 
 ```
 # ┌───────────── minute (0 - 59)
