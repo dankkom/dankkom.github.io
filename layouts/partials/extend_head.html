@@ -7,3 +7,6 @@
 {{ if .Site.Params.GoogleAdsense }}
     {{ partial "google-adsense.html" . }}
 {{ end }}
+{{ if .Site.Params.UmamiAnalytics }}
+    {{ partial "analytics-umami.html" . }}
+{{ end }}
