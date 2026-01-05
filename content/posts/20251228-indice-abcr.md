@@ -112,14 +112,6 @@ Unnamed: 0_level_2	LEVES	PESADOS	TOTAL	LEVES	PESADOS	TOTAL	LEVES	PESADOS	TOTAL	L
 
 Para facilitar o trabalho, vamos renomear as colunas e achatá-las, garantindo que a coluna de datas seja tratada corretamente.
 
-```python
-# Ajustando os nomes para garantir consistência
-new_columns = list(df.columns)
-new_columns[0] = ("Data", "", "") # A primeira coluna é a data
-df.columns = pd.MultiIndex.from_tuples(new_columns)
-df
-```
-
 ### 1.4 Transformação: De "Wide" para "Long" (Tidy Data)
 
 Para criar visualizações com bibliotecas modernas como o `seaborn` (ou Tableau/PowerBI), o formato "Wide" (uma coluna para cada variável) é ruim. Precisamos do formato "Long" (Tidy Data), onde:
@@ -328,22 +320,13 @@ Para o cientista de dados ou economista, fica a lição: **os dados mais valioso
 
 ## Referências
 
-ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. Índice ABCR – apresentação, metodologia e séries históricas. São Paulo, 2025. Disponível em: <a href="https://melhoresrodovias.org.br/indice-abcr/" rel="nofollow">https://melhoresrodovias.org.br/indice-abcr/</a>. Acesso em: 28 dez. 2025.
-
-ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. ABCR em movimento 2024: relatório anual. São Paulo, 2024. Disponível em: <a href="https://melhoresrodovias.org.br/wp-content/uploads/2025/07/ABCR-em-movimento-2024.pdf" rel="nofollow">https://melhoresrodovias.org.br/wp-content/uploads/2025/07/ABCR-em-movimento-2024.pdf</a>. Acesso em: 28 dez. 2025.
-
-CONFEDERAÇÃO NACIONAL DO TRANSPORTE. Pesquisa CNT de Rodovias 2023. Brasília, 2023. Disponível em: <a href="https://www.cnt.org.br/agencia-cnt/pesquisa-cnt-de-rodovias-2023-refora-a-importancia-de-maior-investimento-na-malha-rodoviria" rel="nofollow">https://www.cnt.org.br/agencia-cnt/pesquisa-cnt-de-rodovias-2023-refora-a-importancia-de-maior-investimento-na-malha-rodoviria</a>. Acesso em: 28 dez. 2025.
-
-CONFEDERAÇÃO NACIONAL DO TRANSPORTE. Transporte rodoviário ainda responde por mais de 60% da carga no país. Brasília, 2025. Disponível em: <a href="https://www.terra.com.br/mobilidade/transporte-rodoviario-ainda-responde-por-mais-de-60-da-carga-no-pais" rel="nofollow">https://www.terra.com.br/mobilidade/transporte-rodoviario-ainda-responde-por-mais-de-60-da-carga-no-pais</a>. Acesso em: 28 dez. 2025.
-
-PGL BRASIL. O transporte rodoviário no Brasil e tendências no setor. 2025. Disponível em: <a href="https://pglbr.com.br/o-transporte-rodoviario-no-brasil-e-tendencias-no-setor/" rel="nofollow">https://pglbr.com.br/o-transporte-rodoviario-no-brasil-e-tendencias-no-setor/</a>. Acesso em: 28 dez. 2025.
-
-R. S. TRANSPORTES. 60% da carga no Brasil é transportada pelo modal rodoviário. s.l., s.d. Disponível em: <a href="https://www.rstransportes.com/blog/60-da-carga-no-brasil-e-transportada-pelo-modal-rodoviario/" rel="nofollow">https://www.rstransportes.com/blog/60-da-carga-no-brasil-e-transportada-pelo-modal-rodoviario/</a>. Acesso em: 28 dez. 2025.
-
-ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. Novos caminhos para concessões de rodovias no Brasil: Índice ABCR, o termômetro da economia. Brasília: Poder360, 2018. Disponível em: <a href="https://static.poder360.com.br/2018/09/abcr_relatorio_novos_caminhos-1.pdf" rel="nofollow">https://static.poder360.com.br/2018/09/abcr_relatorio_novos_caminhos-1.pdf</a>. Acesso em: 28 dez. 2025.
-
-ECONODADOS. Séries históricas do Índice ABCR (fluxo de veículos em praças pedagiadas – Brasil, Leves, Pesados, Total, 1999=100). 2025. Disponível em: <a href="https://web.macrodados.com/tabela.dll/in?pg=1&cod=818" rel="nofollow">https://web.macrodados.com/tabela.dll/in?pg=1&cod=818</a>. Acesso em: 28 dez. 2025.
-
-IMTRAFF. Modelos de projeção de variação de tráfego rodoviário a partir do Índice ABCR. São Paulo, 2021. Disponível em: <a href="https://www.imtraff.com.br/wp-content/uploads/2021/10/Artigo-Previsao-TAXA-DE-CRESCIMENTO-DE-TRAFEGO.pdf" rel="nofollow">https://www.imtraff.com.br/wp-content/uploads/2021/10/Artigo-Previsao-TAXA-DE-CRESCIMENTO-DE-TRAFEGO.pdf</a>. Acesso em: 28 dez. 2025.
-
-MATO GROSSO DO SUL. Secretaria de Estado de Governo e Gestão Estratégica. MODELAGEM TÉCNICA – Produto 1: estudos de tráfego. Campo Grande, 2025. Disponível em: <a href="https://www.epe.segov.ms.gov.br/wp-content/uploads/2025/01/Produto-1-Estudos-de-trafego-1.pdf" rel="nofollow">https://www.epe.segov.ms.gov.br/wp-content/uploads/2025/01/Produto-1-Estudos-de-trafego-1.pdf</a>. Acesso em: 28 dez. 2025.
+1. ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. Índice ABCR – apresentação, metodologia e séries históricas. São Paulo, 2025. Disponível em: <a href="https://melhoresrodovias.org.br/indice-abcr/" rel="nofollow">https://melhoresrodovias.org.br/indice-abcr/</a>. Acesso em: 28 dez. 2025.
+2. ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. ABCR em movimento 2024: relatório anual. São Paulo, 2024. Disponível em: <a href="https://melhoresrodovias.org.br/wp-content/uploads/2025/07/ABCR-em-movimento-2024.pdf" rel="nofollow">https://melhoresrodovias.org.br/wp-content/uploads/2025/07/ABCR-em-movimento-2024.pdf</a>. Acesso em: 28 dez. 2025.
+3. CONFEDERAÇÃO NACIONAL DO TRANSPORTE. Pesquisa CNT de Rodovias 2023. Brasília, 2023. Disponível em: <a href="https://www.cnt.org.br/agencia-cnt/pesquisa-cnt-de-rodovias-2023-refora-a-importancia-de-maior-investimento-na-malha-rodoviria" rel="nofollow">https://www.cnt.org.br/agencia-cnt/pesquisa-cnt-de-rodovias-2023-refora-a-importancia-de-maior-investimento-na-malha-rodoviria</a>. Acesso em: 28 dez. 2025.
+4. CONFEDERAÇÃO NACIONAL DO TRANSPORTE. Transporte rodoviário ainda responde por mais de 60% da carga no país. Brasília, 2025. Disponível em: <a href="https://www.terra.com.br/mobilidade/transporte-rodoviario-ainda-responde-por-mais-de-60-da-carga-no-pais" rel="nofollow">https://www.terra.com.br/mobilidade/transporte-rodoviario-ainda-responde-por-mais-de-60-da-carga-no-pais</a>. Acesso em: 28 dez. 2025.
+5. PGL BRASIL. O transporte rodoviário no Brasil e tendências no setor. 2025. Disponível em: <a href="https://pglbr.com.br/o-transporte-rodoviario-no-brasil-e-tendencias-no-setor/" rel="nofollow">https://pglbr.com.br/o-transporte-rodoviario-no-brasil-e-tendencias-no-setor/</a>. Acesso em: 28 dez. 2025.
+6. R. S. TRANSPORTES. 60% da carga no Brasil é transportada pelo modal rodoviário. s.l., s.d. Disponível em: <a href="https://www.rstransportes.com/blog/60-da-carga-no-brasil-e-transportada-pelo-modal-rodoviario/" rel="nofollow">https://www.rstransportes.com/blog/60-da-carga-no-brasil-e-transportada-pelo-modal-rodoviario/</a>. Acesso em: 28 dez. 2025.
+7. ASSOCIAÇÃO BRASILEIRA DE CONCESSIONÁRIAS DE RODOVIAS. Novos caminhos para concessões de rodovias no Brasil: Índice ABCR, o termômetro da economia. Brasília: Poder360, 2018. Disponível em: <a href="https://static.poder360.com.br/2018/09/abcr_relatorio_novos_caminhos-1.pdf" rel="nofollow">https://static.poder360.com.br/2018/09/abcr_relatorio_novos_caminhos-1.pdf</a>. Acesso em: 28 dez. 2025.
+8. ECONODADOS. Séries históricas do Índice ABCR (fluxo de veículos em praças pedagiadas – Brasil, Leves, Pesados, Total, 1999=100). 2025. Disponível em: <a href="https://web.macrodados.com/tabela.dll/in?pg=1&cod=818" rel="nofollow">https://web.macrodados.com/tabela.dll/in?pg=1&cod=818</a>. Acesso em: 28 dez. 2025.
+9. IMTRAFF. Modelos de projeção de variação de tráfego rodoviário a partir do Índice ABCR. São Paulo, 2021. Disponível em: <a href="https://www.imtraff.com.br/wp-content/uploads/2021/10/Artigo-Previsao-TAXA-DE-CRESCIMENTO-DE-TRAFEGO.pdf" rel="nofollow">https://www.imtraff.com.br/wp-content/uploads/2021/10/Artigo-Previsao-TAXA-DE-CRESCIMENTO-DE-TRAFEGO.pdf</a>. Acesso em: 28 dez. 2025.
+10. MATO GROSSO DO SUL. Secretaria de Estado de Governo e Gestão Estratégica. MODELAGEM TÉCNICA – Produto 1: estudos de tráfego. Campo Grande, 2025. Disponível em: <a href="https://www.epe.segov.ms.gov.br/wp-content/uploads/2025/01/Produto-1-Estudos-de-trafego-1.pdf" rel="nofollow">https://www.epe.segov.ms.gov.br/wp-content/uploads/2025/01/Produto-1-Estudos-de-trafego-1.pdf</a>. Acesso em: 28 dez. 2025.
