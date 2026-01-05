@@ -6,6 +6,11 @@ slug: "indice-abcr"
 categories: ["Python", "Data Science", "Visualização de Dados"]
 tags: ["Python", "Pandas", "Seaborn", "Análise de Dados", "Visualização de Dados", "ABCR", "Tráfego Rodoviário"]
 description: "Neste post, exploramos o índice ABCR, que monitora o fluxo de veículos em praças pedagiadas no Brasil. Utilizando Python, baixamos os dados, realizamos a limpeza e transformação necessárias, e criamos visualizações para entender as tendências ao longo do tempo."
+cover:
+  image: https://images2.imgbox.com/f6/2a/zkS7jtai_o.png
+  alt: "Gráfico de linhas mostrando o índice ABCR ao longo do tempo para diferentes regiões do Brasil"
+ShowToc: true
+TocOpen: true
 ---
 
 ## Introdução: O asfalto fala sobre o PIB

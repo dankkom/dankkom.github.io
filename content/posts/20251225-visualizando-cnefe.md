@@ -6,6 +6,11 @@ slug: visualizando-analisando-dados-cnefe-python-datashader
 categories: ["Python", "Data Science", "Geoprocessamento", "Big Data"]
 tags: ["Python", "Datashader", "CNEFE", "Sustentabilidade", "Visualização de Dados", "IBGE"]
 description: "Um guia definitivo para processar, analisar e visualizar milhões de endereços do CNEFE/IBGE. Aprenda a lidar com Big Data geoespacial usando Pandas e Datashader."
+cover:
+  image: https://images2.imgbox.com/8f/fc/nJmz1xlZ_o.png
+  alt: "Mapa de calor do Brasil gerado a partir dos dados do CNEFE usando Datashader"
+ShowToc: true
+TocOpen: true
 ---
 
 O **Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE)**, elaborado pelo IBGE, é muito mais do que uma simples lista de locais: é a "espinha dorsal" da infraestrutura geoespacial brasileira. Atualizado massivamente durante o Censo Demográfico, ele representa o registro mais granular e completo da ocupação do território nacional.
