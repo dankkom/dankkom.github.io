@@ -73,7 +73,7 @@ My CV Lattes: http://lattes.cnpq.br/4839987313912355
 
 ## Education
 
-* **Specialization in Data Science and Analytics** (november 2023 - may 2025 _ongoing_)
+* **Specialization in Data Science and Analytics** (november 2023 - may 2025)
 
 * **Bachelor’s degree in Economics** (2015 - 2018)
 
