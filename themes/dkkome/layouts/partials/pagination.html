@@ -1,0 +1,12 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pagination" style="display:flex; justify-content:space-between; margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--border-color);">
+  {{ if .Paginator.HasPrev }}
+  <a href="{{ .Paginator.Prev.URL }}" class="pagination-link" style="font-weight:600;">&larr; Recentes</a>
+  {{ else }}
+  <span></span>
+  {{ end }}
+  {{ if .Paginator.HasNext }}
+  <a href="{{ .Paginator.Next.URL }}" class="pagination-link" style="font-weight:600;">Antigos &rarr;</a>
+  {{ end }}
+</nav>
+{{ end }}

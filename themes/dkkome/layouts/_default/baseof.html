@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}" data-theme="{{ site.Params.defaultTheme | default "light" }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-primary text-primary transition-colors duration-300">
+  <div class="site-wrapper">
+    {{ partial "header.html" . }}
+    <main class="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
+  {{ if site.Params.math }}{{ partial "math.html" . }}{{ end }}
+</body>
+</html>

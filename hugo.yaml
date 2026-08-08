@@ -1,8 +1,8 @@
 baseURL: "https://dkko.me/"
-languageCode: "pt-br"
+locale: "pt-br"
 title: "dkko.me"
 
-theme: ["PaperMod"]
+theme: ["dkkome"]
 
 params:
   GoogleAnalytics4: "G-RLSNHYP5C3"
@@ -18,6 +18,10 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    parser:
+      attribute:
+        block: true
+        title: true
 
 permalinks:
   posts: "/posts/:slug"
