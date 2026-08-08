@@ -163,7 +163,9 @@ pre code {
   --bleed-max-width: 100vw;
 }
 
-.post-content img,
+.post-content p > img:only-child,
+.post-content > img,
+.post-content figure,
 .post-content .highlight,
 .post-content > pre,
 .post-content table,
@@ -185,7 +187,9 @@ pre code {
   padding-right: 1.5rem;
 }
 
-.post-content img {
+.post-content p > img:only-child,
+.post-content > img,
+.post-content figure img {
   display: block;
   object-fit: contain;
 }
