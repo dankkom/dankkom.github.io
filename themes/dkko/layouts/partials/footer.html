@@ -1,8 +1,46 @@
 <footer class="footer">
-  <div class="footer-container">
-    <p>&copy; {{ now.Year }} {{ site.Title }}. Todos os direitos reservados.</p>
-    <p class="powered-by">
-      Desenvolvido com <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &amp; Tema <a href="https://github.com/dkko/dkkome" target="_blank" rel="noopener">dkkome</a>
-    </p>
+  <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; border-top: 1px solid var(--border-color); padding: 3rem 0 1.5rem 0; margin-top: 4rem;">
+    
+    <div class="footer-section">
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary);">{{ site.Title }}</h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">Economista e Cientista de Dados. Escrevo sobre análise de dados, programação em Python e políticas públicas.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary);">Navegação</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem;">
+        <li><a href="/about/" class="footer-link">Sobre Mim</a></li>
+        <li><a href="/search/" class="footer-link">Pesquisar Artigos</a></li>
+        <li><a href="/tags/" class="footer-link">Todas as Tags</a></li>
+        <li><a href="/privacy/" class="footer-link">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary);">Conectar</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem;">
+        <li><a href="https://github.com/dankkom" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/daniel-komesu/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+        <li><a href="mailto:daniel@dkko.me" class="footer-link">E-mail</a></li>
+        <li><a href="{{ "index.xml" | relURL }}" class="footer-link">RSS Feed</a></li>
+      </ul>
+    </div>
+
+  </div>
+  
+  <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-secondary);">
+    <div>&copy; {{ now.Year }} {{ site.Title }}. Todos os direitos reservados.</div>
+    <div>Desenvolvido com <a href="https://gohugo.io/" target="_blank" rel="noopener" class="footer-link" style="font-weight: 500;">Hugo</a> &bull; Hospedado no <a href="https://pages.github.com/" target="_blank" rel="noopener" class="footer-link" style="font-weight: 500;">GitHub Pages</a></div>
   </div>
 </footer>
+
+<style>
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: var(--accent) !important;
+}
+</style>
