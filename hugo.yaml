@@ -1,8 +1,8 @@
 baseURL: "https://dkko.me/"
 locale: "pt-br"
-title: "dkko.me"
+title: "Daniel Komesu"
 
-theme: ["dkkome"]
+theme: ["dkko"]
 
 params:
   GoogleAnalytics4: "G-RLSNHYP5C3"
