@@ -15,10 +15,7 @@ layout: "page"
     </div>
   </div>
   <div class="about-hero-image">
-    <!-- Substitua este SVG genérico por uma imagem real inserindo: <img src="/sua-foto.jpg" alt="Daniel Komesu" style="width:200px; height:200px; border-radius:50%; object-fit:cover; border: 4px solid var(--accent);"> -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:220px; height:220px; border-radius:50%; border: 4px solid var(--accent); color: var(--text-secondary); background: var(--bg-secondary); padding: 2.5rem;">
-      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
-    </svg>
+    <img src="/android-chrome-512x512.png" alt="Daniel Komesu" style="width:220px; height:220px; border-radius:50%; object-fit:cover; border: 4px solid var(--accent); background: var(--bg-primary);">
   </div>
 </div>
 
