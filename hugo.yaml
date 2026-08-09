@@ -34,7 +34,7 @@ outputs:
 menu:
   main:
     - identifier: "about"
-      name: "About Me"
-      title: "About Me"
+      name: "Sobre"
+      title: "Sobre"
       url: "/about/"
       weight: 0

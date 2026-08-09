@@ -33,6 +33,7 @@
     {{ .Content }}
   </div>
 
+  {{ if eq .Section "posts" }}
   <div class="author-bio" style="display: flex; gap: 1.5rem; margin-top: 3rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
     <div style="flex: 1;">
       <h3 style="margin-top: 0; margin-bottom: 0.5rem;">Sobre {{ .Params.author | default site.Title }}</h3>
@@ -65,6 +66,7 @@
             async>
     </script>
   </div>
+  {{ end }}
 </article>
 
 <script>
