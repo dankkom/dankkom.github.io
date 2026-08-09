@@ -1,123 +1,108 @@
 ---
-title: "About Me"
+title: "Sobre Mim"
+layout: "page"
 ---
 
-## Economist and Data Scientist 📊🚀
-
-With a solid foundation in Economics and a passion for data, I transform information into strategic insights to drive businesses forward. My experience spans various areas of data science, from collection and processing to analysis and visualization, always focused on generating value and supporting decision-making.
-
-**Data Skills:**
-
-* **Extraction:** Proficiency in web scraping and API techniques for efficient data collection from diverse sources.
-* **Manipulation:** Expertise in data processing, cleaning, and transformation (data wrangling) using Python (pandas) and R (tidyverse), with a focus on large public databases (RAIS, CAGED, INMET-BDMEP, CNPJ, DATASUS, SNIS).
-* **Modeling:** Creation of dimensional models for BI and relational database modeling to ensure data integrity and organization.
-* **Visualization:** Creation of impactful charts and informative maps using Python (matplotlib, seaborn), R (ggplot2), QGIS, and kepler.gl, as well as interactive dashboards in Power BI with DAX.
-* **Advanced Excel:** Extensive knowledge of Excel for ad hoc analysis and quick visualizations.
-
-**IT Skills:**
-
-* **Programming:** Proficiency in Python (OOP, functional) and experience developing web applications with Flask and Shiny (R).
-* **Web:** Knowledge of HTML, CSS, and JavaScript for customization and integration of solutions.
-* **Infrastructure:** Familiarity with Docker for creating development and deployment environments, as well as experience with Linux systems (Debian/Ubuntu).
-* **ETL/ELT Pipelines:** Development of custom pipelines in Python for automating data processes.
-* **Databases:** PostgreSQL administration and knowledge of data modeling to ensure the efficiency and performance of solutions.
-* **Website Creation:** Use of Hugo for developing static websites to present results and portfolios.
-
-**Communication:**
-
-* **Technical Reports and Texts:** Ability to communicate results clearly and concisely, both to technical and non-technical audiences.
-
-**Seeking new opportunities to apply my skills and knowledge in challenging and innovative projects.**
-
-Let's connect and explore how I can add value to your organization! 🤝
-
-**Connect with me:**
-[[GitHub](https://github.com/dankkom)]
-[[LinkedIn](https://www.linkedin.com/in/daniel-komesu/)]
-
-My ORCID: [[0000-0002-8086-3636]](https://orcid.org/0000-0002-8086-3636)
-
-My CV Lattes: http://lattes.cnpq.br/4839987313912355
-
----
-
-## Professional Experience
-
-**Pezco Economics**<br/>_São Paulo, Brazil_
-
-* **Data Scientist** (february 2022 - present)
-
-  * Develop and implement data processing and analysis routines for comprehensive reports and strategic recommendations.
-  * Design and maintain interactive dashboards for enhanced data visualization.
-  * Create spatial data analyses and produce informative maps for infrastructure sector projects.
-  * Contribute to in-depth studies and geospatial analyses across various sectors.
-  * Disseminate insights and findings through publications, maps, and social media platforms.
-  * Support data collection, processing, analysis, and visualization, including geospatial data, across various projects.
-
-**Instituto de Economia Agrícola (IEA)**<br/>_São Paulo, Brazil_
-
-* **Technical Advisor** (february 2018 - january 2022)
-
-  * Developed and optimized data processing and analysis routines for technical reports and policy recommendations.
-  * Created and managed interactive dashboards for effective data visualization.
-  * Collaborated on research projects to enhance the quality of Institute publications.
-  * Contributed to studies aiding decision-making in the agricultural sector.
-  * Published technical notes and organized knowledge-sharing events.
-  * Assisted in the development of comprehensive agricultural sector technical reports.
-
-* **Intern** (february 2016 - january 2018)
-
-  * Collected and processed agricultural statistics from Institute databases.
-  * Analyzed and visualized data related to São Paulo’s agricultural products.
-  * Assisted in organizing events to disseminate research and promote knowledge exchange.
-
-## Education
-
-* **Specialization in Data Science and Analytics** (november 2023 - may 2025)
-
-* **Bachelor’s degree in Economics** (2015 - 2018)
-
-### Courses & Certifications:
-
-| Course name                                                                                                                                            | Institution                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
-| [O Poder da Macroeconomia: princípios da economia no mundo real (em Português)](https://www.coursera.org/account/accomplishments/records/2U3RRQCSARJX) | University of California, Irvine |
-| [The Data Scientist’s Toolbox](https://www.coursera.org/account/accomplishments/records/S5JX66V2G7JJ)                                                  | Johns Hopkins University         |
-| [Exploratory Data Analysis](https://www.coursera.org/account/accomplishments/records/WHLX7KBAFKBN)                                                     | Johns Hopkins University         |
-| [R Programming](https://www.coursera.org/account/accomplishments/records/ZYRNCYVJ989N)                                                                 | Johns Hopkins University         |
-| [Reproducible Research](https://www.coursera.org/account/accomplishments/records/PYLJ5WQJQCS4)                                                         | Johns Hopkins University         |
-| [Getting and Cleaning Data](https://www.coursera.org/account/accomplishments/records/7CUJ954AU45S)                                                     | Johns Hopkins University         |
-| Welcome to Game Theory                                                                                                                                 | The University of Tokyo          |
-| [Modernizing Data Lakes and Data Warehouses with GCP](https://coursera.org/share/9e68309318cb2bf7b6571d33ae641568)                                     | Google Cloud                     |
-
----
-
-## Skills/Tools
-
-<div class="tools">
-<img loading="lazy" src="https://img.shields.io/badge/-pandas-150458?style=for-the-badge&amp;logo=pandas" alt="pandas">
-<img loading="lazy" src="https://img.shields.io/badge/-jupyter-ffffff?style=for-the-badge&amp;logo=jupyter" alt="Jupyter">
-<img loading="lazy" src="http://img.shields.io/badge/-Python%20Programming%20Language-ffffff?style=for-the-badge&amp;logo=python" alt="Python Programming Language">
-<img loading="lazy" src="http://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask" alt="Flask">
-<img loading="lazy" src="http://img.shields.io/badge/-R%20Programming%20Language-ffffff?style=for-the-badge&amp;logo=R&amp;logoColor=276DC3" alt="R Programming Language">
-<img loading="lazy" src="https://img.shields.io/badge/-PostgreSQL-ffffff?style=for-the-badge&amp;logo=postgresql" alt="PostgreSQL">
-<img loading="lazy" src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=SQLite" alt="SQLite">
-<img loading="lazy" src="http://img.shields.io/badge/-VS%20Code-ffffff?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=007ACC" alt="VS Code">
-<img loading="lazy" src="http://img.shields.io/badge/-Sublime%20Text-ffffff?style=for-the-badge&amp;logo=sublimetext" alt="Sublime Text">
-<img loading="lazy" src="http://img.shields.io/badge/-Neovim-ffffff?style=for-the-badge&amp;logo=neovim" alt="Neovim">
-<img loading="lazy" src="http://img.shields.io/badge/-Google%20Analytics-ffffff?style=for-the-badge&amp;logo=googleanalytics" alt="Google Analytics">
-<img loading="lazy" src="http://img.shields.io/badge/-Google%20Earth-ffffff?style=for-the-badge&amp;logo=googleearth" alt="Google Earth">
-<img loading="lazy" src="http://img.shields.io/badge/-Inkscape-ffffff?style=for-the-badge&amp;logo=inkscape&amp;logoColor=000000" alt="Inkscape">
-<img loading="lazy" src="http://img.shields.io/badge/-Blender%203D-ffffff?style=for-the-badge&amp;logo=blender" alt="Blender 3D">
-<img loading="lazy" src="http://img.shields.io/badge/-FFmpeg-007808?style=for-the-badge&amp;logo=ffmpeg" alt="FFmpeg">
+<div class="about-hero">
+  <div class="about-hero-text">
+    <h2>Cientista de Dados & Economista 📊🚀</h2>
+    <p>Com uma base sólida em Economia e paixão por dados, transformo informações brutas em insights estratégicos para impulsionar negócios. Minha experiência abrange todas as pontas da ciência de dados: desde a raspagem e engenharia de dados até a modelagem analítica e criação de dashboards interativos. Meu foco é sempre gerar valor real e facilitar a tomada de decisão.</p>
+    <div class="about-social">
+      <a href="https://github.com/dankkom" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/daniel-komesu/" target="_blank" class="btn">LinkedIn</a>
+      <a href="http://lattes.cnpq.br/4839987313912355" target="_blank" class="btn btn-outline">Currículo Lattes</a>
+      <a href="https://orcid.org/0000-0002-8086-3636" target="_blank" class="btn btn-outline">ORCID</a>
+    </div>
+  </div>
+  <div class="about-hero-image">
+    <!-- Substitua este SVG genérico por uma imagem real inserindo: <img src="/sua-foto.jpg" alt="Daniel Komesu" style="width:200px; height:200px; border-radius:50%; object-fit:cover; border: 4px solid var(--accent);"> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="width:220px; height:220px; border-radius:50%; border: 4px solid var(--accent); color: var(--text-secondary); background: var(--bg-secondary); padding: 2.5rem;">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+    </svg>
+  </div>
 </div>
 
-<style type="text/css">
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1px;
-}
-</style>
+<h2 class="section-title">Habilidades em Dados & TI</h2>
+<div class="skills-grid">
+  <div class="skill-card">
+    <h3>Extração & Manipulação</h3>
+    <p>Proficiência em web scraping e consumo de APIs. Forte atuação na limpeza e transformação (data wrangling) com Python (pandas) e R (tidyverse), especialmente em bases complexas (RAIS, CAGED, DATASUS, SNIS, CNPJ).</p>
+  </div>
+  <div class="skill-card">
+    <h3>Modelagem & BD</h3>
+    <p>Administração de PostgreSQL e modelagem de bancos relacionais para garantir a integridade dos dados. Construção de modelos dimensionais e pipelines ETL/ELT automatizados para BI.</p>
+  </div>
+  <div class="skill-card">
+    <h3>Visualização & Dashboards</h3>
+    <p>Criação de gráficos e mapas analíticos em Python (matplotlib, seaborn) e R (ggplot2, kepler.gl, QGIS). Desenvolvimento de painéis interativos em Power BI com DAX avançado.</p>
+  </div>
+  <div class="skill-card">
+    <h3>Dev & Infraestrutura</h3>
+    <p>Programação web full-stack com Flask e HTML/CSS/JS. Uso de ambientes isolados com Docker, administração Linux (Debian/Ubuntu) e desenvolvimento de sites estáticos de alta performance (Hugo).</p>
+  </div>
+</div>
+
+<h2 class="section-title">Experiência Profissional</h2>
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">Fevereiro 2022 - Presente</div>
+    <h3>Cientista de Dados</h3>
+    <h4>Pezco Economics (São Paulo, BR)</h4>
+    <p>Desenvolvimento e implementação de rotinas de processamento de dados para relatórios abrangentes e recomendações estratégicas. Design e manutenção de dashboards interativos. Especialista em análises de dados espaciais e produção de mapas informativos aplicados a projetos do setor de infraestrutura e estudos econômicos aprofundados.</p>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">Fevereiro 2018 - Janeiro 2022</div>
+    <h3>Assessor Técnico</h3>
+    <h4>Instituto de Economia Agrícola - IEA (São Paulo, BR)</h4>
+    <p>Otimização de pipelines de análise de dados e elaboração de relatórios técnicos. Gestão de painéis visuais focados no setor agrícola paulista. Colaboração em pesquisas institucionais para publicações oficiais, subsidiando a tomada de decisão no agronegócio e organizando eventos de compartilhamento de conhecimento.</p>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">Fevereiro 2016 - Janeiro 2018</div>
+    <h3>Estagiário de Economia</h3>
+    <h4>Instituto de Economia Agrícola - IEA</h4>
+    <p>Atuação na coleta primária e processamento de estatísticas agrícolas nas bases do Instituto. Análise exploratória e visualização de dados referentes aos produtos agrícolas do Estado de São Paulo.</p>
+  </div>
+</div>
+
+<h2 class="section-title">Formação Acadêmica</h2>
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">Novembro 2023 - Maio 2025</div>
+    <h3>Especialização em Data Science e Analytics</h3>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-date">2015 - 2018</div>
+    <h3>Bacharelado em Ciências Econômicas</h3>
+  </div>
+</div>
+
+<h2 class="section-title">Cursos e Certificações</h2>
+* **O Poder da Macroeconomia** — University of California, Irvine
+* **The Data Scientist’s Toolbox** — Johns Hopkins University
+* **Exploratory Data Analysis** — Johns Hopkins University
+* **R Programming** — Johns Hopkins University
+* **Getting and Cleaning Data & Reproducible Research** — Johns Hopkins University
+* **Welcome to Game Theory** — The University of Tokyo
+* **Modernizing Data Lakes and Data Warehouses with GCP** — Google Cloud
+
+<h2 class="section-title">Ferramentas Tecnológicas</h2>
+<div class="tools-grouped">
+  <img loading="lazy" src="http://img.shields.io/badge/-Python%20Programming-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python">
+  <img loading="lazy" src="https://img.shields.io/badge/-pandas-150458?style=for-the-badge&amp;logo=pandas" alt="pandas">
+  <img loading="lazy" src="https://img.shields.io/badge/-jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white" alt="Jupyter">
+  <img loading="lazy" src="http://img.shields.io/badge/-R%20Programming-276DC3?style=for-the-badge&amp;logo=R&amp;logoColor=white" alt="R">
+  <img loading="lazy" src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL">
+  <img loading="lazy" src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=SQLite" alt="SQLite">
+  <img loading="lazy" src="http://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask" alt="Flask">
+  <img loading="lazy" src="http://img.shields.io/badge/-Google%20Analytics-E37400?style=for-the-badge&amp;logo=googleanalytics&amp;logoColor=white" alt="Google Analytics">
+  <img loading="lazy" src="http://img.shields.io/badge/-QGIS-589632?style=for-the-badge&amp;logo=qgis&amp;logoColor=white" alt="QGIS">
+  <img loading="lazy" src="http://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=white" alt="VS Code">
+  <img loading="lazy" src="http://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&amp;logo=neovim&amp;logoColor=white" alt="Neovim">
+  <img loading="lazy" src="http://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" alt="Linux">
+  <img loading="lazy" src="http://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="Docker">
+</div>

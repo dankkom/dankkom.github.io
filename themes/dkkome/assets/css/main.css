@@ -151,6 +151,38 @@ pre code {
 }
 .copy-button:hover { color: var(--accent); border-color: var(--accent); }
 
+/* ===== About Page Premium Layout ===== */
+.about-hero { display: flex; align-items: center; gap: 3rem; margin-bottom: 4rem; flex-wrap: wrap-reverse; }
+.about-hero-text { flex: 1; min-width: 300px; }
+.about-hero-text h2 { font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1.2; }
+.about-hero-text p { font-size: 1.1rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 2rem; }
+.about-hero-image { display: flex; justify-content: center; align-items: center; flex: 1; min-width: 250px; }
+.about-social { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 0.6rem 1.2rem; background: var(--accent); color: white; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.2s; border: 2px solid var(--accent); }
+.btn:hover { background: transparent; color: var(--accent); }
+.btn-outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+.btn-outline:hover { background: var(--accent); color: white; }
+
+.section-title { font-size: 1.8rem; margin: 3rem 0 1.5rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.skill-card { background: var(--bg-secondary); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color); transition: transform 0.2s; }
+.skill-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.skill-card h3 { margin: 0 0 0.8rem 0; color: var(--accent); font-size: 1.2rem; }
+.skill-card p { margin: 0; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5; }
+
+.timeline { position: relative; padding-left: 2rem; margin-top: 2rem; }
+.timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--border-color); }
+.timeline-item { position: relative; margin-bottom: 2.5rem; }
+.timeline-dot { position: absolute; left: -2.4rem; top: 0.2rem; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg-primary); }
+.timeline-date { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; letter-spacing: 0.5px; text-transform: uppercase; }
+.timeline-item h3 { margin: 0 0 0.2rem 0; font-size: 1.3rem; }
+.timeline-item h4 { margin: 0 0 1rem 0; font-size: 1rem; color: var(--text-secondary); font-weight: normal; }
+.timeline-item p { margin: 0; color: var(--text-secondary); line-height: 1.6; }
+
+.tools-grouped { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-start; }
+.tools-grouped img { height: 28px; border-radius: 4px; }
+
 /* ===== Reading Progress ===== */
 .reading-progress-container {
   position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 100;
