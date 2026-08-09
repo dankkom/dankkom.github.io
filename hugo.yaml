@@ -1,5 +1,5 @@
 baseURL: "https://dkko.me/"
-languageCode: "pt-br"
+locale: "pt-br"
 title: "dkko.me"
 
 theme: ["dkkome"]
