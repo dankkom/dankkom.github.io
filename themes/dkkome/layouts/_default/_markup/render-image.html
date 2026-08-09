@@ -1,0 +1,12 @@
+{{ $src := .Destination }}
+{{ if strings.HasPrefix $src "http" }}
+  <img src="{{ $src }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" />
+{{ else }}
+  {{ $img := .Page.Resources.GetMatch $src }}
+  {{ if and $img (not (eq $img.MediaType.SubType "svg")) }}
+    {{ $webp := $img.Resize (printf "%dx webp" $img.Width) }}
+    <img src="{{ $webp.RelPermalink }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} width="{{ $webp.Width }}" height="{{ $webp.Height }}" loading="lazy" />
+  {{ else }}
+    <img src="{{ $src | relURL }}" alt="{{ .Text }}" {{ with .Title }}title="{{ . }}"{{ end }} loading="lazy" />
+  {{ end }}
+{{ end }}

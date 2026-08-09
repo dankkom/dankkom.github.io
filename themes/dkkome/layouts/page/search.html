@@ -1,0 +1,42 @@
+{{ define "main" }}
+<header class="post-header">
+  <h1>Pesquisa</h1>
+</header>
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="Digite uma palavra-chave, tag ou assunto..." style="width: 100%; padding: 1rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-secondary); color: var(--text-primary); margin-bottom: 2rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-color)'">
+  <div id="search-results" class="posts-grid"></div>
+</div>
+<script>
+  fetch('/index.json').then(res => res.json()).then(data => {
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    
+    input.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      results.innerHTML = '';
+      if (!query) return;
+      
+      const matches = data.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        item.summary.toLowerCase().includes(query) ||
+        item.tags.some(t => t.toLowerCase().includes(query))
+      );
+      
+      if(matches.length === 0) {
+        results.innerHTML = '<p style="text-align:center; color:var(--text-secondary); width:100%;">Nenhum artigo encontrado.</p>';
+        return;
+      }
+
+      matches.forEach(item => {
+        results.innerHTML += `
+          <article class="post-card" style="padding: 1.5rem;">
+            <h4 style="margin-top:0; font-size:1.2rem;"><a href="${item.permalink}">${item.title}</a></h4>
+            <div class="post-meta" style="margin-bottom:1rem;">${item.date}</div>
+            <div style="font-size:0.95rem; color:var(--text-secondary); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">${item.summary}</div>
+          </article>
+        `;
+      });
+    });
+  });
+</script>
+{{ end }}

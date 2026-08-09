@@ -33,6 +33,28 @@
     {{ .Content }}
   </div>
 
+  <div class="author-bio" style="display: flex; gap: 1.5rem; margin-top: 3rem; padding: 1.5rem; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
+    <div style="flex: 1;">
+      <h3 style="margin-top: 0; margin-bottom: 0.5rem;">Sobre {{ .Params.author | default site.Title }}</h3>
+      <p style="margin-bottom: 0; font-size: 0.95rem; color: var(--text-secondary);">Cientista de Dados e Economista apaixonado por transformar informações em insights estratégicos. <a href="/about/">Conecte-se comigo!</a></p>
+    </div>
+  </div>
+
+  {{ $related := site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <div class="related-posts" style="margin-top: 3rem;">
+    <h3 style="border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Artigos Relacionados</h3>
+    <div class="posts-grid">
+      {{ range . }}
+      <article class="post-card" style="padding: 1rem;">
+        <h4 style="margin-top: 0; font-size: 1.1rem;"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+        <div class="post-meta" style="margin-bottom: 0; font-size: 0.8rem;">{{ .Date.Format "02 Jan 2006" }}</div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
   <div class="comments-section" style="margin-top: 4rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
     <h3 style="margin-bottom: 1rem;">Comentários</h3>
     <script src="https://utteranc.es/client.js"
@@ -51,6 +73,20 @@
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     document.getElementById("reading-progress").style.width = scrolled + "%";
+  });
+
+  document.querySelectorAll('.highlight').forEach(highlight => {
+    const button = document.createElement('button');
+    button.className = 'copy-button';
+    button.innerText = 'Copiar';
+    button.addEventListener('click', () => {
+      const code = highlight.querySelector('code').innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        button.innerText = 'Copiado!';
+        setTimeout(() => button.innerText = 'Copiar', 2000);
+      });
+    });
+    highlight.appendChild(button);
   });
 </script>
 {{ end }}

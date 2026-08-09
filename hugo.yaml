@@ -26,6 +26,11 @@ markup:
 permalinks:
   posts: "/posts/:slug"
 
+outputs:
+  home:
+    - HTML
+    - JSON
+
 menu:
   main:
     - identifier: "about"

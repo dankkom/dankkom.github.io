@@ -1,0 +1,6 @@
+<details style="margin: 1.5rem 0; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.5rem 1rem;">
+  <summary style="cursor: pointer; font-weight: 600; margin: 0.5rem 0;">{{ .Get 0 | default "Ver detalhes" }}</summary>
+  <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: 0.5rem;">
+    {{ .Inner | markdownify }}
+  </div>
+</details>
