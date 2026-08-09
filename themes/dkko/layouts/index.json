@@ -1,5 +1,5 @@
 [
-  {{- range $index, $page := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{- range $index, $page := where site.RegularPages "Section" "posts" -}}
   {{- if $index -}},{{- end -}}
   {
     "title": {{ $page.Title | jsonify }},

@@ -7,7 +7,7 @@
 <h2 style="font-size: 1.8rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem;">Artigos Recentes</h2>
 
 <div class="posts-grid">
-  {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+  {{ $paginator := .Paginate (where site.RegularPages "Section" "posts") }}
   {{ range $paginator.Pages }}
   <article class="post-card">
     <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
