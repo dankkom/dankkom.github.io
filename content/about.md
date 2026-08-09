@@ -82,6 +82,7 @@ layout: "page"
 </div>
 
 <h2 class="section-title">Cursos e Certificações</h2>
+
 * **O Poder da Macroeconomia** — University of California, Irvine
 * **The Data Scientist’s Toolbox** — Johns Hopkins University
 * **Exploratory Data Analysis** — Johns Hopkins University
@@ -91,18 +92,18 @@ layout: "page"
 * **Modernizing Data Lakes and Data Warehouses with GCP** — Google Cloud
 
 <h2 class="section-title">Ferramentas Tecnológicas</h2>
-<div class="tools-grouped">
-  <img loading="lazy" src="http://img.shields.io/badge/-Python%20Programming-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python">
-  <img loading="lazy" src="https://img.shields.io/badge/-pandas-150458?style=for-the-badge&amp;logo=pandas" alt="pandas">
-  <img loading="lazy" src="https://img.shields.io/badge/-jupyter-F37626?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white" alt="Jupyter">
-  <img loading="lazy" src="http://img.shields.io/badge/-R%20Programming-276DC3?style=for-the-badge&amp;logo=R&amp;logoColor=white" alt="R">
-  <img loading="lazy" src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL">
-  <img loading="lazy" src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=SQLite" alt="SQLite">
-  <img loading="lazy" src="http://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask" alt="Flask">
-  <img loading="lazy" src="http://img.shields.io/badge/-Google%20Analytics-E37400?style=for-the-badge&amp;logo=googleanalytics&amp;logoColor=white" alt="Google Analytics">
-  <img loading="lazy" src="http://img.shields.io/badge/-QGIS-589632?style=for-the-badge&amp;logo=qgis&amp;logoColor=white" alt="QGIS">
-  <img loading="lazy" src="http://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=white" alt="VS Code">
-  <img loading="lazy" src="http://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&amp;logo=neovim&amp;logoColor=white" alt="Neovim">
-  <img loading="lazy" src="http://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" alt="Linux">
-  <img loading="lazy" src="http://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="Docker">
+<div class="elegant-tags">
+  <span>Python</span>
+  <span>Pandas</span>
+  <span>Jupyter</span>
+  <span>R</span>
+  <span>PostgreSQL</span>
+  <span>SQLite</span>
+  <span>Flask</span>
+  <span>Google Analytics</span>
+  <span>QGIS</span>
+  <span>VS Code</span>
+  <span>Neovim</span>
+  <span>Linux</span>
+  <span>Docker</span>
 </div>
