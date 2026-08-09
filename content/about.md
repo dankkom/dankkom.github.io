@@ -90,8 +90,14 @@ layout: "page"
 
 <h2 class="section-title">Engenharia de Dados Públicos e a Quantilica</h2>
 <div class="project-card" style="padding: 1.5rem; background: rgba(128, 128, 128, 0.05); border-left: 4px solid var(--accent, #007bff); border-radius: 4px; margin-bottom: 2rem;">
-  <p>Quem trabalha com dados governamentais no Brasil conhece o atrito diário: APIs instáveis, FTPs legados e formatos desestruturados. Para resolver esse problema estrutural, fundei a <strong>Quantilica</strong>, uma organização open-source focada em criar a camada definitiva de abstração e acesso a dados públicos brasileiros.</p>
-  <p style="margin-bottom: 0;">Desenvolvo e mantenho coletores de alta performance (como <code>datasus-fetcher</code>, <code>sidra-fetcher</code> e ferramentas para Tesouro e INMET) focando em <strong>reprodutibilidade, governança e proveniência de dados</strong>. Poupamos milhares de horas de <em>yak shaving</em> para analistas em todo o país transformando fontes complexas em saídas limpas no formato Parquet.</p>
+  <p>Quem trabalha com dados governamentais no Brasil conhece o atrito diário: APIs instáveis, FTPs legados e formatos desestruturados. Para resolver esse problema estrutural, fundei a <a href="https://github.com/Quantilica" target="_blank" style="font-weight: bold; text-decoration: none;">Quantilica</a>, um ecossistema e organização open-source focada em criar a camada definitiva de abstração e acesso a dados públicos brasileiros.</p>
+  <p>Focando em <strong>reprodutibilidade, governança e proveniência de dados</strong>, a arquitetura do projeto poupa milhares de horas de <em>yak shaving</em> para analistas em todo o país, transformando fontes complexas em saídas limpas (como Parquet) e tabelas relacionais prontas para consumo.</p>
+  <p>O ecossistema é dividido em três frentes principais:</p>
+  <ul style="margin-bottom: 0; padding-left: 1.5rem;">
+    <li style="margin-bottom: 0.5rem;"><strong>Infraestrutura e Ferramentas:</strong> Utilitários base (<code>quantilica-core</code>), processamento analítico com Polars e Parquet (<code>quantilica-analytics</code>), catálogo de dados (<code>quantilica-catalog</code>) e uma CLI unificada.</li>
+    <li style="margin-bottom: 0.5rem;"><strong>Coletores de Dados (Fetchers):</strong> Bibliotecas de alta performance para extração de diversas fontes governamentais, como IBGE/SIDRA (<code>sidra-fetcher</code>), DATASUS (<code>datasus-fetcher</code>), Banco Central (<code>bcb-sgs-fetcher</code>), Tesouro Direto, INMET, MDIC (Comex) e MTE (PDET/CAGED).</li>
+    <li><strong>Pipelines ETL:</strong> Catálogos declarativos (<code>sidra-pipelines</code>, <code>bcb-sgs-pipelines</code>) e ferramentas para carregamento direto em bancos de dados relacionais como PostgreSQL.</li>
+  </ul>
 </div>
 
 <h2 class="section-title">Inteligência Artificial e Autoria</h2>
@@ -124,7 +130,7 @@ layout: "page"
   </div>
   <div class="skill-card">
     <h3>Infraestrutura e DevOps</h3>
-    <p>Docker/Docker Compose, Portainer, Proxmox, Garage (S3 Object Storage), Linux (Debian/Ubuntu).</p>
+    <p>Docker/Docker Compose, Portainer, Linux (Debian/Ubuntu).</p>
   </div>
 </div>
 
