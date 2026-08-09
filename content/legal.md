@@ -60,6 +60,8 @@ Se qualquer disposição destes Termos for considerada inválida ou inexequível
 
 Estes Termos constituem o acordo completo entre você e nós em relação ao seu uso do Serviço e substituem todos os acordos e entendimentos anteriores, sejam verbais ou escritos.
 
+Para informações sobre como seus dados são coletados e utilizados por ferramentas de métricas, por favor leia também a nossa **[Política de Privacidade](/privacy/)**.
+
 Se você tiver alguma dúvida ou preocupação com relação a estes Termos, entre em contato conosco pelo email daniel@dkko.me.
 
 Última atualização: 2023-07-09
