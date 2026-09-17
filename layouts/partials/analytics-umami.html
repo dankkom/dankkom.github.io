@@ -1,1 +1,3 @@
-<script defer src="https://umami.dkko.me/script.js" data-website-id="{{ .Site.Params.UmamiAnalytics }}"></script>
+{{- $umamiHost := .Site.Params.UmamiHost | default "https://umami.dkko.me" -}}
+<script defer src="{{ $umamiHost }}/script.js" data-website-id="{{ .Site.Params.UmamiAnalytics }}"></script>
+<script defer src="{{ $umamiHost }}/recorder.js" data-website-id="{{ .Site.Params.UmamiAnalytics }}"></script>

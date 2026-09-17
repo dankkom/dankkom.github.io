@@ -9,5 +9,7 @@
 {{ end }}
 
 {{ if site.Params.UmamiAnalytics }}
-<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.Params.UmamiAnalytics }}"></script>
+{{- $umamiHost := site.Params.UmamiHost | default "https://umami.dkko.me" -}}
+<script defer src="{{ $umamiHost }}/script.js" data-website-id="{{ site.Params.UmamiAnalytics }}"></script>
+<script defer src="{{ $umamiHost }}/recorder.js" data-website-id="{{ site.Params.UmamiAnalytics }}"></script>
 {{ end }}

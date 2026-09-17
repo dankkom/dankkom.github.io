@@ -7,6 +7,7 @@ theme: ["dkko"]
 params:
   GoogleAnalytics4: "G-RLSNHYP5C3"
   UmamiAnalytics: "5a8de01a-3a13-43ca-99af-0a5ec38aebce"
+  UmamiHost: "https://umami.dkko.me"
   GoogleAdsense: false
   defaultTheme: light
   disableThemeToggle: true
