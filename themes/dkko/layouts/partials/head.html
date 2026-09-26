@@ -10,7 +10,7 @@
 
 {{/* CSS Processing */}}
 {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
 {{/* Open Graph / SEO / Schema */}}
 {{ template "_internal/opengraph.html" . }}

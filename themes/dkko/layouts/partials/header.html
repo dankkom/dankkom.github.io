@@ -1,6 +1,6 @@
 <header class="header glassmorphism">
   <div class="header-container">
-    <a href="{{ site.BaseURL }}" class="brand">{{ site.Title }}</a>
+    <a href="{{ "/" | relLangURL }}" class="brand">{{ site.Title }}</a>
     <nav class="nav-links">
       {{ range site.Menus.main }}
       <a href="{{ .URL }}">{{ .Name }}</a>

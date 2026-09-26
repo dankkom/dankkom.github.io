@@ -3,7 +3,7 @@
   {{- if $index -}},{{- end -}}
   {
     "title": {{ $page.Title | jsonify }},
-    "permalink": {{ $page.Permalink | jsonify }},
+    "permalink": {{ $page.RelPermalink | jsonify }},
     "summary": {{ $page.Summary | plainify | truncate 200 | jsonify }},
     "tags": [{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }},{{ end }}{{ $tag | jsonify }}{{ end }}],
     "date": {{ $page.Date.Format "02 Jan 2006" | jsonify }}
