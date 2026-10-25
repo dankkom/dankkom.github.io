@@ -134,8 +134,9 @@ O retrato de hoje: confiança em andamento pesado (é onde está o esforço de e
 ## Nesta série
 
 * **#01 — Visão geral do ecossistema e estado de setembro/2026** (este post)
-* #02 — SIDRA de ponta a ponta: coletor, pipelines, banco e portal (planejado)
-* #03 — Séries do Banco Central: da coleta às tabelas macro (planejado)
+* [#02 — Outubro/2026: quando o dado parece certo e está errado](/posts/devlog-quantilica-02-dado-certo-que-esta-errado)
+* #03 — SIDRA de ponta a ponta: coletor, pipelines e banco (planejado)
+* #04 — Séries do Banco Central: da coleta às tabelas macro (planejado)
 
 ---
 
