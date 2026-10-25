@@ -6,7 +6,7 @@ slug: coletando-datasus
 tags: [Python, Brazil, DATASUS, Population, Data]
 description: "Neste texto apresento o datasus-fetcher, um CLI para baixar microdados do DATASUS e deixá-los de forma organizada no seu sistema de arquivos."
 cover:
-  image: https://images2.imgbox.com/42/9f/yxfHgXu1_o.jpg
+  image: gatos-doutores-datasus.jpg
   alt: "Imagem de gatos doutores usando computadores"
   caption: "Imagem de gatos doutores usando computadores. Fonte: Google Gemini."
 ShowToc: true

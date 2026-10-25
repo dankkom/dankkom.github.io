@@ -6,8 +6,6 @@ slug: exportacao-brasil-destinos
 tags: ["Balança Comercial", "Comércio Exterior", "Visualização de Dados", "Economia"]
 ---
 
-![](https://images2.imgbox.com/c8/4e/b6i7U7Pt_o.png)
-
 Segue uma visualização de dados animada mostrando os principais países de destino das exportações brasileiras entre 1997 e 2022.
 
 <!--more-->

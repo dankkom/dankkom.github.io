@@ -165,7 +165,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](https://images2.imgbox.com/6a/2e/RnIgT5rT_o.png)
+![Gráfico de tendência do PIB paulista](tendencia-pib-paulista.png)
 
 E o gráfico de hiato do produto paulista:
 
@@ -176,7 +176,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![](https://images2.imgbox.com/5e/95/T8FNq2Xy_o.png)
+![Gráfico de hiato do produto paulista](hiato-produto-paulista.png)
 
 ---
 

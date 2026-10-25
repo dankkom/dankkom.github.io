@@ -43,7 +43,7 @@ As atividades e subatividades da PMC são as seguintes:
 
 O IBGE calcula os índices totais para o varejo restrito e para o varejo ampliado, além dos índices de atividades e subatividades por região.
 
-![](https://images2.imgbox.com/68/9a/Kej78FzD_o.png)
+
 
 [A última atualização da metodologia da PMC pelo IBGE ocorreu em abril de 2023](https://www.ibge.gov.br/novo-portal-destaques.html?destaque=36325). As mudanças foram explicadas em webnário no [YouTube](https://www.youtube.com/watch?v=Mzn4TaHjyyw).
 

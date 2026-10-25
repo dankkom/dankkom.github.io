@@ -12,7 +12,7 @@ aliases:
 tags: ["Trabalho", "Gestão", "Gestão de Projetos", "Gestão de Equipes"]
 ---
 
-![](https://images2.imgbox.com/8f/d2/jYbDBvUh_o.jpg)
+![Estudantes reunidos trabalhando em grupo](estudantes-trabalho-grupo.jpg)
 
 ## 1. conheça seus colegas
 

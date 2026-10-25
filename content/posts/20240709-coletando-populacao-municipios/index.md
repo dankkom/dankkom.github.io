@@ -6,7 +6,7 @@ slug: coletando-ibge-sidra-populacao-municipios
 tags: [Python, IBGE, SIDRA, Populacao, Data]
 description: "Neste texto eu mostro como baixar os dados de população municipal de três bases do IBGE, utilizando Python, e consolidá-las em uma única base."
 cover:
-  image: https://images2.imgbox.com/6b/15/aA2MFiAC_o.jpg
+  image: evolucao-populacao-brasil.png
   alt: "Evolução da população brasileira"
   caption: "Evolução da população brasileira, 1970-2022. Fonte: IBGE (Censos, Contagens e Estimativas)"
 ShowToc: true
@@ -338,9 +338,7 @@ dados |>
   theme_minimal()
 ```
 
-<a href="https://imgbox.com/aA2MFiAC" target="_blank">
-  <img src="https://images2.imgbox.com/6b/15/aA2MFiAC_o.jpg" alt="Evolução da população brasileira"/>
-</a>
+![Evolução da população brasileira](evolucao-populacao-brasil.png)
 
 ## Conclusão
 

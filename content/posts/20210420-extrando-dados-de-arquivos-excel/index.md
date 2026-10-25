@@ -70,7 +70,7 @@ df = pd.read_excel(
 df.head()
 ```
 
-![](https://images2.imgbox.com/48/57/DpoiLNaF_o.png)
+![Visualização do DataFrame com colunas Unnamed](dataframe-head-unnamed.png)
 
 Veja que é preciso tratar os nomes das colunas. Principalmente, é preciso corrigir os nomes das olunas do segundo nível (as colunas "Unnamed" 😣).
 
@@ -103,7 +103,7 @@ df.columns = pd.MultiIndex.from_tuples(new_columns)
 df.head()
 ```
 
-![](https://images2.imgbox.com/0f/2c/B2Zt62PA_o.png)
+![Visualização do DataFrame com MultiIndex corrigido](dataframe-head-multiindex-corrigido.png)
 
 O código para ler os dados de uma planilha está feito. Vou colocá-lo em uma função para usar no loop para ler todas as planilhas do arquivo.
 

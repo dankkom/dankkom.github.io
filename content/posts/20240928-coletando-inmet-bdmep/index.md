@@ -11,7 +11,7 @@ tags: [
 ]
 description: "Neste texto explico como coletar e tratar os dados meteorológicos do INMET-BDMEP."
 cover:
-  image: https://images2.imgbox.com/7b/72/TiwgwbbH_o.jpg
+  image: temperatura_sp.png
   alt: "Temperatura horária e média diária em São Paulo em 2023"
 ShowToc: true
 TocOpen: true
@@ -549,9 +549,7 @@ ggsave("temperatura_sp.png", width = 16, height = 8, dpi = 300)
 ```
 
 <figure class="size-large">
-  <a href="https://imgbox.com/TiwgwbbH" target="_blank">
-    <img src="https://images2.imgbox.com/7b/72/TiwgwbbH_o.jpg"/>
-  </a>
+  <img src="temperatura_sp.png" alt="Temperatura horária e média diária em São Paulo em 2023"/>
   <figcaption>Temperatura horária e média diária em São Paulo em 2023</figcaption>
 </figure>
 
