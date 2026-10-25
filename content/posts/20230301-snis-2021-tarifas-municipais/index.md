@@ -7,7 +7,7 @@ tags: ["Saneamento Básico", "Visualização de Dados", Economia]
 katex: true
 ---
 
-![](https://images2.imgbox.com/ab/bd/xArPPcUW_o.gif)
+![Visualização das tarifas de saneamento básico no Brasil](snis-tarifas-capa.jpg)
 
 Nos últimos anos, o saneamento básico tem sido um dos principais temas discutidos no Brasil. Com o objetivo de promover o acesso universal aos serviços de abastecimento de água e esgotamento sanitário, o governo brasileiro vem implementando políticas públicas para garantir o acesso à água tratada e ao tratamento de esgoto em todo o país. No entanto, apesar dos esforços, ainda existem muitos desafios a serem enfrentados nessa área.
 
@@ -113,7 +113,7 @@ No outro extremo, o estado do Rio Grande do Sul apresenta a mediana mais alta de
 
 Gráfico 1 - Boxplot das tarifas médias municipais por Unidade Federativa, 2021
 
-![](https://images2.imgbox.com/0d/46/eBCA8wq1_o.png)
+![Boxplot das tarifas médias municipais por Unidade Federativa, 2021](snis-boxplot-uf-2021.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -123,7 +123,7 @@ O mapa no Gráfico 2 mostra as tarifas médias de água e esgoto nos municípios
 
 Gráfico 2 - Mapa das Tarifas Médias Municipais, 2021
 
-![](https://images2.imgbox.com/d9/36/0EchmLuX_o.png)
+![Mapa das Tarifas Médias Municipais, 2021](snis-mapa-tarifas-2021.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -141,7 +141,7 @@ A seguir são apresentados os gráficos para as séries temporais das tarifas m�
 
 Gráfico 3 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Norte, deflacionado
 
-![](https://images2.imgbox.com/3f/71/VVtySHUj_o.png)
+![Tendências das Tarifas Médias Municipais, 2002-2021, Região Norte, deflacionado](snis-tendencias-norte.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -149,7 +149,7 @@ A região Norte apresenta três grupos de séries temporias que divergiram ao lo
 
 Gráfico 4 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Nordeste, deflacionado
 
-![](https://images2.imgbox.com/54/36/es5Xb2vy_o.png)
+![Tendências das Tarifas Médias Municipais, 2002-2021, Região Nordeste, deflacionado](snis-tendencias-nordeste.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -157,7 +157,7 @@ As tarifas médias dos municípios da região Nordeste são as que mais "andam j
 
 Gráfico 5 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Centro-Oeste, deflacionado
 
-![](https://images2.imgbox.com/a7/24/9pddVjSP_o.png)
+![Tendências das Tarifas Médias Municipais, 2002-2021, Região Centro-Oeste, deflacionado](snis-tendencias-centro-oeste.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -165,7 +165,7 @@ O Centro-Oeste tem apenas um grupo de séries temporais que andam juntas.
 
 Gráfico 6 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Sudeste, deflacionado
 
-![](https://images2.imgbox.com/c9/76/e5lZg7Hu_o.png)
+![Tendências das Tarifas Médias Municipais, 2002-2021, Região Sudeste, deflacionado](snis-tendencias-sudeste.png)
 
 Fonte: Elaborado com dados do SNIS
 
@@ -173,7 +173,7 @@ As tarifas municipais na região Sudeste apresentam dois grupos de séries tempo
 
 Gráfico 7 - Tendências das Tarifas Médias Municipais, 2002-2021, Região Sul, deflacionado
 
-![](https://images2.imgbox.com/72/21/VlJBLhut_o.png)
+![Tendências das Tarifas Médias Municipais, 2002-2021, Região Sul, deflacionado](snis-tendencias-sul.png)
 
 Fonte: Elaborado com dados do SNIS
 

@@ -26,7 +26,7 @@ A ANP (2022) publica estatísticas da balança comercial de petróleo e seus der
 <figure>
 Gráfico 1 - Balança Comercial de petróleo bruto, anual, Brasil, 2000-2021, FOB US$
 
-![](https://images2.imgbox.com/93/25/TRYsAcc4_o.png)
+![Balança Comercial de petróleo bruto, anual, Brasil, 2000-2021, FOB US$](grafico-1-balanca-comercial-petroleo-bruto.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
@@ -36,7 +36,7 @@ O Gráfico 2 mostra a participação relativa das exportações e importações,
 <figure>
 Gráfico 2 – Participação do petróleo bruto nas exportações e importações, anual, Brasil, 2000-2021, %
 
-![](https://images2.imgbox.com/cd/37/PBjMdwb9_o.png)
+![Participação do petróleo bruto nas exportações e importações, anual, Brasil, 2000-2021, %](grafico-2-participacao-petroleo-bruto-comex.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
@@ -46,7 +46,7 @@ Por outro lado, os derivados de petróleo (óleo diesel, gasolina, querosene etc
 <figure>
 Gráfico 3 - Balança Comercial de derivados de petróleo, anual, Brasil, 2000-2021, FOB US$
 
-![](https://images2.imgbox.com/a3/92/RpfsmrUz_o.png)
+![Balança Comercial de derivados de petróleo, anual, Brasil, 2000-2021, FOB US$](grafico-3-balanca-comercial-derivados-petroleo.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
@@ -64,7 +64,7 @@ Entre o final de 2011 e o final de 2014 o preço médio do barril de petróleo b
 <figure>
 Gráfico 4 – Preço do petróleo bruto (Brent), internacional, mensal, jan/2000-mai/2022, (US$ FOB)
 
-![](https://images2.imgbox.com/3c/ae/l6ZRtCMf_o.png)
+![Preço do petróleo bruto (Brent), internacional, mensal, jan/2000-mai/2022, (US$ FOB)](grafico-4-preco-petroleo-brent.png)
 
 Fonte: Elaboração própria com dados do Ipeadata (2022)
 </figure>
@@ -72,7 +72,7 @@ Fonte: Elaboração própria com dados do Ipeadata (2022)
 <figure>
 Gráfico 5 - Taxa de câmbio, compra, média mensal, Brasil, jan/2000-mai/2022, R$/US$
 
-![](https://images2.imgbox.com/fc/71/oSsQml7s_o.png)
+![Taxa de câmbio, compra, média mensal, Brasil, jan/2000-mai/2022, R$/US$](grafico-5-taxa-cambio-usd-brl.png)
 
 Fonte: Elaboração própria com dados do Ipeadata (2022)
 </figure>
@@ -82,7 +82,7 @@ Apesar do aumento do custo de importação do petróleo, houve poucos reajustes 
 <figure>
 Gráfico 6 - Preço médio de revenda do Óleo Diesel, Brasil, mensal, R$/litro
 
-![](https://images2.imgbox.com/c5/2b/HvKyapvJ_o.png)
+![Preço médio de revenda do Óleo Diesel, Brasil, mensal, R$/litro](grafico-6-preco-medio-oleo-diesel.png)
 
 Fonte: Elaboração própria com dados da ANP (2022) e IBGE (2022)
 
@@ -110,7 +110,7 @@ A produção de petróleo brasileiro está em crescimento desde 2000, e não apa
 <figure>
 Gráfico 7 – Produção e Processamento de Petróleo, Brasil, m³, anual, 2000-2021
 
-![](https://images2.imgbox.com/09/bb/qE16oREe_o.png)
+![Produção e Processamento de Petróleo, Brasil, m³, anual, 2000-2021](grafico-7-producao-processamento-petroleo.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 </figure>
@@ -122,7 +122,7 @@ A produção dos produtos derivados de petróleo nas refinarias brasileiras teve
 
 Gráfico 8 – Produção de derivados de petróleo, Brasil, m³, anual, 2000-2021
 
-![](https://images2.imgbox.com/69/10/kfAKlJ0e_o.png)
+![Produção de derivados de petróleo, Brasil, m³, anual, 2000-2021](grafico-8-producao-derivados-petroleo.png)
 
 Fonte: Elaboração própria com dados da ANP (2022)
 

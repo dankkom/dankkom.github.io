@@ -9,7 +9,7 @@ tags: ["Balança Comercial", "Economia", "Petróleo"]
 katex: true
 ---
 
-![](https://images2.imgbox.com/8e/03/ty8mgZnx_o.jpg)
+![Balança comercial do Brasil de 2008 a 2017: Petróleo e derivados](balanca-comercial-petroleo-capa.jpg)
 
 Este trabalho analisa a evolução das exportações e importações brasileiras entre os anos de 2008 e 2017, com foco nos combustíveis derivados de petróleo (diesel, gasolina, querosene etc.), motivado pela recente paralisação dos caminhoneiros em decorrência da alta dos preços desses produtos.
 
@@ -25,7 +25,7 @@ Este trabalho está dividido em quatro seções, sendo esta introdução a prime
 
 O Brasil, desde a abertura comercial no começo da década de 1990, avançou bastante quanto à abertura ao comércio com outros países. O Gráfico 1 mostra a evolução anual das exportações e importações brasileiras em valores free-on-board (FOB) em dólares e o saldo.
 
-![](https://images2.imgbox.com/8b/d4/hxakqeRu_o.png)
+![Evolução anual da balança comercial brasileira, 1997-2017](grafico-1-balanca-comercial-1997-2017.png)
 
 A partir do ano 2001 observou-se um grande crescimento do volume de importações e exportações brasileiras, acumulando contínuos superávits até 2013. Nesse período de 13 anos, o superávit acumulado foi de 326,6 bilhões de reais. Em 2009, devido à crise financeira nos Estados Unidos, o comércio exterior teve uma queda acentuada, mas se recuperou rapidamente no ano seguinte. Do final de 2002 a meados de 2011 viu-se uma grande valorização da taxa de câmbio brasileira, com uma breve interrupção apenas durante a crise financeira.
 
@@ -35,7 +35,7 @@ De julho de 2011 a outubro de 2018 o real desvalorizou em relação ao dólar ce
 
 A Tabela 1 apresenta os dados da balança comercial brasileira em relação aos dez países com maior corrente de comércio em 2017. A China é, atualmente, o maior parceiro de comércio exterior do Brasil, seguido dos Estados Unidos, Argentina, Alemanha, Países Baixos, Japão, Chile, Coréia do Sul e Índia.
 
-![](https://images2.imgbox.com/d0/9e/TnY0diRy_o.png)
+![Balança comercial brasileira com os dez principais parceiros comerciais em 2017](tabela-1-principais-parceiros-comerciais-2017.png)
 
 Chama atenção o impressionante aumento das exportações brasileiras para a China (187,5%) e para a Índia (322,7%), revertendo um cenário de déficit em 2008 para superávit em 2017. O comércio com os Países Baixos apresenta superávit constante e significativo ao longo do tempo, apesar de ter havido queda das exportações e aumento das importações nesse período. A balança comercial com a Alemanha, por outro lado, traz déficits consistentemente para o Brasil.
 
@@ -51,7 +51,7 @@ Onde: \\(X\\) e \\(M\\) representam os valores de exportações e importações,
 
 O Gráfico 2 mostra um ranking de grau de abertura comercial de 45 países calculado a partir de dados do Banco Mundial (2018).
 
-![](https://images2.imgbox.com/62/73/IXnnJT1C_o.png)
+![Ranking do grau de abertura comercial de países selecionados](grafico-2-grau-abertura-comercial-ranking.png)
 
 Para a construção desse ranking foram escolhidos os países que atendiam a três critérios:
 
@@ -67,11 +67,11 @@ O baixo grau de abertura comercial do Brasil é explicado pelos altos impostos d
 
 A Agência Nacional do Petróleo, Gás Natural e Biocombustíveis (ANP, 2018) publica estatísticas da balança comercial de petróleo e seus derivados mensalmente em seu site. Segundo esses dados, o Brasil tem significativo superávit na importação e exportação de petróleo bruto (Gráfico 3).
 
-![](https://images2.imgbox.com/8b/7e/9QytRd9b_o.png)
+![Balança Comercial de petróleo bruto, anual, Brasil, 2000-2017](grafico-3-balanca-petroleo-bruto-2000-2017.png)
 
 Por outro lado, o resultado da balança comercial de derivados de petróleo apresenta déficit em magnitude quase igual ao de petróleo bruto (Gráfico 4), anulando grande parte do saldo positivo da conta de petróleo e derivados.
 
-![](https://images2.imgbox.com/15/d0/wphCAUT9_o.png)
+![Balança Comercial de derivados de petróleo, anual, Brasil, 2000-2017](grafico-4-balanca-derivados-petroleo-2000-2017.png)
 
 A partir de 2016 o saldo da balança comercial de petróleo de derivados passou a ser positivo (IBP, 2018) em mais de 2 bilhões de dólares anuais, principalmente pela queda das importações de petróleo bruto. Nos anos de 2009 e 2010, o Brasil teve saldo positivo mas em valores bem menores (592 milhões e 271 milhões de dólares respectivamente).
 
@@ -87,11 +87,11 @@ A mudança na política de preços da Petrobras, principal empresa do setor, de 
 
 Com o objetivo de refletir o preço do petróleo no mercado internacional, os preços dos combustíveis vendidos pelas refinarias da Petrobras são reajustados sempre que for necessário. O represamento dos preços da gasolina durante o primeiro governo Dilma (2011–2014), que causou prejuízos bilionários à empresa foi um dos motivos para a mudança na política de preços da empresa (MORAES, 2018).
 
-![](https://images2.imgbox.com/72/dc/XGgZgNQV_o.png)
+![Preço do petróleo bruto (Brent) e taxa de câmbio, mensal, jan/2000-out/2018](grafico-5-preco-petroleo-brent-cambio-2000-2018.png)
 
 Entre 2011 e final de 2014 o preço médio do barril de petróleo bruto esteve em patamares bastante elevados (Gráfico 5). A taxa de câmbio, vale lembrar, se desvalorizou nesse período, como mostrado no Gráfico 1b, o que contribuiu para elevar o preço do petróleo mesmo em momentos de relativa estabilidade dos preços internacionais. No entanto, houve poucos ajustes nos preços dos combustíveis pela Petrobras, geralmente abaixo do aumento do preço do petróleo em moeda local.
 
-![](https://images2.imgbox.com/c4/a0/wt1wHI5X_o.png)
+![Evolução dos preços reais médios da gasolina e do diesel nos postos, Brasil, 2001-2018](grafico-6-preco-real-gasolina-diesel-2001-2018.png)
 
 De fato, o preço real da gasolina vem caindo desde o início da década de 2000 (NEXO JORNAL, 2017). A forte alta dos preços recentemente (Gráfico 6), e sua excessiva oscilação nos postos de gasolina, entretanto, foi visto negativamente pela sociedade. Para amenizar as oscilações de curto-prazo poderia ser adotado um mecanismo de suavização de preços para diminuir a volatilidade e os riscos/incertezas percebidos pelos agentes econômicos em relação aos preços dos combustíveis (COADY, 2012).
 
@@ -101,11 +101,11 @@ A produção de petróleo brasileiro está em crescimento desde 2000, e não apa
 
 Por outro lado, o processamento de petróleo nas refinarias apresenta tendência de queda a partir do último trimestre de 2014. Os processamentos de petróleo nacional e importado tiveram queda de -13,4% e -52,4%, respectivamente, no último trimestre de 2018 em relação ao último trimestre de 2014, representando um decréscimo somado de -38,2 bilhões de bep processados.
 
-![](https://images2.imgbox.com/99/43/PkyB5YWo_o.png)
+![Produção e processamento de petróleo por trimestre, Brasil, 2000-2018](grafico-6b-producao-processamento-trimestral-2000-2018.png)
 
 A produção dos produtos derivados de petróleo nas refinarias brasileiras também teve significativa queda a partir de 2015 (Gráfico 7). A produção de óleo diesel sofreu a maior variação negativa. A gasolina automotiva (GASOLINA A) também teve queda de produção, mas em volume absoluto menor do que o do diesel.
 
-![](https://images2.imgbox.com/78/c6/nmqfn35b_o.png)
+![Produção de derivados de petróleo nas refinarias, Brasil, 2000-2017](grafico-7-producao-derivados-refinarias-2000-2017.png)
 
 A Petrobras está executando um plano de venda de ativos (desinvestimentos) que inclui a venda de refinarias<sup id="r2">[2](#f2)</sup> e isso pode ter impactado a produção e processamento de petróleo e derivados no Brasil. A redução de produção de derivados de petróleo pode estar relacionada ao aumento da ociosidade das refinarias em operação no país.
 
