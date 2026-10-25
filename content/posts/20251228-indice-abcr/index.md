@@ -7,7 +7,7 @@ categories: ["Python", "Data Science", "Visualização de Dados"]
 tags: ["Python", "Pandas", "Seaborn", "Análise de Dados", "Visualização de Dados", "ABCR", "Tráfego Rodoviário"]
 description: "Neste post, exploramos o índice ABCR, que monitora o fluxo de veículos em praças pedagiadas no Brasil. Utilizando Python, baixamos os dados, realizamos a limpeza e transformação necessárias, e criamos visualizações para entender as tendências ao longo do tempo."
 cover:
-  image: https://images2.imgbox.com/f6/2a/zkS7jtai_o.png
+  image: abcr-1.png
   alt: "Gráfico de linhas mostrando o índice ABCR ao longo do tempo para diferentes regiões do Brasil"
 ShowToc: true
 TocOpen: true
@@ -183,7 +183,7 @@ plt.savefig("abcr-0.png", dpi=120, bbox_inches="tight")
 
 *Figura 1: A série bruta mostra a dificuldade de leitura devido à volatilidade mensal.*
 
-<a href="https://imgbox.com/Xh0LRO1k" target="_blank" rel="noopener noreferrer nofollow"><img src="https://images2.imgbox.com/f6/dc/Xh0LRO1k_o.png" alt="image host"/></a>
+![Série bruta do índice ABCR por região](abcr-0.png)
 
 ### 2.2 Revelando a Tendência (Média Móvel)
 
@@ -260,7 +260,7 @@ plt.savefig("abcr-1.png", dpi=120)
 
 *Figura 2: Análise Regional da atividade econômica via tráfego.*
 
-<a href="https://imgbox.com/zkS7jtai" target="_blank" rel="noopener noreferrer nofollow"><img src="https://images2.imgbox.com/f6/2a/zkS7jtai_o.png" alt="image host"/></a>
+![Média móvel de 12 meses do índice ABCR por região](abcr-1.png)
 
 **O que os dados nos dizem:**
 
@@ -308,7 +308,7 @@ plt.savefig("abcr-2.png", dpi=120)
 
 *Figura 3: O descolamento entre produção e consumo.*
 
-<a href="https://imgbox.com/SvcQv6GP" target="_blank" rel="noopener noreferrer nofollow"><img src="https://images2.imgbox.com/e8/80/SvcQv6GP_o.png" alt="image host"/></a>
+![Média móvel de 12 meses do índice ABCR por tipo de veículo](abcr-2.png)
 
 **Análise Econômica:**
 

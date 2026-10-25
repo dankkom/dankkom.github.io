@@ -315,7 +315,7 @@ dados |>
   theme_minimal()
 ```
 
-![Histograma do Coeficiente de Gini](https://images2.imgbox.com/1f/bd/n1PRigzI_o.png)
+![Histograma do Coeficiente de Gini](histograma-coeficiente-gini.png)
 
 ## Dicas para Análise Avançada
 
