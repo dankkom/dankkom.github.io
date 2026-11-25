@@ -158,7 +158,7 @@ O #03 faz o deep-dive prometido: o **pipeline SIDRA de ponta a ponta**, do colet
 * [O que é a Quantilica](/posts/o-que-e-quantilica) (pilar evergreen)
 * [Devlog #01 — Visão geral e setembro/2026](/posts/devlog-quantilica-01-visao-geral)
 * **#02 — Outubro/2026: quando o dado parece certo e está errado** (este post)
-* #03 — SIDRA de ponta a ponta: coletor, pipelines e banco (planejado)
+* [Devlog #03 — Novembro/2026: SIDRA de ponta a ponta](/posts/devlog-quantilica-03-sidra-ponta-a-ponta)
 
 ---
 
