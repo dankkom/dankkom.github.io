@@ -7,7 +7,7 @@ categories: ["Python", "Data Science", "Geoprocessamento", "Big Data"]
 tags: ["Python", "Datashader", "CNEFE", "Sustentabilidade", "Visualização de Dados", "IBGE"]
 description: "Um guia definitivo para processar, analisar e visualizar milhões de endereços do CNEFE/IBGE. Aprenda a lidar com Big Data geoespacial usando Pandas e Datashader."
 cover:
-  image: cnefe-brasil.png
+  image: cnefe-brasil.jpg
   alt: "Mapa de calor do Brasil gerado a partir dos dados do CNEFE usando Datashader"
 ShowToc: true
 TocOpen: true
@@ -182,7 +182,7 @@ img = ds.tf.shade(agg, cmap=colorcet.fire, how="log")
 img
 ```
 
-![Renderização inicial do CNEFE com Datashader](cnefe-brasil.png)
+![Renderização inicial do CNEFE com Datashader](cnefe-brasil.jpg)
 
 **Entendendo os parâmetros:**
 
@@ -198,7 +198,7 @@ Visualizar no notebook é ótimo, mas geralmente precisamos enviar a imagem para
 ds.utils.export_image(img, "cnefe-brasil", background="black", export_path=".")
 ```
 
-![Mapa de calor exportado do CNEFE Brasil](cnefe-brasil.png)
+![Mapa de calor exportado do CNEFE Brasil](cnefe-brasil.jpg)
 
 ## 5. Alta Definição: Detalhes em Escala Continental
 
@@ -216,7 +216,7 @@ Este processo é intensivo computacionalmente. Certifique-se de ter memória dis
 ds.utils.export_image(img, "cnefe-brasil-highres", background="black", export_path=".")
 ```
 
-![Mapa de calor em alta resolução do CNEFE Brasil](cnefe-brasil-highres.png)
+![Mapa de calor em alta resolução do CNEFE Brasil](cnefe-brasil-highres.jpg)
 
 ## Análise Visual: Decifrando a "Impressão Digital" do Brasil
 
