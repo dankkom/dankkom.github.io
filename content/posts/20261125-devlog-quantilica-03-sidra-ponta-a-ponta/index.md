@@ -44,7 +44,7 @@ O `sync` também grava o índice de pesquisas do SIDRA, mas só quando o conteú
 
 ### Núcleo: download que respeita cada servidor (`quantilica-core` 0.22 a 0.27.1)
 
-Quatro mudanças que afetam todos os coletores:
+Quatro mudanças que os coletores passam a poder usar (quase todas são opt-in):
 
 * **Política por host** (0.23.0, 15 de novembro): balde de tokens para controlar o ritmo, pausa por host quando o servidor responde `429` e disjuntor, que recusa novas requisições para um host em falha até um teste após o cooldown. Tudo é opt-in: sem configurar, o comportamento é o de antes.
 * **Paginação OData por chave**, sem `$skip` (0.23.0). Se a fonte ignora o filtro, o erro aparece em vez de a coleta truncar em silêncio.
@@ -59,16 +59,16 @@ Quatro mudanças que afetam todos os coletores:
 
 ### Camada SQL
 
-* **`quantilica-sql` 0.3.0** (14 de novembro): o comando `quantilica sql validate` confere as referências dentro do SQL e devolve erro quando uma delas não existe. `CREATE SCHEMA` só roda quando o schema não existe, porque o `IF NOT EXISTS` exige o privilégio `CREATE` no banco mesmo com o schema já criado. Isso importa quando o papel da aplicação não tem esse privilégio.
+* **`quantilica-sql` 0.3.0** (14 de novembro): o comando `quantilica sql validate`, no motor duckdb, confere se as referências `fonte.alias` do SQL constam no arquivo de aliases e devolve erro quando não constam. `CREATE SCHEMA` só roda quando o schema não existe, porque o `IF NOT EXISTS` exige o privilégio `CREATE` no banco mesmo com o schema já criado. Isso importa quando o papel da aplicação não tem esse privilégio.
 * **`quantilica-sql` 0.3.1** (25 de novembro): a conversão entrega ao conversor só a versão vigente de cada arquivo bruto.
 
-Versões em 25 de novembro, nos pacotes centrais: `quantilica-core` 0.27.1, `quantilica-cli` 0.29.0, `quantilica-analytics` 0.15.3, `quantilica-sql` 0.3.1 e `ibge-sidra-fetcher` 0.14.0.
+Versões atuais em 25/11, nos pacotes centrais: `quantilica-core` 0.27.1, `quantilica-cli` 0.29.0, `quantilica-analytics` 0.15.3, `quantilica-sql` 0.3.1 e `ibge-sidra-fetcher` 0.14.0.
 
 ---
 
 ## SIDRA de ponta a ponta
 
-O caminho de um número do IBGE até uma tabela analítica tem seis passos. Cada um é um comando ou uma função, e cada um pode ser rodado sozinho.
+O caminho de um número do IBGE até uma tabela analítica tem seis passos. Cada passo é um comando da CLI ou uma função da biblioteca.
 
 **1. Descobrir.** `quantilica ibge-sidra periods 1620` lista os períodos com a data de modificação de cada um. Com `quantilica ibge-sidra info 1737`, você vê os metadados de uma tabela.
 
@@ -87,7 +87,7 @@ for linha in iter_dados_tabela("./data", 1620):
 
 Por padrão (`ultima_versao=True`), o leitor usa só a versão mais recente de cada consulta. As antigas continuam no disco.
 
-**5. Carregar no PostgreSQL.** `quantilica sql load sidra` aponta para a pasta baixada. Cada arquivo carregado fica registrado em `ibge_sidra.arquivo_carregado`, e rodar de novo não duplica nada. A carga usa `COPY` em streaming, então o arquivo inteiro não precisa caber na memória.
+**5. Carregar no PostgreSQL.** `quantilica sql load sidra` carrega um arquivo por chamada. Cada arquivo carregado fica registrado em `ibge_sidra.arquivo_carregado`, e a mesma carga não roda duas vezes.
 
 **6. Materializar com um pipeline declarativo.** Um pipeline é uma pasta com o arquivo de busca (`fetch.toml`), o de transformação (`transform.toml`) e um ou mais `.sql`. O catálogo oficial tem 20 pipelines do IBGE em oito temas. O `quantilica sql run ibge/precos/snipc` materializa sete tabelas no schema `analytics`: `inpc`, `ipca`, `ipca15` e mais quatro.
 
@@ -119,7 +119,7 @@ O custo é que alguém precisa declarar quais colunas são carimbo. Uma lista er
 
 ### 4. Um servidor pode responder 200 e mandar uma página de manutenção
 
-Esse caso já apareceu no #02, no `bcb-sgs-fetcher`, que salvou uma página de "sessão expirada" como se fosse dado. A política por host da 0.23.0 trata esse caso. O balde de tokens controla o ritmo. A pausa por host protege contra rajadas de `429`. O disjuntor reconhece página HTML curta de manutenção e para de insistir até um teste bem-sucedido após o cooldown.
+Esse caso já apareceu no #02, no `bcb-sgs-fetcher`, que salvou uma página de "sessão expirada" como se fosse o metadado da série. A política por host da 0.23.0 trata esse caso. O balde de tokens controla o ritmo. A pausa por host protege contra rajadas de `429`. O disjuntor reconhece página HTML curta de manutenção e para de insistir até um teste bem-sucedido após o cooldown.
 
 O custo é o risco de configurar mal. Um disjuntor que abre na hora errada interrompe a coleta inteira de uma fonte. Por isso, tudo é opt-in e o padrão continua sendo o comportamento de antes.
 
@@ -127,7 +127,7 @@ O custo é o risco de configurar mal. Um disjuntor que abre na hora errada inter
 
 ## Próximo mês
 
-Dezembro fecha o que ficou pendente nesta leva. A documentação ainda lista o `check` do `bcb-sgs-fetcher` como ausente, e a migração de `sidra-sql` e `bcb-sgs-sql` para o `quantilica-sql` segue gradual. Se algum provedor mudar de formato até lá, ele entra como nota, como em outubro.
+Ficam para dezembro as pendências desta leva. A documentação ainda lista o `check` do `bcb-sgs-fetcher` como ausente, e a migração de `sidra-sql` e `bcb-sgs-sql` para o `quantilica-sql` segue gradual. Se algum provedor mudar de formato até lá, ele entra como nota, como em outubro.
 
 ---
 
