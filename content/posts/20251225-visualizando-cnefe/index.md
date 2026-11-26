@@ -216,8 +216,6 @@ Este processo é intensivo computacionalmente. Certifique-se de ter memória dis
 ds.utils.export_image(img, "cnefe-brasil-highres", background="black", export_path=".")
 ```
 
-![Mapa de calor em alta resolução do CNEFE Brasil](cnefe-brasil-highres.jpg)
-
 ## Análise Visual: Decifrando a "Impressão Digital" do Brasil
 
 A imagem resultante do processamento com o Datashader não é apenas um mapa bonito; é uma representação fidelíssima da demografia brasileira, livre das fronteiras artificiais dos polígonos municipais. Ao observar o mapa de calor gerado (figura acima), onde a cor preta representa ausência de dados e o amarelo/branco representa densidade máxima, emergem padrões geográficos e sociológicos profundos:
